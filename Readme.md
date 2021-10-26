@@ -2,18 +2,18 @@
 <br>Datamoshing is an effect that really looks cool and if you also want to make this glitch effect with your videos, you are in the right place!
 ![icon](https://user-images.githubusercontent.com/89206401/138873267-16f152e7-b61a-4fc2-a215-1cb66a004f13.png)
 <br>➤Why I made this?
-<br>I was also looking for good datamoshing softwares, you can either have to use those old softwares like Avidemux or have to look for some paid plugins, but I created my own GUI based application that is Datamosher Pro which is a free project. It contains 7 different effects and more will be added in future, you can also help to make new effects.
+<br>I was also looking for good datamoshing softwares, you can either have to use those old softwares like Avidemux or have to look for some paid plugins, but I created my own GUI based application that is Datamosher Pro which is a free project. It contains 7 different effects and more will be added in future, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, etc).
 <br>
 <br>➤How to Install?
-<br>You can either use the python based version for viewing logs and changing some settings if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro. There is no malware in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
-<br>Note: For python users, make sure you have all the assets with the python file and Imageio module installed in your system (if not then open CMD and type"pip install imageio" and it will be installed).
+<br>You can either use the python based version for viewing logs and changing some settings if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro. There is no malware or difference in the exe version.(as the same python version is converted to .exe using Auto-Py-To-Exe Converter)
+<br>Note: For python users, make sure you have all the assets with the python file and Imageio module installed in your system if not then open CMD and type"pip install imageio" and it will be installed.
 <br>
 <br>➤How to Use?
-<br>•Open the video file first(supported formats-mp4,gif,avi + more will be added if you demand")
-<br>•Choose the desired datamosh mode, then select the export format."
+<br>•Input the video file first (supported formats-mp4,gif,avi + more will be added if you demand")
+<br>•Choose the desired datamosh mode, then select the export format"
 <br>•Use advance options to get more accurate results"
-<br>•Then just click on the datamosh button, then wait for a few seconds."
-<br>•Then your video will be moshed, see the video in the directory."
+<br>•Then just click on the datamosh button, then wait for a few seconds"
+<br>•Then your video will be moshed, see the video in the directory"
 <br>•Note that if you mosh the same files in the same location again, then the new moshed file will replace the old file.
 <br>
 <br>➤Effects Info:
@@ -35,4 +35,4 @@
 <br>You can try around changing the values from 50-100 and see the results, you can visit to view more examples about the advanced tab.
 <br>
 <br>➤More Info about this project:
-<br>The effects are all inspired from ItsKasper's tomato.py. But it can only handle .avi file structure but in Datamosher Pro you can use any video file type including mp4, avi, gif. The files are first converted to avi file using Imageio without losing any quality and then the effect is applied and then again the corrupted file is converted to stable file using the same process, so that the output file can be directly used by other softwares without any error. A raw form option is also available if needed. You will not find this type of GUI program anywhere, so please don't misuse it. I hope there is no error in the software, but if you have any bug then raise an issue. Thanks!
+<br>The effects are all inspired from ItsKasper's tomato.py but it can only handle .avi file structure, but in Datamosher Pro you can use any video file type including mp4, avi, gif. The files are first converted to avi file using Imageio without losing any quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used by other softwares without any error. A raw form option is also available if needed. You will not find this type of GUI program anywhere, so please don't distribute it outside github. I hope there is no error in the software, but if you saw any bug then raise an issue. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
