@@ -17,7 +17,7 @@
 <br>•Note that if you mosh the same files in the same location again, then the new moshed file will replace the old file.
 <br>
 <br>➤Effects Info:
-<br>c is Glitch Frequency and n is Frame Frequency
+<br>(c is Glitch Frequency and n is Frame Frequency)
 <br>random - randomizes frame order
 <br>reverse - reverse frame order
 <br>invert - switches each consecutive frame witch each other
