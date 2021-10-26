@@ -9,7 +9,7 @@
 <br>Note: For python users, make sure you have all the assets with the python file and Imageio module installed in your system if not then open CMD and type"pip install imageio" and it will be installed.
 <br>
 <br>➤How to Use?
-<br>•Input the video file first (supported formats-mp4,gif,avi + more will be added if you demand")
+<br>•Input the video file first (supported formats- mp4, gif, avi + more will be added if you demand")
 <br>•Choose the desired datamosh mode, then select the export format"
 <br>•Use advance options to get more accurate results"
 <br>•Then just click on the datamosh button, then wait for a few seconds"
