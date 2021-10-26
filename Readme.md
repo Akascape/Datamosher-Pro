@@ -1,4 +1,4 @@
-# Datamosher Pro (GUI)
+# Datamosher Pro
 <br>Datamoshing is an effect that really looks cool and if you also want to make this glitch effect with your videos, you are in the right place!
 ![icon](https://user-images.githubusercontent.com/89206401/138873267-16f152e7-b61a-4fc2-a215-1cb66a004f13.png)
 <br>➤Why I made this?
