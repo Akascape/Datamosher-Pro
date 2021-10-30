@@ -2,7 +2,7 @@
 <br>Datamoshing is an effect that really looks cool and if you also want to make this glitch effect with your videos, you are in the right place!
 ![icon](https://user-images.githubusercontent.com/89206401/138873267-16f152e7-b61a-4fc2-a215-1cb66a004f13.png)
 <br>➤Why I made this?
-<br>I was also looking for good datamoshing softwares, you can either have to use those old softwares like Avidemux or have to look for some paid plugins, but I created my own GUI based application that is Datamosher Pro which is a free project. It contains 7 different effects and more will be added in future, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, etc).
+<br>I was also looking for good datamoshing softwares, you can either have to use those old softwares like Avidemux or have to look for some paid plugins, but I created my own GUI based application that is Datamosher Pro which is a free project. It contains 7 different effects and more will be added in future, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, mov etc).
 <br>
 <br>➤How to Install?
 <br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro from the release pagehttps:(https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.1.exe)
@@ -40,7 +40,7 @@
 <br>![Screenshot 2021-10-26 220159](https://user-images.githubusercontent.com/89206401/138922164-4c78f673-050e-4513-a3d2-6208e836cabc.png)
 <br>
 <br>➤More Info about this project:
-<br>The effects are all inspired from ItsKaspar's tomato.py but it can only handle .avi file structure, but in Datamosher Pro you can use any video file type including mp4, avi, gif. The files are first converted to avi file using Imageio without losing any quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used by other softwares without any error. A raw form option is also available if needed. You will not find this type of GUI program anywhere, I hope there is no error in the software but if you saw any bug then raise an issue. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
+<br>The effects are all inspired from ItsKaspar's tomato.py but it can only handle .avi file structure, in Datamosher Pro you can use any video file type including mp4, avi, gif, mov, mkv +more. The files are first converted to avi file using Imageio without losing any quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used by other softwares without any error. A raw form option is also available if needed. You will not find this type of GUI program anywhere, I hope there is no error in the software but if you saw any bug then raise an issue. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
 <br>DATAMOSH MADE EASY!
 <br>Current Version=1.1
