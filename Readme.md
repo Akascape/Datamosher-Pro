@@ -5,7 +5,7 @@
 <br>I was also looking for good datamoshing softwares, you can either have to use those old softwares like Avidemux or have to look for some paid plugins, but I created my own GUI based application that is Datamosher Pro which is a free project. It contains 7 different effects and more will be added in future, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, etc).
 <br>
 <br>➤How to Install?
-<br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro from the release pagehttps:(github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.1.exe)
+<br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro from the release pagehttps:(//github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.1.exe)
 <br>There is no malware or difference in the exe version(as the same python version is converted to .exe using Auto-Py-To-Exe Converter).
 <br>Note: For python users, make sure you have all the assets with the python file and Imageio module installed in your system if not then open CMD and type"pip install imageio" and it will be installed.
 <br>
