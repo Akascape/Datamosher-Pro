@@ -19,14 +19,14 @@
 <br>
 <br>➤Effects Info:
 <br>(c is Glitch Frequency and n is Frame Frequency)
-<br>random - randomizes frame order
-<br>reverse - reverse frame order
-<br>invert - switches each consecutive frame witch each other
-<br>bloom - duplicates c times p-frame number n
-<br>pulse - duplicates groups of c p-frames every n frames
-<br>overlap - copy group of c frames taken from every nth position
-<br>jiggle - take frame from around current position. n parameter is spread size.
-<br>classic - uses classic ffmpeg way to corrupt videos (*new)
+<br>Classic - uses classic ffmpeg way to corrupt videos (NEW)
+<br>Random - randomizes frame order
+<br>Reverse - reverse frame order
+<br>Invert - switches each consecutive frame witch each other
+<br>Bloom - duplicates c times p-frame number n (also known as waterbloom)
+<br>Pulse - duplicates groups of c p-frames every n frames (My fav)
+<br>Overlap - copy group of c frames taken from every nth position
+<br>Jiggle - take frame from around current position. n parameter is spread size.
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
