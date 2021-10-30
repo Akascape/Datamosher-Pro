@@ -26,7 +26,7 @@
 <br>pulse - duplicates groups of c p-frames every n frames
 <br>overlap - copy group of c frames taken from every nth position
 <br>jiggle - take frame from around current position. n parameter is spread size.
-<br>classic - uses classic ffmpeg way to corrupt videos
+<br>classic - uses classic ffmpeg way to corrupt videos (*new)
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
