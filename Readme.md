@@ -7,7 +7,7 @@
 <br>➤How to Install?
 <br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro from the release page: (https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.1.exe)
 <br>There is no malware or difference in the exe version(as the same python version is converted to .exe using Auto-Py-To-Exe Converter).
-<br>Note: For python users, make sure you have all the assets with the python file and Imageio module installed in your system if not then open CMD and type"pip install imageio" and it will be installed.
+<br>Note: For python users, make sure you have all the assets with the python file, Imageio and Imageio-ffmpeg module installed in your system.
 <br>
 <br>➤How to Use?
 <br>•Input the video file first (supported formats- mp4, gif, avi + more will be added if you demand")
