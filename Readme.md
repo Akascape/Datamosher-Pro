@@ -19,7 +19,7 @@
 <br>
 <br>➤Effects Info:
 <br>(c is Glitch Frequency and n is Frame Frequency)
-<br>Classic - uses classic ffmpeg way to corrupt videos (NEW)
+<br>Classic - uses classic ffmpeg way to corrupt videos and remove pixels (NEW)
 <br>Random - randomizes frame order
 <br>Reverse - reverse frame order
 <br>Invert - switches each consecutive frame witch each other
