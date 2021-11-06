@@ -6,8 +6,7 @@
 <br>
 <br>➤How to Install?
 <br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the executable version of Datamosher Pro from the release page: 
-<br>⬇️DOWNLOAD⬇️
-<br>(https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.2.exe)
+<br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.2.exe)
 <br>There is no malware or difference in the exe version(as the same python version is converted to .exe using Auto-Py-To-Exe Converter).
 <br>Note: For python users, make sure you have all the assets with the python file, Imageio and Imageio-ffmpeg module installed in your system.
 <br>
@@ -36,7 +35,7 @@
 <br>Frame Frequency - tells how many frames in the glitch (for modes that support it)
 <br>Ignored First Frame - tells whether to keep first video frames
 <br>Kill frames - tells max framesize to kill while cleaning
-<br>You can try around changing the values from 50-100 and see the results, you can visit https://github.com/itsKaspar/tomato.git to view more examples about the advanced tab.
+<br>You can try around changing the values from 50-100 and see the results, you can visit [Tomato git](https://github.com/itsKaspar/tomato.git) to view more examples about the advanced tab.
 <br>
 <br>➤User Interface:
 <br>![Screenshot 2021-10-26 220159](https://user-images.githubusercontent.com/89206401/138922164-4c78f673-050e-4513-a3d2-6208e836cabc.png)
