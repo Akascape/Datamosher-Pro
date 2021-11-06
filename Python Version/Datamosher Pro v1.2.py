@@ -22,6 +22,7 @@ if missing:
         for x in range(len(missingset)):
             y=missingset[x]
             subprocess.Popen('python -m pip install '+y)
+        sys.exit()
     elif res=="no":
         print("Error: Required modules not available! \nWithout the modules you can't use this program. Please install them first!")
         sys.exit()
