@@ -3,7 +3,7 @@ This version is comparitively lower in size and works the same inside python env
 To use this version, just download the zip file and extract this folder and then double 
 click on the Datamosher Pro v1.2.py to open the program, then use the software as describes in the Readme.md 
 or click the "i" button inside the software.
-In this version, the modules will be downloaded and ffmpeg path will be specified automatically, so no need to worry about modules and stuff
-(specially for windows user).
+In this version, the modules will be automatically downloaded and ffmpeg path will be pre-specified, so no need to worry about modules and stuff
+(specially for windows user). Make sure to restart the program after completing the automatic module installation.
 Do not delete or move any assets that are linked with the main file or else it will show error.
 This is all about the python version, you can now Datamosh your videos!
