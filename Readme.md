@@ -43,5 +43,5 @@
 <br>The effects are inspired from ItsKaspar's tomato.py which can only handle .avi file structure, but in Datamosher Pro you can use any video file type including mp4, avi, gif, mov, mkv +more. The files are first converted to avi file using Imageio without losing any quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used by other softwares without any error. A raw form option is also available if needed. You will not find this type of GUI program anywhere, I hope there is no error in the software but if you saw any bug then raise an issue. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
 <br>DATAMOSH MADE EASY!
-<br>Current Version=1.1
+<br>Current Version=1.2
 
