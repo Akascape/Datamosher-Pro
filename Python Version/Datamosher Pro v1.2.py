@@ -3,7 +3,6 @@ from tkinter import *
 from tkinter import ttk, messagebox, filedialog
 import tkinter
 import sys
-import imageio 
 import random
 import re
 import struct
@@ -27,6 +26,8 @@ if missing:
     elif res=="no":
         print("Error: Required modules not available! \nWithout the modules you can't use this program. Please install them first!")
         sys.exit()
+else:
+    import imageio 
 def resource_path0(relative_path):
     base_path = getattr(
         sys,
