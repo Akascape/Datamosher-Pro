@@ -20,21 +20,21 @@
 <br>
 <br>➤Effects Info:
 <br>(c is Glitch Frequency and n is Frame Frequency)
-<br>Classic - uses classic ffmpeg way to corrupt videos and remove pixels (NEW)
-<br>Random - randomizes frame order
-<br>Reverse - reverse frame order
-<br>Invert - switches each consecutive frame witch each other
-<br>Bloom - duplicates c times p-frame number n (also known as waterbloom)
-<br>Pulse - duplicates groups of c p-frames every n frames (My fav)
-<br>Overlap - copy group of c frames taken from every nth position
-<br>Jiggle - take frame from around current position. n parameter is spread size.
+<br>•Classic - uses classic ffmpeg way to corrupt videos and remove pixels (NEW)
+<br>•Random - randomizes frame order
+<br>•Reverse - reverse frame order
+<br>•Invert - switches each consecutive frame witch each other
+<br>•Bloom - duplicates c times p-frame number n (also known as waterbloom)
+<br>•Pulse - duplicates groups of c p-frames every n frames (My fav)
+<br>•Overlap - copy group of c frames taken from every nth position
+<br>•Jiggle - take frame from around current position. n parameter is spread size.
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
-<br>Glitch Frequency - tells how often to glitch (for modes that support it)
-<br>Frame Frequency - tells how many frames in the glitch (for modes that support it)
-<br>Ignored First Frame - tells whether to keep first video frames
-<br>Kill frames - tells max framesize to kill while cleaning
+<br>•Glitch Frequency - tells how often to glitch (for modes that support it)
+<br>•Frame Frequency - tells how many frames in the glitch (for modes that support it)
+<br>•Ignored First Frame - tells whether to keep first video frames
+<br>•Kill frames - tells max framesize to kill while cleaning
 <br>You can try around changing the values from 50-100 and see the results, you can visit [Tomato git](https://github.com/itsKaspar/tomato.git) to view more examples about the advanced tab.
 <br>
 <br>➤User Interface:
