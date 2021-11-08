@@ -24,10 +24,11 @@
 <br>•Random - randomizes frame order
 <br>•Reverse - reverse frame order
 <br>•Invert - switches each consecutive frame witch each other
-<br>•Bloom - duplicates c times p-frame number n (also known as waterbloom)
+<br>•Bloom - duplicates c times p-frame number n
 <br>•Pulse - duplicates groups of c p-frames every n frames (My fav)
 <br>•Overlap - copy group of c frames taken from every nth position
 <br>•Jiggle - take frame from around current position. n parameter is spread size.
+<br>More effects will be added in future!
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
