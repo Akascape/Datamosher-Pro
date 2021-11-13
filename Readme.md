@@ -18,6 +18,7 @@
 # Effects Info:
 <br>c=Glitch Size; n=Frame Frequency
 <br>All effects:
+<b>
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
 <br>•Sort - sorts video frames by data size in a rapid movement (NEW)
 <br>•Echo - duplicates the single video and apply the mosh in the midpoint (NEW)
@@ -31,6 +32,7 @@
 <br>•Overlap - copy group of c frames taken from every nth position
 <br>•Jiggle - take frame from around current position. n parameter is spread size.
 <br>•Void - gives a clean output but with distorted pixels
+ </b>
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
