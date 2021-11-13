@@ -40,7 +40,7 @@ c=Glitch Size; n=Frame Frequency
 <br>•Frame Frequency - tells how many frames to apply in the glitch (for modes that support it)
 <br>•First Frame - tells whether to keep first video frames
 <br>•Kill frames - tells max framesize to kill while cleaning
-<br>You can try around changing the values from 50-100 and see the results, you can visit [Tomato git](https://github.com/itsKaspar/tomato.git) to view more examples about the advanced tab.
+<br>You can try experimenting with the values and see the results.
 # User Interface:
 <img src="https://user-images.githubusercontent.com/89206401/138922164-4c78f673-050e-4513-a3d2-6208e836cabc.png">
 <br>➤More Info about this project:
