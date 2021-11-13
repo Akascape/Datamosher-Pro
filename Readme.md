@@ -31,7 +31,7 @@
 <br>•Overlap - copy group of c frames taken from every nth position
 <br>•Jiggle - take frame from around current position. n parameter is spread size.
 <br>•Void - gives a clean output but with distorted pixels
-<b>
+<br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
 <br>•Glitch Size - tells how often to glitch (for modes that support it)
