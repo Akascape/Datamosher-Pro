@@ -1,5 +1,5 @@
 # Datamosher Pro
-<br>Datamoshing is an effect that really looks cool and if you also want to make this glitch effect with your videos, you are in the right place!
+<br>Datamoshing is a cool video effect and if you also want to create this glitch effect with your videos, you are in the right place!
 <br>![icon](https://user-images.githubusercontent.com/89206401/138873267-16f152e7-b61a-4fc2-a215-1cb66a004f13.png)
 <br>➤Why I made this?
 <br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 13 different effects for now, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, mov etc).
