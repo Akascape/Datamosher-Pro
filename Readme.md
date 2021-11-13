@@ -4,13 +4,13 @@
 <br>➤Why I made this?
 <br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 13 different effects for now, you can also help to make new effects. With Datamosher Pro, you can quickly and easily datamosh your videos(supports mp4, gif, avi, mov etc).
 <br>
-<br>#How to Install?
+# How to Install?
 <br>You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
 <br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.2.exe)
 <br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users, make sure you have all the assets saved in the same folder. Modules will be automatically downloaded if not installed, so no need to worry.
 <br>
-<br>#How to Use?
+<br>➤How to Use?
 <br>•Input the video file first (supported formats- mp4, gif, avi + more will be added if you demand")
 <br>•Choose the desired datamosh mode, then select the export format"
 <br>•Use advance options to get more accurate results"
@@ -18,7 +18,7 @@
 <br>•Then your video will be moshed, see the video in the directory"
 <br>NOTE: audio glitching is not available for all modes!
 <br>
-<br>#Effects Info:
+<br>➤Effects Info:
 <br>c=Glitch Size; n=Frame Frequency
 <br>All effects:
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
