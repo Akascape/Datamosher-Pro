@@ -24,7 +24,7 @@ c=Glitch Size; n=Frame Frequency
 <br>•Echo - duplicates the single video and apply the mosh in the midpoint (NEW)
 <br>•Shake - shakes the pixel movement throughout the video (NEW)
 <br>•Classic - uses the traditional ffmpeg way to change the files and then corrupt the videos by moving the pixels
-<br>•Random - randomizes frame order
+<br>•Random - randomizes frame order<p align='right'><img scr="https://user-images.githubusercontent.com/89206401/141643830-8be0093e-1212-43d4-9953-263926f4e1df.png"></p>
 <br>•Reverse - reverse frame order
 <br>•Invert - switches each consecutive frame witch each other
 <br>•Bloom - duplicates c times p-frame number n
