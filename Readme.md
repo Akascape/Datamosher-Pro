@@ -10,7 +10,7 @@
 <br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users, make sure you have all the assets saved in the same folder. Modules will be automatically downloaded if not installed, so no need to worry.
 <br>
-<br>➤How to Use?
+#How to Use?
 <br>•Input the video file first (supported formats- mp4, gif, avi + more will be added if you demand")
 <br>•Choose the desired datamosh mode, then select the export format"
 <br>•Use advance options to get more accurate results"
@@ -18,7 +18,7 @@
 <br>•Then your video will be moshed, see the video in the directory"
 <br>NOTE: audio glitching is not available for all modes!
 <br>
-<br>➤Effects Info:
+#Effects Info:
 <br>c=Glitch Size; n=Frame Frequency
 <br>All effects:
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
@@ -43,7 +43,7 @@
 <br>•Kill frames - tells max framesize to kill while cleaning
 <br>You can try around changing the values from 50-100 and see the results, you can visit [Tomato git](https://github.com/itsKaspar/tomato.git) to view more examples about the advanced tab.
 <br>
-<br>➤User Interface:
+#User Interface:
 <br>![Screenshot 2021-10-26 220159](https://user-images.githubusercontent.com/89206401/138922164-4c78f673-050e-4513-a3d2-6208e836cabc.png)
 <br>
 <br>➤More Info about this project:
