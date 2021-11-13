@@ -16,7 +16,7 @@
 <br>•Then your video will be moshed, see the video in the directory"
 <br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
-<br>c=Glitch Size; n=Frame Frequency
+c=Glitch Size; n=Frame Frequency
 <b>
 <br>All effects:
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
