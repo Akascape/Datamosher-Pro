@@ -17,8 +17,8 @@
 <br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
 <br>c=Glitch Size; n=Frame Frequency
-<br>All effects:
 <b>
+<br>All effects:
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
 <br>•Sort - sorts video frames by data size in a rapid movement (NEW)
 <br>•Echo - duplicates the single video and apply the mosh in the midpoint (NEW)
