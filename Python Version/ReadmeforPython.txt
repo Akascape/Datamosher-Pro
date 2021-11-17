@@ -1,5 +1,6 @@
 #Read this to use the python version.
 This version is comparitively lower in size and works the same inside python environment.
+Extract the correct ffglitch version(only windows version is given in this repository, for other systems download from ffglitch.org)
 To use this version, just download the zip file and extract this folder and then double 
 click on the Datamosher Pro v1.2.py to open the program, then use the software as describes in the Readme.md 
 or click the "i" button inside the software.
