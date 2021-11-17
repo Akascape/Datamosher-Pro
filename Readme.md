@@ -5,7 +5,7 @@
 <br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 13 different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos (supports mp4, gif, avi, mkv etc).
 # How to Install?
 You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
-<br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.3.exe)
+<br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.4.exe)
 <br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users, make sure you have all the assets saved in the same folder. Modules will be automatically downloaded if not installed, so no need to worry.
 # How to Use?
@@ -19,10 +19,14 @@ You can either use the python based version for viewing logs and changing source
 c=Glitch Size; n=Frame Frequency
 <b>
 <br>All effects:
-<br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame (NEW)
-<br>•Sort - sorts video frames by data size in a rapid movement (NEW)
-<br>•Echo - duplicates the single video and apply the mosh in the midpoint (NEW)
-<br>•Shake - shakes the pixel movement throughout the video (NEW)
+<br>•Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video (NEW)
+<br>•Repeat - this repeats a series of p frames which gives a melting effect (NEW)
+<br>•Motion - with this powerful ffglitch feature, you can transfer the vector motion data of one video to a different video (NEW)
+<br>•Stretch - stretches the p-frames vertically (NEW)
+<br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame
+<br>•Sort - sorts video frames by data size in a rapid movement
+<br>•Echo - duplicates the single video and apply the mosh in the midpoint
+<br>•Shake - shakes the pixel movement throughout the video
 <br>•Classic - uses the traditional ffmpeg way to change the files and then remove the i-frames
 <br>•Random - randomizes frame order
 <br>•Reverse - reverse frame order
