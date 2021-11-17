@@ -46,7 +46,7 @@ c=Glitch Size; n=Frame Frequency
 <br>•Kill frames - tells max framesize to kill while cleaning
 <br>You can try experimenting with the values and see the results.
 # User Interface:
-<br><img src="https://user-images.githubusercontent.com/89206401/141643709-73b68644-5697-4c39-8be0-5384dc391fa4.png">
+<br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 <br>➤More Info about this project:
 <br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato) and Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) which can only handle .avi file structures, but in Datamosher Pro you can use any video file type including mp4, avi, gif, mov, mkv +more. The files are first converted to avi file using Imageio-ffmpeg without losing much quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used in other softwares for editing without any error. A raw file option is also available if needed. You will not find this type of GUI program anywhere with so many free effects, I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
