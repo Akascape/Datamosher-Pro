@@ -10,10 +10,11 @@ You can either use the python based version for viewing logs and changing source
 <br>Note: For python users, make sure you have all the assets saved in the same folder. Modules will be automatically downloaded if not installed, so no need to worry.
 # How to Use?
 •Input the video file first (supported formats- mp4, gif, avi + more will be added if you demand")
-<br>•Choose the desired datamosh mode, then select the export format"
-<br>•Use advance options to get more accurate results"
-<br>•Click on the datamosh button, then wait for a few seconds"
-<br>•Then your video will be moshed, see the video in the directory"
+<br>•Choose the desired datamosh mode, then select the export format
+<br>•Use advance options to get more accurate results
+<br>•Uncheck the highest quality box if needed (export time will be reduced)
+<br>•Click on the datamosh button, then wait for a few seconds
+<br>•Then your video will be moshed, see the video in the directory
 <br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
 <b>
@@ -47,7 +48,7 @@ You can either use the python based version for viewing logs and changing source
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 <br>➤More Info about this project:
-<br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato) and Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) which can only handle .avi file structures, but in Datamosher Pro you can use any video file type including mp4, avi, gif, mov, mkv +more. The files are first converted to avi file using Imageio-ffmpeg without losing much quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used in other softwares for editing without any error. A raw file option is also available if needed. You will not find this type of GUI program anywhere with so many free effects, I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
+<br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). The main issue with datamoshing is conversion, most of the files need avi structure to mosh but in Datamosher Pro you can use any video file type including mp4, avi, gif, mov, mkv +more. The files are first converted to the correct file format using ffmpeg without losing much quality and then the effect is applied and then again the corrupted file is converted to stable version using the same process so that the output video can be directly used in other softwares for further editing without any error. A raw file option is also available if needed. You will not find this type of GUI program anywhere with so many free effects, I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects. All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
 <br>DATAMOSH MADE EASY!
-<br>Current Version=1.3
+<br>Current Version=1.4
