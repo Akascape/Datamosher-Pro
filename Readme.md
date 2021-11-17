@@ -44,6 +44,7 @@ You can either use the python based version for viewing logs and changing source
 <br>•First Frame - tells whether to keep first video frames
 <br>•Kill frames - tells max framesize to kill while cleaning
 <br>You can try experimenting with the values and see the results.
+<br>
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 <br>➤More Info about this project:
