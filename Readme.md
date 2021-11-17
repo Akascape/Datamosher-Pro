@@ -23,7 +23,7 @@ c=Glitch Size; n=Frame Frequency
 <br>•Sort - sorts video frames by data size in a rapid movement (NEW)
 <br>•Echo - duplicates the single video and apply the mosh in the midpoint (NEW)
 <br>•Shake - shakes the pixel movement throughout the video (NEW)
-<br>•Classic - uses the traditional ffmpeg way to change the files and then remove the i frames
+<br>•Classic - uses the traditional ffmpeg way to change the files and then remove the i-frames
 <br>•Random - randomizes frame order
 <br>•Reverse - reverse frame order
 <br>•Invert - switches each consecutive frame witch each other
