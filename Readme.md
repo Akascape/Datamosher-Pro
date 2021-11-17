@@ -20,7 +20,7 @@ You can either use the python based version for viewing logs and changing source
 <br>All effects:
 <br>•Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video (NEW)
 <br>•Repeat - this repeats a series of p frames which gives a melting effect (NEW)
-<br>•Motion - with this powerful ffglitch feature, you can transfer the vector motion data of one video to a different video (NEW)
+<br>•Motion - a powerful ffglitch feature where you can transfer the vector motion data of one video to a different one (NEW)
 <br>•Stretch - stretches the p-frames vertically (NEW)
 <br>•Glide - duplicates number of n frames and show it as a flow before reaching the p-frame
 <br>•Sort - sorts video frames by data size in a rapid movement
