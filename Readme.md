@@ -17,6 +17,7 @@ You can either use the python based version for viewing logs and changing source
 <br>•Then your video will be moshed, see the video in the directory
 <br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
+c=Glitch Size; n=Frame Frequency
 <b>
 <br>All effects:
 <br>•Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video (NEW)
