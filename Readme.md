@@ -14,7 +14,7 @@ You can either use the python based version for viewing logs and changing source
 <br>•Use advance options to get more accurate results
 <br>•Uncheck the highest quality box if needed (export time will be reduced)
 <br>•Click on the datamosh button, then wait for a few seconds
-<br>•Then your video will be moshed, see the video in the directory
+<br>•Then your video will be moshed, see the video in its directory
 <br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
 c=Glitch Size; n=Frame Frequency
