@@ -47,11 +47,10 @@ c=Glitch Size; n=Frame Frequency
 <br>You can try experimenting with the values and see the results.
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
-<br>➤More Info about this project:
-<br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 # How It Works
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file type and get an usable datamoshed video file. The files are first converted to the required file format using ffmpeg without losing much quality, then the effect is applied and the corrupted file is converted to stable version again using the same process so that the output video can be used in other softwares directly for further editing. You will not find this type of GUI program anywhere with so many free effects only for datamoshing.
-I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects. 
+I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects.
+<br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
 <br>DATAMOSH MADE EASY!
