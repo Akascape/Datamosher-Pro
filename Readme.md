@@ -15,7 +15,6 @@ You can either use the python based version for viewing logs and changing source
 <br>• Uncheck the highest quality box if needed (export time will be reduced)
 <br>• Click on the datamosh button, then wait for a few seconds
 <br>• Then your video will be moshed, see the video in its directory
-<br>NOTE: audio glitching is not available for all modes!
 # Effects Info:
 c=Glitch Size; n=Frame Frequency
 <b>
@@ -37,6 +36,7 @@ c=Glitch Size; n=Frame Frequency
 <br>• Overlap - copy group of c frames taken from every nth position
 <br>• Jiggle - take frame from around current position. n parameter is spread size.
 <br>• Void - gives a clean output but with distorted pixels</b>
+<br>NOTE: audio glitching is not available for all modes!
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
