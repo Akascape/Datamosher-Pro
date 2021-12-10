@@ -2,7 +2,7 @@
 <br><b>Datamoshing is a cool video effect and if you also want to create this glitch effect with your videos easily, you are in the right place!</b>
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
 <br>➤Why I made this?
-<br>I was also looking for some good datamoshing software and I found that for datamoshing, you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 15+ different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos (supports mp4, gif, avi, mkv etc).
+<br>I was also looking for some good datamoshing software. I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 15+ different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos (supports mp4, gif, avi, mkv etc).
 # How to Install?
 You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
 <br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.4)
