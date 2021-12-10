@@ -43,7 +43,7 @@ c=Glitch Size; n=Frame Frequency
 <br>•Glitch Size - tells how often to glitch (for modes that support it)
 <br>•Frame Frequency - tells how many frames to apply in the glitch (for modes that support it)
 <br>•First Frame - tells whether to keep first video frames
-<br>•Kill frames - tells max framesize to kill while cleaning
+<br>•Kill frames - tells max framesize to kill while cleaning (available only for supported modes)
 <br>You can try experimenting with the values and see the results.
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
