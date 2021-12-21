@@ -16,9 +16,8 @@ You can either use the python based version for viewing logs and changing source
 <br>• Click on the datamosh button, then wait for a few seconds
 <br>• Then your video will be moshed, see the video in its directory
 # Effects Info:
-c=Glitch Size; n=Frame Frequency
+All Effects Info
 <b>
-<br>All effects:
 <br>• Buffer - creates ring buffers (NEW)
 <br>• Delay - another delaying ffglitch effect (NEW)
 <br>• Invert Reverse - applies both inverse and reverse mode (NEW)
@@ -44,11 +43,12 @@ c=Glitch Size; n=Frame Frequency
 <br>• Random - randomizes frame order
 <br>• Reverse - reverse frame order
 <br>• Invert - switches each consecutive frame witch each other
-<br>• Bloom - duplicates c times p-frame number n
+<br>• Bloom - duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)
 <br>• Pulse - duplicates groups of c p-frames every n frames
 <br>• Overlap - copy group of c frames taken from every nth position
 <br>• Jiggle - take frame from around current position. n parameter is spread size.
-<br>• Void - gives a clean output but with distorted pixels</b>
+<br>• Void - gives a clean output but with distorted pixels
+</b>
 <br>NOTE: audio glitching is not available for all modes!
 <br>
 <br>➤How to use Advanced Options?
