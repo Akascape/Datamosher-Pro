@@ -33,7 +33,7 @@ All Effects Info
 <br>• Zoom - simply zoom inside the moshed video (NEW)
 <br>• Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video
 <br>• Repeat - repeats a series of p frames which gives the melting effect
-<br>• Motion - a powerful ffglitch feature where you can transfer the vector motion data of one video to a different one
+<br>• Motion - a powerful ffglitch feature that can transfer the vector motion data from one video to a different one
 <br>• Stretch - stretches the p-frames vertically
 <br>• Glide - duplicates number of n frames and show it as a flow before reaching the p-frame
 <br>• Sort - sorts video frames by data size in a rapid movement
