@@ -1064,4 +1064,4 @@ Highbox.place(x=85,y=240, anchor='center')
 wrong=Label(root, width=2,bg="#FFFFFF",fg="red", text="ⓘ",font=(10),relief="sunken", highlightthickness=0,borderwidth=0,padx=0,pady=0)
 root.mainloop()
 #DEVELOPER: AKASH BORA (a.k.a Akascape)
-#Version=1.4
+#Version=1.5
