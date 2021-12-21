@@ -19,6 +19,19 @@ You can either use the python based version for viewing logs and changing source
 c=Glitch Size; n=Frame Frequency
 <b>
 <br>All effects:
+<br>• Buffer - creates ring buffers
+<br>• 
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
+<br>•
 <br>• Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video (NEW)
 <br>• Repeat - this repeats a series of p frames which gives a melting effect (NEW)
 <br>• Motion - a powerful ffglitch feature where you can transfer the vector motion data of one video to a different one (NEW)
