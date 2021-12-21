@@ -18,8 +18,8 @@ You can either use the python based version for viewing logs and changing source
 # Effects Info:
 All Effects Info
 <b>
-<br>• Buffer - creates ring buffers to mosh (NEW)
-<br>• Delay - another delaying ffglitch effect (NEW)
+<br>• `Buffer` - creates ring buffers to mosh (NEW)
+<br>• `Delay` - another delaying ffglitch effect (NEW)
 <br>• Invert Reverse - applies both inverse and reverse mode (NEW)
 <br>• Mirror - does the mosh with ffglitch but with mirrored X (NEW)
 <br>• Noise - makes large noisy mosh (NEW)
