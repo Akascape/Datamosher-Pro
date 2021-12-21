@@ -20,44 +20,44 @@ All Effects Info
 <b>
 <br>• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
-<br>• Invert Reverse - applies both inverse and reverse mode (NEW)
-<br>• Mirror - does the mosh with ffglitch but with mirrored X (NEW)
-<br>• Noise - makes large noisy mosh (NEW)
-<br>• Shear - moves down the right side of te video and merge with the mosh (NEW)
-<br>• Shift - shifts the block of the video upwards randomly (NEW)
-<br>• Sink - drowns the next frame of the video with the previous one (NEW)
-<br>• Slam Zoom - applies zoom with the sink effect (NEW)
-<br>• Slice - Zooms and slices the video in parts randomy (NEW)
-<br>• Stop - similar to sink but only stops the XY values randomly (NEW)
-<br>• Vibrate - works as a randomizer (NEW)
-<br>• Zoom - simply zoom inside the moshed video (NEW)
-<br>• Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video
-<br>• Repeat - repeats a series of p frames which gives the melting effect
-<br>• Motion - a powerful ffglitch feature that can transfer the vector motion data from one video to a different one
-<br>• Stretch - stretches the p-frames vertically
-<br>• Glide - duplicates number of n frames and show it as a flow before reaching the p-frame
-<br>• Sort - sorts video frames by data size in a rapid movement
-<br>• Echo - duplicates the single video and apply the mosh in the midpoint
-<br>• Shake - shakes the pixel movement throughout the video
-<br>• Classic - uses the traditional ffmpeg way to change the files and then remove the i-frames
-<br>• Random - randomizes frame order
-<br>• Reverse - reverse frame order
-<br>• Invert - switches each consecutive frame witch each other
-<br>• Bloom - duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)
-<br>• Pulse - duplicates groups of c p-frames every n frames
-<br>• Overlap - copy group of c frames taken from every nth position
-<br>• Jiggle - take frame from around current position. n parameter is spread size.
-<br>• Void - gives a clean output but with distorted pixels
+<br>• `Invert` Reverse - applies both inverse and reverse mode (NEW)
+<br>• `Mirror` - does the mosh with ffglitch but with mirrored X (NEW)
+<br>• `Noise` - makes large noisy mosh (NEW)
+<br>• `Shear` - moves down the right side of te video and merge with the mosh (NEW)
+<br>• `Shift` - shifts the block of the video upwards randomly (NEW)
+<br>• `Sink` - drowns the next frame of the video with the previous one (NEW)
+<br>• `Slam Zoom` - applies zoom with the sink effect (NEW)
+<br>• `Slice` - Zooms and slices the video in parts randomy (NEW)
+<br>• `Stop` - similar to sink but only stops the XY values randomly (NEW)
+<br>• `Vibrate` - works as a randomizer (NEW)
+<br>• `Zoom` - simply zoom inside the moshed video (NEW)
+<br>• `Fluid` - this is a ffglitch effect which gives a smooth liquid type transition to the video
+<br>• `Repeat` - repeats a series of p frames which gives the melting effect
+<br>• `Motion` - a powerful ffglitch feature that can transfer the vector motion data from one video to a different one
+<br>• `Stretch` - stretches the p-frames vertically
+<br>• `Glide` - duplicates number of n frames and show it as a flow before reaching the p-frame
+<br>• `Sort` - sorts video frames by data size in a rapid movement
+<br>• `Echo` - duplicates the single video and apply the mosh effect in the midpoint
+<br>• `Shake` - shakes the pixel movement throughout the video
+<br>• `Classic` - uses the traditional ffmpeg way to change the files and then remove the i-frames
+<br>• `Random` - randomizes frame order
+<br>• `Reverse` - reverse frame order
+<br>• `Invert` - switches each consecutive frame witch each other
+<br>• `Bloom` - duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)
+<br>• `Pulse` - duplicates groups of c p-frames every n frames
+<br>• `Overlap` - copy group of c frames taken from every nth position
+<br>• `Jiggle` - take frame from around current position. n parameter is spread size.
+<br>• `Void` - gives a clean output but with distorted pixels
 </b>
 <br>NOTE: audio glitching is not available for all modes!
 <br>Major Effects you need: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
-<br>• Glitch Size - tells how often to glitch
-<br>• Frame Frequency - tells how many frames to apply in the glitch
-<br>• First Frame - tells whether to keep first video frames
-<br>• Kill frames - tells max framesize to kill while cleaning
+<br>• `Glitch Size` - tells how often to glitch
+<br>• `Frame Frequency` - tells how many frames to apply in the glitch
+<br>• `First Frame` - tells whether to keep first video frames
+<br>• `Kill frames` - tells max framesize to kill while cleaning
 <br>NOTE: Some modes may not support all the 4 advanced options.
 <br>You can try experimenting with the values and see the results!
 # User Interface:
