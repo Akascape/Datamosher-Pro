@@ -50,7 +50,7 @@ All Effects Info
 <br>• Void - gives a clean output but with distorted pixels
 </b>
 <br>NOTE: audio glitching is not available for all modes!
-<br>Major Effects: Classic, Bloom, Glide, Repeat, Motion, Fluid
+<br>Major Effects you need: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <br>
 <br>➤How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
