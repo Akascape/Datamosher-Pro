@@ -6,7 +6,7 @@
 # How to Install?
 You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
 <br>[`⬇️DOWNLOAD⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.5)
-<br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
+<br>Don't worry, there is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users modules will be automatically downloaded if not installed, so no need to worry.
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
