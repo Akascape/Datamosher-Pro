@@ -974,7 +974,7 @@ def info():
     "\n➤Click on the datamosh button, then wait for a few seconds."
     "\n➤After conversion, your video will be ready and you can view the moshed video with any media player."
     "\n\nDeveloper: Akash Bora (a.k.a. Akascape)\nIf you are facing any issue then contact me on Github."
-    "\nVersion-1.4")
+    "\nVersion-1.5")
 def callback(url):
     webbrowser.open_new_tab("https://github.com/Akascape/Datamosher-Pro-GUI-.git")
 root=Tk()
