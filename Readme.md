@@ -9,7 +9,7 @@ You can either use the python based version for viewing logs and changing source
 <br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users modules will be automatically downloaded if not installed, so no need to worry.
 # How to Use?
-• Input the video file first (supported formats- mp4, gif, avi, mov, mkv etc)
+• Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode, then select the export format
 <br>• Use advance options to get more accurate results
 <br>• Uncheck the highest quality box if needed (export time will be reduced)
