@@ -2,10 +2,10 @@
 <br><b>Datamoshing is a cool video effect and if you also want to create this glitch effect with your videos easily, you are in the right place!</b>
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
 <br>➤Why I made this?
-<br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 15+ different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
+<br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains 30+ different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
 # How to Install?
 You can either use the python based version for viewing logs and changing source code if you want, but if you are looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
-<br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.4)
+<br>[⬇️DOWNLOAD⬇️](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.5)
 <br>There is no malware or difference in the exe version as the same python version is converted to .exe using Auto-Py-To-Exe Converter.
 <br>Note: For python users modules will be automatically downloaded if not installed, so no need to worry.
 # How to Use?
@@ -16,26 +16,25 @@ You can either use the python based version for viewing logs and changing source
 <br>• Click on the datamosh button, then wait for a few seconds
 <br>• Then your video will be moshed, see the video in its directory
 # Effects Info:
-c=Glitch Size; n=Frame Frequency
 <b>
 <br>All effects:
-<br>• Buffer - creates ring buffers
-<br>• 
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>•
-<br>• Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video (NEW)
-<br>• Repeat - this repeats a series of p frames which gives a melting effect (NEW)
-<br>• Motion - a powerful ffglitch feature where you can transfer the vector motion data of one video to a different one (NEW)
-<br>• Stretch - stretches the p-frames vertically (NEW)
+<br>• Buffer - creates ring buffers (NEW)
+<br>• Delay - another delaying ffglitch effect (NEW)
+<br>• Invert Reverse - applies both inverse and reverse mode (NEW)
+<br>• Mirror - does the mosh with ffglitch but with mirrored X (NEW)
+<br>• Noise - makes large noisy mosh (NEW)
+<br>• Shear - moves down the right side of te video and merge with the mosh (NEW)
+<br>• Shift - shifts the block of the video upwards randomly (NEW)
+<br>• Sink - drowns the next frame of the video with the previous one (NEW)
+<br>• Slam Zoom - applies zoom with the sink effect (NEW)
+<br>• Slice - Zooms and slices the video in parts randomy (NEW)
+<br>• Stop - similar to sink but only stops the XY values randomly (NEW)
+<br>• Vibrate - works as a randomizer (NEW)
+<br>• Zoom - simply zoom inside the moshed video (NEW)
+<br>• Fluid - this is a ffglitch effect which gives a smooth liquid type transition to the video
+<br>• Repeat - repeats a series of p frames which gives the melting effect
+<br>• Motion - a powerful ffglitch feature where you can transfer the vector motion data of one video to a different one
+<br>• Stretch - stretches the p-frames vertically
 <br>• Glide - duplicates number of n frames and show it as a flow before reaching the p-frame
 <br>• Sort - sorts video frames by data size in a rapid movement
 <br>• Echo - duplicates the single video and apply the mosh in the midpoint
@@ -44,7 +43,7 @@ c=Glitch Size; n=Frame Frequency
 <br>• Random - randomizes frame order
 <br>• Reverse - reverse frame order
 <br>• Invert - switches each consecutive frame witch each other
-<br>• Bloom - duplicates c times p-frame number n
+<br>• Bloom - duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)
 <br>• Pulse - duplicates groups of c p-frames every n frames
 <br>• Overlap - copy group of c frames taken from every nth position
 <br>• Jiggle - take frame from around current position. n parameter is spread size.
@@ -69,5 +68,5 @@ I hope there is no error in the program but if you find any bug then raise an is
 <br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a Akascape).
 <br>
-<br>DATAMOSH MADE EASY!
-<br>Current Version=1.4
+<br>DATAMOSHING MADE EASY!
+<br>Current Version=1.5
