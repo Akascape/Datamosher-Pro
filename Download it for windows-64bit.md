@@ -1,3 +1,3 @@
 Click Here to directly download the Windows version zip⬇️
-[`⬇️DOWNLOAD⬇️`]("https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip")
+[`Datamosher-Pro-Win64⬇`]("https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip")
 (Extract the zip file and run the DatamosherPro.exe)
