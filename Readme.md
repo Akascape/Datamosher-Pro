@@ -57,7 +57,7 @@ All Effects Info
 <br>• `Glitch Size` - tells how often to glitch
 <br>• `Frame Frequency` - tells how many frames to apply in the glitch
 <br>• `First Frame` - tells whether to keep first video frames
-<br>• `Kill frames` - tells max framesize to kill while cleaning
+<br>• `Kill Frames` - tells max framesize to kill while cleaning
 <br>NOTE: Some modes may not support all the 4 advanced options.
 <br>You can try experimenting with the values and see the results!
 # User Interface:
