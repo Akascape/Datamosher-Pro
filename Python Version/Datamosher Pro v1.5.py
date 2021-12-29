@@ -12,10 +12,9 @@ from itertools import chain, repeat, islice
 import subprocess
 import pkg_resources
 import json
-import numpy as np
 #Note that this program is optimised for only windows, for other systems you have to change the ffmpeg path(line 54)
 #Also get the correct version of ffglitch and extract it in the ffglitch folder!
-required = {'imageio', 'imageio-ffmpeg'}
+required = {'imageio', 'imageio-ffmpeg', 'numpy'}
 installed = {pkg.key for pkg in pkg_resources.working_set}
 missing = required - installed
 missingset=[*missing,]
@@ -36,6 +35,7 @@ if missing:
         sys.exit()
 else:
     import imageio
+    import numpy as np
     if os.path.isdir("pymosh") and os.path.isdir("ffglitch") and os.path.isdir("Assets"):
         from pymosh import Index
         from pymosh.codec.mpeg4 import is_iframe
