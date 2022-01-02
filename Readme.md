@@ -62,7 +62,7 @@ All Effects Info
 <br>You can try experimenting with the values and see the results!
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
-# How It Works
+## How It Works
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file type and get an usable datamoshed video file rendered. The files are first converted to the required file format using ffmpeg without losing much quality, then the effect is applied and the corrupted file is converted to stable version again using the same process so that the output video can be used directly in other softwares for further editing. All the unneccesary temp file will get deleted automatically.
 ## Conclusion
 You will not find this type of GUI program anywhere with so many free effects only for datamoshing.
