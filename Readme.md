@@ -7,7 +7,7 @@ I was also looking for some good datamoshing software and I found that you have 
 You can either use the python based version for viewing logs and changing source code if you want, or if you are a basic windows user then download the windows executable version of Datamosher Pro from the Download section or from the [release page](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.5).
 <br>Note: For python users required modules will be automatically downloaded if not installed, so no need to do much hard work.
 # DOWNLOAD
-<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Python⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
+<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip)                  [`⬇️Python⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode, then select the export format
