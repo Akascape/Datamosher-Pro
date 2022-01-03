@@ -18,6 +18,7 @@ For Windows version, just run the Datamosher-Pro.exe and use it. (No installatio
 <br>• Then your video will be moshed and will be saved in the same directory
 # Effects Info:
 ### All Effects:
+<br>TIP: Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <b>• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
 <br>• `Invert-Reverse` - applies both inverse and reverse mode (NEW)
@@ -59,7 +60,6 @@ The advanced tab is very useful and you can use it to get accurate results.
 <br>- Some modes may not support all the 4 advanced options.
 <br>- You can try experimenting with the values and see the results!
 <br>- Audio glitching is not available for all modes!
-<br>- Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 ## How It Works
