@@ -58,7 +58,7 @@ The advanced tab is very useful and you can use it to get accurate results.
 <br>
 <br>NOTE:
 <br>- Some modes may not support all the 4 advanced options.
-<br>- You can try experimenting with the values and see the results!
+<br>- You can try experimenting with the values and see the results but don't put huge values!
 <br>- Audio glitching is not available for all modes!
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
