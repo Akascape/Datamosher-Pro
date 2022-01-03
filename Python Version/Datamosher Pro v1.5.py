@@ -26,7 +26,8 @@ if missing:
                 y=missingset[x]
                 subprocess.Popen('python -m pip install '+y)
             messagebox.showinfo("Module Installed","Please restart the program!")
-            sys.exit()
+            import imageio
+            import numpy as np
         except:
             messagebox.showerror("Error downloading modules","Please download the neccessary modules separately!\n Required: Imageio, Imageio-ffmpeg")
             sys.exit()
@@ -36,12 +37,12 @@ if missing:
 else:
     import imageio
     import numpy as np
-    if os.path.isdir("pymosh") and os.path.isdir("ffglitch") and os.path.isdir("Assets"):
-        from pymosh import Index
-        from pymosh.codec.mpeg4 import is_iframe
-    else:
-        messagebox.showerror("Missing Folder!","Some folder(s) are not available! Please download it from our github page.")
-        sys.exit()
+if os.path.isdir("pymosh") and os.path.isdir("ffglitch") and os.path.isdir("Assets"):
+    from pymosh import Index
+    from pymosh.codec.mpeg4 import is_iframe
+else:
+    messagebox.showerror("Missing Folder!","Some folder(s) are not available! Please download it from our github page.")
+    sys.exit()
 def resource_path0(relative_path):
     base_path = getattr(
         sys,
