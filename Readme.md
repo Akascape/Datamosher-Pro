@@ -30,7 +30,7 @@ You can either use the python based version for viewing logs and changing source
 <br>• `Stop` - similar to sink but only stops the XY values randomly (NEW)
 <br>• `Vibrate` - works as a randomizer (NEW)
 <br>• `Zoom` - simply zooms inside the moshed video (NEW)
-<br>• `Fluid` - this is a ffglitch effect which gives a smooth liquid type effect to the video
+<br>• `Fluid` - this is a ffglitch's average effect which gives a smooth liquid type motion to the video
 <br>• `Repeat` - repeats a series of p frames which gives the melting effect
 <br>• `Motion` - a powerful ffglitch feature that can transfer the vector motion data from one video to a different one
 <br>• `Stretch` - stretches the p-frames vertically
