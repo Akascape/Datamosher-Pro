@@ -1,7 +1,7 @@
 # Datamosher Pro
 <br><b>Datamoshing is a cool video effect and if you also want to create this glitch effect with your videos easily, you are in the right place!</b>
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
-<br>➤Why I made this?
+### Why I made this?
 <br>I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
 # How to Install?
 You can either use the python based version for viewing logs and changing source code if you want, but if you are in windows and looking for faster renders then download the windows executable version of Datamosher Pro from the release page: 
@@ -52,7 +52,7 @@ You can either use the python based version for viewing logs and changing source
 <br>NOTE: audio glitching is not available for all modes!
 <br>Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <br>
-<br>➤How to use Advanced Options?
+### How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
 <br>• `Glitch Size` - tells how often to glitch
 <br>• `Frame Frequency` - tells how many frames to apply in the glitch
@@ -70,5 +70,5 @@ I hope there is no error in the program but if you find any bug then raise an is
 <br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a `Akascape`).
 <br>
-<br>DATAMOSHING MADE EASY!
-<br>Current Version=1.5
+### DATAMOSHING MADE EASY!
+## Current Version=1.5
