@@ -16,7 +16,7 @@ You can either use the python based version for viewing logs and changing source
 <br>• Click on the datamosh button, then wait for a few seconds
 <br>• Then your video will be moshed, see the video in its directory
 # Effects Info:
-All Effects Info
+### All Effects Info
 <b>
 <br>• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
