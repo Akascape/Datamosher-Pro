@@ -17,7 +17,7 @@ You can either use the python based version for viewing logs and changing source
 <br>• Then your video will be moshed, see the video in its directory
 # Effects Info:
 ### All Effects Info
-<br>• `Buffer` - creates ring buffers to mosh (NEW)
+• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
 <br>• `Invert` Reverse - applies both inverse and reverse mode (NEW)
 <br>• `Mirror` - does the mosh with ffglitch but with mirrored X (NEW)
@@ -50,7 +50,7 @@ You can either use the python based version for viewing logs and changing source
 <br>NOTE: audio glitching is not available for all modes!
 <br>Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 ### How to use Advanced Options?
-<br>The advanced tab is very useful and you can use it to get accurate results.
+The advanced tab is very useful and you can use it to get accurate results.
 <br>• `Glitch Size` - tells how often to glitch
 <br>• `Frame Frequency` - tells how many frames to apply in the glitch
 <br>• `First Frame` - tells whether to keep first video frames
