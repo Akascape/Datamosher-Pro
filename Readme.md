@@ -51,7 +51,6 @@ You can either use the python based version for viewing logs and changing source
 </b>
 <br>NOTE: audio glitching is not available for all modes!
 <br>Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
-<br>
 # How to use Advanced Options?
 <br>The advanced tab is very useful and you can use it to get accurate results.
 <br>• `Glitch Size` - tells how often to glitch
