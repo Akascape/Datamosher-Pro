@@ -3,11 +3,12 @@
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
-# How to Install?
-You can either use the python based version for viewing logs and changing source code if you want, or if you are a basic windows user then download the windows executable version of Datamosher Pro from the Download section or from the [release page](https://github.com/Akascape/Datamosher-Pro/releases/tag/Datamosher_Prov1.5).
-<br>Note: For python users who are not in windows, please download the correct version of ffglitch from ffglitch.org and extract it in inside the ffglitch folder of Datamosher pro. (Only windows version is given in this repo)
 # DOWNLOAD
 <br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Python⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
+# How to Install?
+For Windows version, just run the Datamosher-Pro.exe and use it. (No installation setup required)
+<br>For Python users, just download the python version and run the Datamosher.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. Then the program is ready to use.
+<br>Note: For python users who are not in windows, please download the correct version of ffglitch from ffglitch.org and extract it in inside the ffglitch folder of Datamosher pro. (Only windows version is given in this repo)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode, then select the export format
