@@ -22,7 +22,7 @@ You can either use the python based version for viewing logs and changing source
 <br>• `Invert-Reverse` - applies both inverse and reverse mode (NEW)
 <br>• `Mirror` - does the mosh with ffglitch but with mirrored X (NEW)
 <br>• `Noise` - makes large noisy mosh (NEW)
-<br>• `Shear` - moves down the right side of te video and merge with the mosh (NEW)
+<br>• `Shear` - moves down the right side of the video and merge with the mosh (NEW)
 <br>• `Shift` - shifts the block of the video upwards randomly (NEW)
 <br>• `Sink` - drowns the next frame of the video with the previous one (NEW)
 <br>• `Slam Zoom` - applies zoom with the sink effect (NEW)
