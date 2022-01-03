@@ -70,5 +70,5 @@ I hope there is no error in the program but if you find any bug then raise an is
 <br>The effects are inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 All the logo and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a `Akascape`).
 <br>
-### DATAMOSHING MADE EASY!
-## Current Version=1.5
+<br> DATAMOSHING MADE EASY!
+<br> Current Version=1.5
