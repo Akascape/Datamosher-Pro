@@ -16,7 +16,7 @@ For Windows version, just run the Datamosher-Pro.exe and use it. (No installatio
 <br>• Uncheck the highest quality box if needed (export time will be reduced)
 <br>• Click on the datamosh button, then wait for a few seconds
 <br>• Then your video will be moshed and will be saved in the same directory
-# Effects Info:
+# Effects Info
 ### All Effects:
 TIP: Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <b><br>• `Buffer` - creates ring buffers to mosh (NEW)
@@ -62,7 +62,7 @@ The advanced tab is very useful and you can use it to get accurate results.
 <br>- Audio glitching is not available for all modes!
 # UI
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
-## How It Works
+## How It Works?
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file type and get an usable datamoshed video file rendered. The files are first converted to the required file format using ffmpeg without losing much quality, then the effect is applied and the corrupted file is converted to stable version again using the same process so that the output video can be used directly in other softwares for further editing. All the unneccesary temp file will get deleted automatically.
 ## Conclusion
 You will not find this type of GUI program anywhere with so many free effects only for datamoshing.
