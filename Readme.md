@@ -38,7 +38,7 @@ You can either use the python based version for viewing logs and changing source
 <br>• `Sort` - sorts video frames by data size in a rapid movement
 <br>• `Echo` - duplicates the single video and apply the mosh effect in the midpoint
 <br>• `Shake` - shakes the pixel movement throughout the video
-<br>• `Classic` - uses the traditional ffmpeg way to change the files and then remove the i-frames
+<br>• `Classic` - uses the traditional ffmpeg way to corrupt the video and then remove the i-frames
 <br>• `Random` - randomizes frame order
 <br>• `Reverse` - reverse frame order
 <br>• `Invert` - switches each consecutive frame witch each other
