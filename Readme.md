@@ -7,7 +7,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Python⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
 # How to Install?
 - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
-- For Python users, just download the python version run the Datamosher.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. Then the program is ready to use.
+- For Python users, just run the Datamosher.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. Then the program is ready to use.
 <br>Note: For python users who are not in windows, please download the correct version of ffglitch from ffglitch.org and extract it in inside the ffglitch folder of Datamosher pro. (Only windows version is given in this repo)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
