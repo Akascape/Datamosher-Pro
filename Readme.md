@@ -53,10 +53,11 @@ The advanced tab is very useful and you can use it to get accurate results.
 <br>• `Frame Frequency` - tells how many frames to apply in the glitch
 <br>• `First Frame` - tells whether to keep first video frames
 <br>• `Kill Frames` - tells max framesize to kill while cleaning
-<br>NOTE: Some modes may not support all the 4 advanced options.
-<br>You can try experimenting with the values and see the results!
-<br>NOTE: audio glitching is not available for all modes!
-<br>Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
+<br>NOTE:
+<br>- Some modes may not support all the 4 advanced options.
+<br>- You can try experimenting with the values and see the results!
+<br>- Audio glitching is not available for all modes!
+<br>- Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 # User Interface:
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 ## How It Works
