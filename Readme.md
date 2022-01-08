@@ -71,7 +71,7 @@ The main issue with datamoshing is conversion of corrupted files but with Datamo
 You will not find this type of free software anywhere with so many free effects only for datamoshing. 
 I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects.
 <br>The effects are all inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
-All the logos and designs are created by me. <br>Thanks! Made by Akash Bora (a.k.a `Akascape`).
+All the logos and designs are created by me. <br>Thanks! Made by Akash Bora (Follow me [`Akascape`](https://github.com/Akascape).
 <br>
 <br> DATAMOSHING MADE EASY!
 ### Current Version=1.5
