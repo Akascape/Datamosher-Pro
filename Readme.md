@@ -22,11 +22,11 @@ I was also looking for some good datamoshing software and I found that you have 
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-|  Buffer         | creates ring buffers to mosh (NEW)|
-| \Delay          | another delaying ffglitch effect (NEW)|
-| \Invert-Reverse | applies both inverse and reverse mode (NEW)|
-| \Mirror         | does the mosh with ffglitch but with mirrored X (NEW)|
-| \Noise          | makes large noisy mosh (NEW)|
+| Buffer          | creates ring buffers to mosh (NEW)|
+| Delay           | another delaying ffglitch effect (NEW)|
+| Invert-Reverse  | applies both inverse and reverse mode (NEW)|
+| Mirror          | does the mosh with ffglitch but with mirrored X (NEW)|
+| Noise           | makes large noisy mosh (NEW)|
 | Shear           | tilt the video clockwise and merges the mosh (NEW)|
 | Shift           | shifts random blocks of the video upwards (NEW)|
 | Sink            | drowns the next frame of the video in the previous one (NEW)|
