@@ -1,10 +1,10 @@
 # Datamosher Pro
-<br><b>Datamoshing is a cool video effect and if you also want to create this glitch effect with your videos easily, you are in the right place!</b>
+<br><b>Datamoshing is a cool video effect and if you also want to easily create this glitch effect with your videos, you are in the right place!</b>
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
 ### Why I made this?
-I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
+I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos!
 # DOWNLOAD
-<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Python (Source Code)⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
+<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip)<p align='right'> [`⬇️Python (Source Code)⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)</p>
 # How to Install?
 - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
 - For Python users, just run the Datamosher.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. Then the program is ready to use.
@@ -58,12 +58,12 @@ The advanced tab is very useful and you can use it to get accurate results.
 <br>
 <br>NOTE:
 <br>- Some modes may not support all the 4 advanced options.
-<br>- You can try experimenting with the values and see the results but don't put huge values!
-<br>- Audio glitching is not available for all modes!
+<br>- You can try experimenting with the values and see the results but don't put huge values.
+<br>- Audio glitching is not available for all modes.
 # UI
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 ## How It Works?
-The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file type and get an usable datamoshed video file rendered. The files are first converted to the required file format using ffmpeg without losing much quality, then the effect is applied and the corrupted file is converted back to stable version again using the same process so that the output video can be used directly in other editing softwares. All the unneccesary temp file will get deleted automatically.
+The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed video file. The files are first converted to the required file format using ffmpeg without losing much quality, then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can be used directly in other editing softwares. All the unneccesary temp files get deleted automatically.
 ## Conclusion
 You will not find this type of GUI program anywhere with so many free effects only for datamoshing.
 I hope there is no error in the program but if you find any bug then raise an issue. You can also help to make new datamosh effects.
