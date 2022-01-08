@@ -20,36 +20,38 @@ I was also looking for some good datamoshing software and I found that you have 
 # Effects Info
 ### Effects List:
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
-<b><br>• `Buffer` - creates ring buffers to mosh (NEW)
-<br>• `Delay` - another delaying ffglitch effect (NEW)
-<br>• `Invert-Reverse` - applies both inverse and reverse mode (NEW)
-<br>• `Mirror` - does the mosh with ffglitch but with mirrored X (NEW)
-<br>• `Noise` - makes large noisy mosh (NEW)
-<br>• `Shear` - tilt the video clockwise and merges the mosh (NEW)
-<br>• `Shift` - shifts random blocks of the video upwards (NEW)
-<br>• `Sink` - drowns the next frame of the video in the previous one (NEW)
-<br>• `Slam Zoom` - applies zoom with the sink effect (NEW)
-<br>• `Slice` - randomly zooms and slices the video in parts (NEW)
-<br>• `Stop` - similar to sink but stops the XY values (NEW)
-<br>• `Vibrate` - works as a randomizer (NEW)
-<br>• `Zoom` - simply zooms inside the moshed video (NEW)
-<br>• `Fluid` - this is a ffglitch's average effect which gives a smooth liquid type motion in the video
-<br>• `Repeat` - repeats a series of p frames which gives the melting effect
-<br>• `Motion` - a powerful ffglitch feature that can transfer the vector motion data from one video to another
-<br>• `Stretch` - stretches the p-frames horizontally and vertically
-<br>• `Glide` - duplicates number of n frames and show it as a flow before reaching the p-frame
-<br>• `Sort` - sorts video frames by data size in a rapid movement
-<br>• `Echo` - duplicates the single video and apply the mosh effect in the midpoint
-<br>• `Shake` - randomly shakes the pixels/blocks throughout the video
-<br>• `Classic` - uses the traditional ffmpeg way to convert and corrupt the video by removing the i-frames
-<br>• `Random` - randomizes frame order
-<br>• `Reverse` - reverses frame order
-<br>• `Invert` - switches each consecutive frame witch each other
-<br>• `Bloom` - duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)
-<br>• `Pulse` - duplicates groups of c p-frames every n frames
-<br>• `Overlap` - copy group of c frames taken from every nth position
-<br>• `Jiggle` - take frame from around current position. n parameter is spread size.
-<br>• `Void` - gives a clean output but with distortion</b>
+| Effect Name     | Description                                                           |
+| ----------------| --------------------------------------------------------------------- |
+|  Buffer         | creates ring buffers to mosh (NEW)|
+| \Delay          | another delaying ffglitch effect (NEW)|
+| \Invert-Reverse | applies both inverse and reverse mode (NEW)|
+| \Mirror         | does the mosh with ffglitch but with mirrored X (NEW)|
+| \Noise          | makes large noisy mosh (NEW)|
+| Shear           | tilt the video clockwise and merges the mosh (NEW)|
+| Shift           | shifts random blocks of the video upwards (NEW)|
+| Sink            | drowns the next frame of the video in the previous one (NEW)|
+| Slam Zoom       | applies zoom with the sink effect (NEW)|
+| Slice           | randomly zooms and slices the video in parts (NEW)|
+| Stop            | similar to sink but stops the XY values (NEW)|
+| Vibrate         | works as a randomizer (NEW)|
+| Zoom            | simply zooms inside the moshed video (NEW)|
+| Fluid           | this is a ffglitch's average effect which gives a smooth liquid type motion in the video|
+| Repeat          | repeats a series of p frames which gives the melting effect|
+| Motion          | a powerful ffglitch feature that can transfer the vector motion data from one video to another|
+| Stretch         | stretches the p-frames horizontally and vertically|
+| Glide           | duplicates number of n frames and show it as a flow before reaching the p-frame|
+| Sort            | sorts video frames by data size in a rapid movement|
+| Echo            | duplicates the single video and apply the mosh effect in the midpoint|
+| Shake           | randomly shakes the pixels/blocks throughout the video|
+| Classic         | uses the traditional ffmpeg way to convert and corrupt the video by removing the i-frames|
+| Random          | randomizes frame order|
+| Reverse         | reverses frame order|
+| Invert          | switches each consecutive frame witch each other|
+| Bloom           | duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)|
+| Pulse           | duplicates groups of c p-frames every n frames|
+| Overlap         | copy group of c frames taken from every nth position|
+| Jiggle          | take frame from around current position. n parameter is spread size|
+| Void            | gives a clean output but with distortion|
 ### How to use Advanced Options?
 The advanced tab is very useful to get accurate results. The options are:
 <br>• `Glitch Size` - tells how long/often to glitch
