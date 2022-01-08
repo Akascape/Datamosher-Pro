@@ -19,7 +19,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• After conversions, your video will be moshed and saved in the same directory
 # Effects Info
 ### All Effects:
-TIP: Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
+TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <b><br>• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
 <br>• `Invert-Reverse` - applies both inverse and reverse mode (NEW)
