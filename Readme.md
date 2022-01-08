@@ -51,7 +51,7 @@ TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Mo
 <br>• `Jiggle` - take frame from around current position. n parameter is spread size.
 <br>• `Void` - gives a clean output but with distortion</b>
 ### How to use Advanced Options?
-The advanced tab is very useful and you can use it to get accurate results.
+The advanced tab is very useful to get accurate results.
 <br>• `Glitch Size` - tells how long/often to glitch
 <br>• `Frame Frequency` - tells how many frames to apply in the glitch
 <br>• `First Frame` - tells whether to keep the first video frames
