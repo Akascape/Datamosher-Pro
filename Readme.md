@@ -1,15 +1,15 @@
 # Datamosher Pro
-<br><b>Datamoshing is a cool video effect and if you also want to easily create this glitch effect in your videos, you are in the right place!
+<br><b>Datamoshing is a cool video effect and if you want to easily create this glitch effect in your videos, you are in the right place!
 <br>With Datamosher Pro you can quickly and easily datamosh your videos!</b><br>
 <br><p align='center'><img src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png"></p>
 ### Why I made this?
-I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style.
+I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style.
 # DOWNLOAD
 <br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip)             [`⬇️Python (Source Code)⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
 # How to Install?
 - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
 - For Python users, just run the Datamosher-Pro.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. After installation of modules the program is ready to use.
-<br>Note: For python users who are not in windows, please download the correct version of ffglitch from ffglitch.org and extract it inside the ffglitch folder of Datamosher pro. (Only windows ffglitch is given in this repo)
+<br>Note: For python users who are not in windows, please download the correct version of ffglitch from ffglitch.org and extract it inside the ffglitch folder (Only windows ffglitch is given in this repo)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode and the export format
