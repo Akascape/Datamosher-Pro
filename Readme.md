@@ -48,7 +48,7 @@ TIP: Major Effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Mo
 <br>• `Pulse` - duplicates groups of c p-frames every n frames
 <br>• `Overlap` - copy group of c frames taken from every nth position
 <br>• `Jiggle` - take frame from around current position. n parameter is spread size.
-<br>• `Void` - gives a clean output but with distorted pixels </b>
+<br>• `Void` - gives a clean output but distorted by killing frames</b>
 ### How to use Advanced Options?
 The advanced tab is very useful and you can use it to get accurate results.
 <br>• `Glitch Size` - tells how often to glitch
