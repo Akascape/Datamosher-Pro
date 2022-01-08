@@ -4,7 +4,7 @@
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins to datamosh your videos, so I created my own GUI based application that is Datamosher Pro which is a free project. It contains `30+` different effects which can replicate any type of datamoshing style. With Datamosher Pro, you can quickly and easily datamosh your videos.
 # DOWNLOAD
-<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Source Code⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
+<br>[`⬇️Windows⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro_win64.zip) [`⬇️Python Source Code⬇️`](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.5/Datamosher_Pro-python_version.zip)
 # How to Install?
 - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
 - For Python users, just run the Datamosher.py file. If any module error pops up then just click on yes and the required module will be downloaded automatically. Then the program is ready to use.
