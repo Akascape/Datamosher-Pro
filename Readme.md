@@ -18,7 +18,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
 # Effects Info
-### All Effects:
+### Effects List:
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 <b><br>• `Buffer` - creates ring buffers to mosh (NEW)
 <br>• `Delay` - another delaying ffglitch effect (NEW)
