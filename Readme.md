@@ -22,19 +22,19 @@ I was also looking for some good datamoshing software and I found that you have 
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Buffer          | creates ring buffers to mosh (NEW)|
-| Delay           | another delaying ffglitch effect (NEW)|
-| Invert-Reverse  | applies both inverse and reverse mode (NEW)|
-| Mirror          | does the mosh with ffglitch but with mirrored X (NEW)|
-| Noise           | makes large noisy mosh (NEW)|
-| Shear           | tilt the video clockwise and merges the mosh (NEW)|
-| Shift           | shifts random blocks of the video upwards (NEW)|
-| Sink            | drowns the next frame of the video in the previous one (NEW)|
-| Slam Zoom       | applies zoom with the sink effect (NEW)|
-| Slice           | randomly zooms and slices the video in parts (NEW)|
-| Stop            | similar to sink but stops the XY values (NEW)|
-| Vibrate         | works as a randomizer (NEW)|
-| Zoom            | simply zooms inside the moshed video (NEW)|
+| Buffer          | creates ring buffers to mosh|
+| Delay           | another delaying ffglitch effect|
+| Invert-Reverse  | applies both inverse and reverse mode|
+| Mirror          | does the mosh with ffglitch but with mirrored X|
+| Noise           | makes large noisy mosh|
+| Shear           | tilt the video clockwise and merges the mosh|
+| Shift           | shifts random blocks of the video upwards|
+| Sink            | drowns the next frame of the video in the previous one|
+| Slam Zoom       | applies zoom with the sink effect|
+| Slice           | randomly zooms and slices the video in parts|
+| Stop            | similar to sink but stops the XY values|
+| Vibrate         | works as a randomizer|
+| Zoom            | simply zooms inside the moshed video|
 | Fluid           | this is a ffglitch's average effect which gives a smooth liquid type motion in the video|
 | Repeat          | repeats a series of p frames which gives the melting effect|
 | Motion          | a powerful ffglitch feature that can transfer the vector motion data from one video to another|
