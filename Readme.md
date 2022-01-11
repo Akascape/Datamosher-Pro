@@ -65,6 +65,8 @@ The advanced tab is very useful to get accurate results. The options are:
 <br>- Audio glitching is not available in all modes.
 # UI
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
+## Demo
+Demos will be uploaded soon!
 ## How It Works?
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed file. The video is first converted to the required file format using ffmpeg, then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unneccesary temp files get deleted automatically.
 ## Conclusion
