@@ -22,6 +22,7 @@ I was also looking for some good datamoshing software and I found that you have 
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
+| Shuffle         | randomly shuffles chuncks of video frames with the classic ffglitch datamosh|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | another delaying ffglitch effect|
 | Invert-Reverse  | applies both inverse and reverse mode|
@@ -77,4 +78,4 @@ All the logos and designs are created by me. <br>-Akash Bora
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
 <br>
 <br> DATAMOSHING MADE EASY!
-### Current Version=1.5
+### Current Version=1.6
