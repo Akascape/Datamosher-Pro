@@ -77,7 +77,7 @@ You will not find this type of free software anywhere with so many free effects 
 <br>The effects are all inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
 All the logos and designs are created by me. <br>-Akash Bora
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
-<br> Don't forget to give a star⭐!
+<br> Don't forget to give a ⭐!
 <br>
 <br> DATAMOSHING MADE EASY!
 ### Current Version-1.6.1
