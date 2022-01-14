@@ -19,7 +19,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• After conversions, your video will be moshed and saved in the same directory
 # Effects Info
 ### Effects List:
-TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion, Fluid
+TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Fluid
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Shuffle (NEW)   | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
