@@ -80,4 +80,4 @@ All the logos and designs are created by me. <br>-Akash Bora
 <br> Don't forget to give a star⭐!
 <br>
 <br> DATAMOSHING MADE EASY!
-### Current Version=1.6
+### Current Version=1.6.1
