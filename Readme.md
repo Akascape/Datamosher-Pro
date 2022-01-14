@@ -22,7 +22,7 @@ I was also looking for some good datamoshing software and I found that you have 
 TIP: Major effects used for basic datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Rise (NEW)      | another classic i frame removal effect that gives the raising effect|
+| Rise (NEW)      | another classic i and p frames removal effect|
 | Shuffle (NEW)   | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | another delaying ffglitch effect|
