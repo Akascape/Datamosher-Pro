@@ -78,6 +78,6 @@ You will not find this type of free software anywhere with so many free effects 
 All the logos and designs are created by me. <br>-Akash Bora
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
 <br> Don't forget to give a ⭐!
-<br>![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Your_GitHub_Username&show_icons=true)
+<br>![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Akascape&show_icons=true)
 <br> DATAMOSHING MADE EASY!
 ### Current Version-1.6.1
