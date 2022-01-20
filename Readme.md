@@ -66,7 +66,7 @@ The advanced tab is very useful to get accurate results. The options are:
 <br>- You can try experimenting with the values and see the results but don't put huge values.
 <br>- Audio glitching is only available in few modes like classic and repeat.
 # UI
-<br><img align="center" src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
+<br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 ## Demo
 Demos will be uploaded soon!
 ## How It Works?
