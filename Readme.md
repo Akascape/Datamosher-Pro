@@ -19,6 +19,8 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• After conversions, your video will be moshed and saved in the same directory
 # Effects Info
 ### Effects List:
+<br> TIP: Major effects used for datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
+<br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Rise (NEW)      | another classic i and p frames removal effect|
@@ -53,8 +55,6 @@ I was also looking for some good datamoshing software and I found that you have 
 | Overlap         | copy group of c frames taken from every nth position|
 | Jiggle          | take frame from around current position. n parameter is spread size|
 | Void            | gives a clean output but with distortion|
-<br>
-<br> TIP: Major effects used for datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
 ### How to use Advanced Options?
 The advanced tab is very useful to get accurate results. The options are:
 <br>• `Glitch Size` - tells how long/often to glitch
