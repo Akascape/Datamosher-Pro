@@ -19,7 +19,6 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• After conversions, your video will be moshed and saved in the same directory
 # Effects Info
 ### Effects List:
-<br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Rise (NEW)      | another classic i and p frames removal effect|
