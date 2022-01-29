@@ -1,5 +1,5 @@
 # Datamosher Pro
-<br><b>Datamoshing is a cool video effect and if you also want to create this glitch in your videos, you are in the right place!
+<b>Datamoshing is a cool video effect and if you also want to create this glitch in your videos, you are in the right place!
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 <br>With Datamosher Pro you can quickly and easily datamosh your videos!</b><br>
 ### Why I made this?
