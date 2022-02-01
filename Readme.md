@@ -25,7 +25,7 @@ I was also looking for some good datamoshing software and I found that you have 
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Rise (NEW)      | another classic i and p frames removal effect|
-| Shuffle (NEW)   | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
+| Shuffle (NEW)   | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable)|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | another delaying ffglitch effect|
 | Invert-Reverse  | applies both inverse and reverse mode|
