@@ -9,7 +9,7 @@ I was also looking for some good datamoshing software and I found that you have 
 
 # How to Install?
 - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
-- For other OS, just use the python version. Make sure you have python installed properly and then open the datamosher pro folder and just run that Datamosher-Pro.py file. If any module error pops up then just click on yes and the required module will get downloaded automatically. After installation of modules the program is ready to use. (all ffglitch versions are provided and ffmpeg issue is also fixed)
+- For other OS, just use the python version. Make sure you have python installed properly and then open the datamosher_pro-python_version folder and just run that Datamosher-Pro.py file. If any module error pops up then just click on yes and the required module will get downloaded automatically. After installation of modules the program is ready to use. (all ffglitch versions are provided and ffmpeg issue is also fixed)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode and the export format
