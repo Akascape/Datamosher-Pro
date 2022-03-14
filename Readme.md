@@ -17,6 +17,8 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• Check/uncheck the highest quality box for quality adjustments
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
+## Demos
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.6/Demos.md)
 # Effects Info
 ### Effects List:
 <br> TIP: Major effects used for datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
@@ -68,8 +70,6 @@ The advanced tab is very useful to get accurate results. The options are:
 <br>- Audio glitching is only available in few modes like classic and repeat.
 # UI
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
-## Demos
-<br> [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.6/Demos.md)
 ## How It Works?
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed file. The video is first converted to the required file format using ffmpeg, then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unneccesary temp files get deleted automatically.
 ## Conclusion
