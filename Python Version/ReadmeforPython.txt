@@ -1,8 +1,8 @@
 #Read this to use the python version.
 This version is comparitively lower in size and works the same inside python environment.
-first setup ffglitch if you are using this repo.
-(See readme inside ffglitch folder to download ffglitch)
-In this version, the modules will be automatically downloaded and ffmpeg path will be pre-specified, so no need to worry about modules and stuff
-(specially for windows user).
+Things to setup before running the python file:
+1) First setup ffglitch if you are using this repo only. (See readme.txt inside ffglitch folder to download ffglitch)
+NOte: No need to do the ffglitch setup if you downloaded the release python version as all the versions are pre-provided there
+2) After doing that, run the datamosher-pro.py file and click yes if module error pops up and let the modules get downloaded.
 Do not delete or move any assets or folder that are linked with the main file or else it will show error.
-This is all about the python version, you can now datamosh your videos!
+After the setup the application will open and you can try datamosh.
