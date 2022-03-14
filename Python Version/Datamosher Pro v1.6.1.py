@@ -53,7 +53,7 @@ def resource_path0(relative_path):
 python_folder=os.path.dirname(sys.executable)
 path=python_folder.replace(os.sep, '/')
 global resource, ffgac, ffedit
-resource=resource_path0(path+"/Lib/site-packages/imageio_ffmpeg/binaries/ffmpeg-win64-v4.2.2")
+resource=resource_path0("ffmpeg")
 ffgac=resource_path0("ffglitch/ffgac")
 ffedit=resource_path0("ffglitch/ffedit")
 def openfile():
