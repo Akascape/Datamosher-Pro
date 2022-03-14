@@ -1,1 +1,1 @@
-Please extract the ffglitch file here using any extraction tool like 7-Zip.
+Please extract the correvt ffglitch version file here using any extraction tool like 7-Zip.
