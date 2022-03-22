@@ -1,4 +1,4 @@
-# This is the demo page for Datamosher-Pro
+# This is the gallery page for Datamosher-Pro
 If you want your datamosh video to be listed here then tag datamosherpro on any social media website including youtube, reddit, vimeo etc. (Note: You must use datamosher-pro)
 <br>
 - Basic i-frame removal examples (bloom, classic, rise):
