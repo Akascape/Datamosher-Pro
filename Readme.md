@@ -5,9 +5,9 @@
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is a free open source project. It contains `30+` different effects which can replicate any type of datamoshing style.
 # DOWNLOAD
-### Support Datamosher-Pro Development by buying datamosher-pro installer for windows on Gumroad!
+### Support Datamosher-Pro Development by buying datamosher-pro installer for windows on Gumroad. It will be really helpful!
 <br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
-### Or simply use the python version 
+### Otherwise just use the source code that is the python version 
 <br> <p align='center'> [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/Datamosher-Pro?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="300">](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.6/Datamosher_Pro-python_version.zip) <br> Don't forget to give a ⭐ :) </p>
 
 # How to Install?
