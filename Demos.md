@@ -7,4 +7,6 @@ If you want your datamosh video to be listed here then tag datamosherpro on any 
 <br> [![Click to watch!](https://img.youtube.com/vi/fFhnV19fuzg/0.jpg)](https://youtu.be/fFhnV19fuzg)
 ##  Automated Shuffle effect example
 <br> [![Click to watch!](https://img.youtube.com/vi/26BJl87ksec/0.jpg)](https://youtu.be/26BJl87ksec)
+##  The Beautiful Fluid effect
+<br> [![Click to watch!](https://img.youtube.com/vi/GJiP6R432D8/0.jpg)](https://youtu.be/GJiP6R432D8)
 ## More to be uploaded soon!
