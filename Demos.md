@@ -9,6 +9,8 @@ If you want your datamosh video to be listed here then tag datamosherpro on any 
 <br> [![Click to watch!](https://img.youtube.com/vi/26BJl87ksec/0.jpg)](https://youtu.be/26BJl87ksec)
 ##  The Beautiful Fluid effect
 <br> [![Click to watch!](https://img.youtube.com/vi/GJiP6R432D8/0.jpg)](https://youtu.be/GJiP6R432D8)
+##  The Vibrate effect that can be used to make backgrounds:
+<br>[![Click to watch!](https://img.youtube.com/vi/DkIvfRSQ8bo/0.jpg)](https://youtu.be/DkIvfRSQ8bo)
 ##  Fan Made Videos:
 <br> [![Click to watch!](https://img.youtube.com/vi/qvOK6twezM8/0.jpg)](https://youtu.be/qvOK6twezM8) [![Click to watch!](https://img.youtube.com/vi/ULH_AMqz56c/0.jpg)](https://youtu.be/ULH_AMqz56c)
 ## More to be uploaded soon!
