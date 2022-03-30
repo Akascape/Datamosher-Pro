@@ -14,7 +14,8 @@ I was also looking for some good datamoshing software and I found that you have 
 # How to Install?
 <!--- - For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
 <br> Benefits of having the windows version: All the files are packed in one exe file, no environment or setup problems, faster renders and get new updates earlier.--->
-- For now please python version. Make sure you have python installed properly and then open the datamosher_pro-python folder and just run that Datamosher_Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. After that you will be asked to choose your OS, just follow the setup carefully and you are done.
+- For now please python version. Make sure you have python installed properly and then open the datamosher_pro-python folder and just run that Datamosher_Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. After that you will be asked to choose your OS, just follow the setup carefully and you are done. (You don't need any python skill)
+- Don't worry if you don't want to use source code version, windows version will be available by the first week of april 2022!
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode and the export format
