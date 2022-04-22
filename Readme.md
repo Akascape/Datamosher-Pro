@@ -35,7 +35,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Custom Script   | This mode is only available in paid version where you can use any ffglitch script|
+| Custom Script (NEW)| This mode is only available in paid version where you can use any ffglitch script|
 | Rise            | another classic i and p frames removal effect|
 | Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable)|
 | Buffer          | creates ring buffers to mosh|
