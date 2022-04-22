@@ -1,9 +1,9 @@
 # Datamosher Pro
-<b>Datamoshing is a cool video effect and if you also want to create this glitch in your videos, you are in the right place!
+<b>Datamoshing is a cool video effect and if you also want to create this glitch with your videos, you are in the right place!
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 <br>With Datamosher Pro you can quickly and easily datamosh your videos!</b><br>
 ### Why I made this?
-I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is a free open source project. It contains `30+` different effects which can replicate any type of datamoshing style.
+I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is an open source project. It contains `30+` different effects which can replicate any type of datamoshing style.
 # DOWNLOAD
 ### Support Datamosher-Pro Development by buying datamosher-pro installer for windows on Gumroad. It will be really helpful!
 <br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
@@ -11,9 +11,15 @@ I was also looking for some good datamoshing software and I found that you have 
 <br> <p align='center'> [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/Datamosher-Pro?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="300">](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.6/Datamosher_Pro-python_version.zip) <br> Don't forget to give a ⭐ :) </p>
 
 # How to Install?
-- For Windows version, just extract the downloaded zip file and run the Datamosher-Pro.exe to open it. (No installation setup required)
-<br> Benefits of having the windows version: All the files are packed in one exe file, no environment or setup problems, faster renders and get new updates earlier.
-- For other OS, use the python version. Make sure you have python installed properly and then open the datamosher_pro-python folder and just run that Datamosher_Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. After that you will be asked to choose your OS, just follow the setup carefully and you are done. (No python skills needed)
+- For the Windows version, just extract the downloaded zip file and run the Datamosher_Pro.exe to open it.
+<br> Benefits of having the executable version: 
+<br>• All the files are packed in one exe file
+<br>• No environment or setup problems 
+<br>• Faster renders
+<br>• Get new updates earlier
+<br>• Custom Script mode is available
+- please use the python version for now if you are on any other OS. (Mac version is in development and will be avaialable soon)
+<br> Make sure you have python installed properly and then open the datamosher_pro-python folder and just run that Datamosher_Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. After that you will be asked to choose your OS, just follow the setup carefully and you are done. (No python skills needed)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode and the export format
@@ -29,8 +35,9 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Rise (NEW)      | another classic i and p frames removal effect|
-| Shuffle (NEW)   | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable)|
+| Custom Script   | This mode is only available in paid version where you can use any ffglitch script|
+| Rise            | another classic i and p frames removal effect|
+| Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable)|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | another delaying ffglitch effect|
 | Invert-Reverse  | applies both inverse and reverse mode|
