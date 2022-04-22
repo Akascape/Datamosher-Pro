@@ -415,7 +415,7 @@ def external_scripts(output_video):
     gop_period = int(Countframe.get())
     if (gop_period==1):
         gop_period=1000
-    script_path = "ffglitch/jscripts/"+modechoices.get()+".js"
+    script_path = resource_path0("ffglitch/jscripts/"+modechoices.get()+".js")
     input_video = file
     subprocess.call(f'"{ffgac}" -i "{input_video}" -an -mpv_flags +nopimb+forcemv -qscale:v 0  -b:v 20M -minrate 20M -maxrate 20M -bufsize 2M -g "{gop_period}"' +
                         ' -vcodec mpeg2video -f rawvideo -y tmp.mpg', shell=True)
