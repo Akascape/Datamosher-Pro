@@ -17,6 +17,8 @@ If you want your datamosh video to be listed here then tag datamosherpro on any 
 <br> [![Click to watch!](https://img.youtube.com/vi/hYFEwL8Do_U/0.jpg)](https://youtu.be/hYFEwL8Do_U)
 ##  Drone shot + Noise mode
 <br> [![Click to watch!](https://img.youtube.com/vi/IaD8yX2kXgE/0.jpg)](https://youtu.be/IaD8yX2kXgE)
+# Read Online Guides:
+<br> [![Read](https://img.shields.io/badge/Guide-1-orange)](https://akascape.gumroad.com/p/datamosher-pro-guide)
 ##  Fan Made Videos
 <br> [![Click to watch!](https://img.youtube.com/vi/qvOK6twezM8/0.jpg)](https://youtu.be/qvOK6twezM8) [![Click to watch!](https://img.youtube.com/vi/ULH_AMqz56c/0.jpg)](https://youtu.be/ULH_AMqz56c)
 ## More to be uploaded soon!
