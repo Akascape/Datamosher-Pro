@@ -37,7 +37,7 @@ I was also looking for some good datamoshing software and I found that you have 
 | ----------------| --------------------------------------------------------------------- |
 | Custom Script (NEW)| This mode is only available in paid version where you can use any ffglitch script|
 | Rise            | another classic i frames removal effect|
-| Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable)|
+| Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh (unstable with short videos)|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | another delaying ffglitch effect|
 | Invert-Reverse  | applies both inverse and reverse mode|
