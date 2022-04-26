@@ -19,6 +19,8 @@ If you want your datamosh video to be listed here then tag datamosherpro on any 
 <br> [![Click to watch!](https://img.youtube.com/vi/IaD8yX2kXgE/0.jpg)](https://youtu.be/IaD8yX2kXgE)
 ## Showreel 2 (Sort & Shuffle mixed)
 <br> [![Click to watch!](https://img.youtube.com/vi/BWIK5gCt5ZA/0.jpg)](https://youtu.be/BWIK5gCt5ZA)
+## Done shot + Different ffglitch modes (Mirror, buffer, zoom, stretch, sink, fluid)
+<br> [![Click to watch!](https://img.youtube.com/vi/SCUkP1TfDDM/0.jpg)](https://youtu.be/SCUkP1TfDDM)
 # Read Online Guides:
 <br> [![Read](https://img.shields.io/badge/Guide-1-orange)](https://akascape.gumroad.com/p/datamosher-pro-guide) [![Read](https://img.shields.io/badge/Guide-2-green)](https://akascape.gumroad.com/p/datamosher-pro-guide-2)
 ##  Fan Made Videos ❤️
