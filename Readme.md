@@ -8,7 +8,7 @@ I was also looking for some good datamoshing software and I found that you have 
 ### Support Datamosher-Pro Development by buying datamosher-pro installer for windows on Gumroad. It will be really helpful!
 <br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
 ### Otherwise you can use the source code (python version)
-<br> <p align='center'> [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/Datamosher-Pro?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="300">](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.6/Datamosher_Pro-python_version.zip) <br> Don't forget to give a ⭐ :) </p>
+<br> <p align='center'> [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/Datamosher-Pro?color=9508e2&label=Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="300">](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version.zip) <br> Don't forget to give a ⭐ :) </p>
 
 # How to Install?
 - For the Windows version, just extract the downloaded zip file and run the Datamosher_Pro.exe to open it.
@@ -93,6 +93,6 @@ All the logos and designs are created by me. <br>-Akash Bora
 <br>Follow me : [`Akascape`](https://github.com/Akascape)
 <br>
 <br> DATAMOSHING MADE EASY!
-### Current Version-1.6.1
+### Current Version-1.7
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
 
