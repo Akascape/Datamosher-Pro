@@ -70,19 +70,24 @@ I was also looking for some good datamoshing software and I found that you have 
 | Void            | gives a clean output but with distortion|
 ### How to use Advanced Options?
 The advanced tab is very useful to get accurate results. The options are:
-<br>• `Glitch Size` - tells how long/often to glitch
-<br>• `Frame Frequency` - tells how many frames to apply in the glitch
-<br>• `First Frame` - tells whether to keep the first video frames
-<br>• `Kill Frames` - tells max framesize to kill while cleaning
+<br>• `Glitch Size` - tells how long/often to glitch per part (depends on the mode)
+<br>• `Frame Frequency` - tells how many frames to apply/repeat in the glitch
+<br>• `Ignore Frame` - tells whether to keep the first video frame
+<br>• `Kill Frames` - tells max framesize to kill while cleaning (For shuffle/rise mode the kill frame is number of frames that will be deleted)
+<br>• `First Frame` - tells the starting frame
+<br>• `Last Frame` - tells the ending frame
+<br>• `Start(sec)` - tells the starting time (in seconds) of the glitch
+<br>• `End(sec)` - tells the ending time (in seconds) of the glitch
+<br>• `Mid Point (Echo mode only)` - tell the point from where the video to repeat(echo) again.
 <br>
 <br>NOTE:
 <br>- Some modes may not support all the 4 advanced options.
-<br>- You can try experimenting with the values and see the results but don't put huge values.
+<br>- You can try experimenting with the options but don't put huge values.
 <br>- Audio glitching is only available in few modes like classic and repeat.
 # UI
 <br><img src="https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png">
 ## How It Works?
-The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed file. But I still recomend everyone to use MP4 videos. The video is first converted to the required file format using ffmpeg, then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unneccesary temp files get deleted automatically.
+The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed file. But I still recomend everyone to use MP4 videos. The video is first converted to the required file format using ffmpeg and then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unneccesary temp files get deleted automatically.
 ### Read these guides for more details:
 <br> [![Read](https://img.shields.io/badge/Guide-1-orange)](https://akascape.gumroad.com/p/datamosher-pro-guide) [![Read](https://img.shields.io/badge/Guide-2-green)](https://akascape.gumroad.com/p/datamosher-pro-guide-2)
 ## Conclusion
