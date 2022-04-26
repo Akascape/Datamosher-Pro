@@ -13,12 +13,12 @@ I was also looking for some good datamoshing software and I found that you have 
 # How to Install?
 - For the Windows version, just extract the downloaded zip file and run the Datamosher_Pro.exe to open it.
 <br> Benefits of having the executable version: 
-<br>• All the files are packed in one exe file
+<br>• All the files are packed in one exe application
 <br>• No environment or setup problems 
 <br>• Faster renders
-<br>• Get new updates earlier
+<br>• Earlier updates
 <br>• Custom Script mode is available
-- please use the python version for now if you are on any other OS. (Mac version is in development and will be avaialable soon)
+- For those who are using the python-version,
 <br> Make sure you have python installed properly and then open the datamosher_pro-python folder and just run that Datamosher_Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. After that you will be asked to choose your OS, just follow the setup carefully and you are done. (No python skills needed)
 # How to Use?
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
