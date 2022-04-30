@@ -28,7 +28,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
 ## Gallery & Demos
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.6/Demos.md)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
 # Effects Info
 ### Effects List:
 <br> TIP: Major effects used for datamoshing: Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
