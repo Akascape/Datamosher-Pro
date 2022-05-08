@@ -23,6 +23,8 @@ If you want your datamosh video to be listed here then tag datamosher-pro on any
 <br> [![Click to watch!](https://img.youtube.com/vi/SCUkP1TfDDM/0.jpg)](https://youtu.be/SCUkP1TfDDM)
 ## Blooming Glide effect (classic mode used)
 <br> [![Click to watch!](https://img.youtube.com/vi/z5Uc3vOfahw/0.jpg)](https://youtu.be/z5Uc3vOfahw)
+## Trippy Showreel 1
+<br> [![Click to feel!](https://img.youtube.com/vi/ovM0tKlzEDY/0.jpg)](https://youtu.be/ovM0tKlzEDY)
 # Read Online Guides:
 <br> [![Read](https://img.shields.io/badge/Guide-1-orange)](https://akascape.gumroad.com/p/datamosher-pro-guide) [![Read](https://img.shields.io/badge/Guide-2-green)](https://akascape.gumroad.com/p/datamosher-pro-guide-2)
 ##  Fan Made Videos ❤️
