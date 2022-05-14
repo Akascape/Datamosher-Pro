@@ -11,7 +11,7 @@ I was also looking for some good datamoshing software and I found that you have 
 <br>
 ### <p align='center'> FREE SOURCE CODE VERSIONS
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-Windows-informational?style=flat&logo=Microsoft&logoColor=blue&color=1bdce3" width=300>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version-win.zip)
-<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-Mac-informational?style=flat&logo=apple&logoColor=b0b5b9&color=b2b7bb" width=300 height=35>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version-mac.zip)
+<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-MacOS-informational?style=flat&logo=apple&logoColor=b0b5b9&color=b2b7bb" width=300 height=35>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version-mac.zip)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-Linux-informational?style=flat&logo=linux&logoColor=black&color=eaea4a" width=300 height=35>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version-linux.zip) <br> Don't forget to give a ⭐ :) </p>
 
 # How to Install?
