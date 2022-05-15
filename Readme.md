@@ -104,7 +104,7 @@ You will not find this type of software anywhere with so many effects only for d
 All the logos and designs are created by me. <br>-Akash Bora
 <br>
 ## License
-[<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](LICENSE.md)
+[<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/LICENSE)
 
 Note that the **FFglitch** part provided in the *releases* is not placed under this license. It is itself an independent program provided without any **modification**. When distributing an application with this package, it must be taken into account that multiple licenses are involved. See the [FFglitch's github page](https://github.com/ramiropolla/ffglitch-core/tree/master) for further details. (The source code is freely available there)
 <br>
