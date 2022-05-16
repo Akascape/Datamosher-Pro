@@ -95,7 +95,7 @@ The advanced tab is very useful if you want accurate results. The options are:
 | ![Windows UI](https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png) | ![Linux UI](https://user-images.githubusercontent.com/89206401/168416728-fc9bc8e5-ce34-40c8-9222-bf9986dbb280.png) | ![Mac UI](https://user-images.githubusercontent.com/89206401/168416751-73658dcf-506f-4166-933b-e3f3cb43194c.png) |
 
 ## How It Works?
-The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and get an usable datamoshed file. But I still recomend everyone to use MP4 videos. The video is first converted to the required file format using ffmpeg (distributed **externally** with Imageio module) and then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unneccesary temp files get deleted automatically.
+The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and it will export an usable datamoshed file. But I still recomend everyone to use MP4 videos. The video is first converted to the required file format using ffmpeg (distributed **externally** with Imageio module) and then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unnecessary temp files are removed automatically.
 ### Read these guides for more details:
 <br> [![Read](https://img.shields.io/badge/Guide-1-orange)](https://akascape.gumroad.com/p/datamosher-pro-guide) [![Read](https://img.shields.io/badge/Guide-2-green)](https://akascape.gumroad.com/p/datamosher-pro-guide-2)
 ## Conclusion
@@ -117,4 +117,4 @@ Note that the **FFglitch** part provided in the *releases* is not placed under t
 <br> DATAMOSHING MADE EASY!
 ### Current Version-1.7
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
-[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=1)](https://opensourcelibs.com/lib/capsule-render)
+[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
