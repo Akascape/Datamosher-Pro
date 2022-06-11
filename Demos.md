@@ -32,5 +32,6 @@
 [![Click to watch!](https://img.youtube.com/vi/Mi0Lplsxq3Y/0.jpg)](https://youtu.be/Mi0Lplsxq3Y)
 [![Click to watch!](https://user-images.githubusercontent.com/89206401/169638330-ebdbde2d-50ed-43ab-8d5f-4066c29318c1.png)
 ](https://www.reddit.com/r/datamoshing/comments/uuf50b/shifting_mountains/?utm_source=share&utm_medium=web2x&context=3)
+[![Click to watch this short!](https://img.youtube.com/vi/EppD9SCVPQM/0.jpg)](https://youtube.com/shorts/EppD9SCVPQM?feature=share)
 ## More to be uploaded soon!
 
