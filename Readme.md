@@ -6,7 +6,7 @@
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is an open source project. It contains `30+` different effects which can replicate any type of datamoshing style.
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* on Gumroad. It will be really helpful!
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which have a modern UI and lots of other features on Gumroad. It will be really helpful!
 ### <p align='center'> EXECUTABLE VERSION
 <br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
 <br>
@@ -93,7 +93,7 @@ The advanced tab is very useful if you want accurate results. The options are:
 | Windows  | Linux   | MacOS   |
 | ---------| ------- | ------- |
 | ![Windows UI](https://user-images.githubusercontent.com/89206401/142208408-6970448d-fe9d-4e60-aac6-21809aefcfca.png) | ![Linux UI](https://user-images.githubusercontent.com/89206401/168416728-fc9bc8e5-ce34-40c8-9222-bf9986dbb280.png) | ![Mac UI](https://user-images.githubusercontent.com/89206401/168416751-73658dcf-506f-4166-933b-e3f3cb43194c.png) |
-### (I am working on a new modern GUI which will be available soon!)
+### The new modern UI is available in the paid version.
 ## How It Works?
 The main issue with datamoshing is conversion of corrupted files but with Datamosher Pro you can use any video file and it will export an usable datamoshed file. But I still recomend everyone to use MP4 videos. The video is first converted to the required file format using ffmpeg (distributed **externally** with Imageio module) and then the effect is applied and the corrupted file is converted back to stable version using the same process so that the output video can directly be used in other editing softwares. All the unnecessary temp files are removed automatically.
 ### Read these guides for more details:
