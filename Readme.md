@@ -22,13 +22,14 @@ It comes in two version, one paid and one basic free source code version:
 - For the executable version, just extract the downloaded zip file and run the Datamosher_Pro.exe application.
 # How to Use?
 For the basic python version:
+
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
 <br>• Choose the desired datamosh mode and the export format (mp4 is recommended)
 <br>• Use the advanced options to get more accurate results
 <br>• Check/uncheck the highest quality box for quality adjustments
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
-### A documentation for the paid version will be available in the [!Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
+### A documentation for the paid version will be available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
 
 ## Gallery
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
