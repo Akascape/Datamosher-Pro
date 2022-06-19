@@ -9,7 +9,7 @@ It comes in two version, one paid and one basic free source code version:
 # DOWNLOAD
 ### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* on Gumroad which have a modern UI and lots of other features. It will be really helpful!
 ### <p align='center'> MODERN VERSION (SEE DETAILS)
-<br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
+<br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?style=for-the-badge&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
 ### <p align='center'> FREE BASIC SOURCE CODE VERSIONS
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-Windows-informational?style=flat&logo=Microsoft&logoColor=blue&color=1bdce3" width=300>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.7/Datamosher_Pro-python_version-win.zip)
