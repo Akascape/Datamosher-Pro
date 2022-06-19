@@ -20,7 +20,6 @@ It comes in two version, one paid and one basic free source code version:
 - For those who are using the python-version,
 <br> Download the correct python version (3.10+ recomended) and make sure you have python installed properly. Extract the zip file and open the "datamosher_pro-python_version" folder and just run that Datamosher-Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. Then it is ready to use! (No python skills needed)
 - For the executable version, just extract the downloaded zip file and run the Datamosher_Pro.exe application.
-- 
 # How to Use?
 For the basic python version:
 • Input the video file first (supported formats- mp4, gif, avi, mov, mkv, wmv)
