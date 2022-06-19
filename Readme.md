@@ -108,7 +108,7 @@ All the logos and designs are created by me. <br>-Akash Bora
 ## License
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/LICENSE)
 
-Only the python version is licensed under MIT. The executable windows version is closed source.
+Only the python version is licensed under MIT. The executable windows version is different and closed source.
 Note that the **FFglitch** part provided in the *releases* is not placed under this license. It is itself an independent program provided without any **modification**. When distributing an application with this package, it must be taken into account that multiple licenses are involved. See the [FFglitch's github page](https://github.com/ramiropolla/ffglitch-core/tree/master) for further details. (That source code is freely available there)
 <br>
 ## Follow me
