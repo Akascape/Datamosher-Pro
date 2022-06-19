@@ -17,12 +17,6 @@ I was also looking for some good datamoshing software and I found that you have 
 
 # How to Install?
 - For the standalone/executable version, just extract the downloaded zip file and run the Datamosher_Pro.exe application.
-<br> Benefits of having the executable version:
-<br>• All the files are packed in one executable application
-<br>• No environment or setup problems 
-<br>• Faster workflow
-<br>• Earlier updates
-<br>• Custom Script mode is available
 - For those who are using the python-version,
 <br> Download the correct python version and make sure you have python installed properly. Extract the zip file and open the "datamosher_pro-python_version" folder and just run that Datamosher-Pro.py file. If any module error pops up then just click on yes and the required modules will get downloaded automatically. You can also do that manually if it doesn't work. Then it is ready to use! (No python skills needed)
 # How to Use?
@@ -107,7 +101,7 @@ All the logos and designs are created by me. <br>-Akash Bora
 ## License
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/LICENSE)
 
-Note that the **FFglitch** part provided in the *releases* is not placed under this license. It is itself an independent program provided without any **modification**. When distributing an application with this package, it must be taken into account that multiple licenses are involved. See the [FFglitch's github page](https://github.com/ramiropolla/ffglitch-core/tree/master) for further details. (The source code is freely available there)
+Only python version is licensed under MIT. The paid version is closed source. Note that the **FFglitch** part provided in the *releases* is not placed under this license. It is itself an independent program provided without any **modification**. When distributing an application with this package, it must be taken into account that multiple licenses are involved. See the [FFglitch's github page](https://github.com/ramiropolla/ffglitch-core/tree/master) for further details. (The source code is freely available there)
 <br>
 ## Follow me
 [<img src="https://img.shields.io/badge/-Github-informational?style=flat&logo=github&logoColor=black&color=grey">](https://github.com/Akascape)
