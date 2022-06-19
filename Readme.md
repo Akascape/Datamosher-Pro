@@ -6,7 +6,7 @@
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro' which is an open source project. It contains `30+` different effects which can replicate any type of datamoshing style.
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which have a modern UI and lots of other features on Gumroad. It will be really helpful!
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* on Gumroad which have a modern UI and lots of other features. It will be really helpful!
 ### <p align='center'> EXECUTABLE VERSION
 <br> <p align='center'> [<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/Akascape/Datamosher-Pro?display_name=release&label=Windows&logo=Windows&logoColor=019df4&style=for-the-badge" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro) </br> 
 <br>
