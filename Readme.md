@@ -2,7 +2,7 @@
 # Datamosher Pro
 <b>Datamoshing is a cool video effect and if you want to achieve this glitch with your videos, then you are in the right place!
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
-<br> Datamosher Pro is an automated glitching application for free! With Datamosher Pro you can quickly and easily datamosh your videos! </b> <br>
+<br> Datamosher Pro is an automated glitching application for free (python version)! With Datamosher Pro you can quickly and easily datamosh your videos! </b> <br>
 ### Why I made this?
 I was also looking for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. It contains `30+` different effects which can replicate any type of datamoshing style.
 It comes in two version, one paid and one basic free source code version:
