@@ -30,7 +30,7 @@ For the basic python version:
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
 
-### A documentation will be available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
+### A documentation is also available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
 
 ## Gallery
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
