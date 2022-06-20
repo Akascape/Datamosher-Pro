@@ -29,7 +29,8 @@ For the basic python version:
 <br>• Check/uncheck the highest quality box for quality adjustments
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
-### A documentation for the paid version will be available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
+
+### A documentation will be available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
 
 ## Gallery
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
