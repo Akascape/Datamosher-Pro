@@ -29,7 +29,7 @@ For the basic python version:
 <br>• Check/uncheck the highest quality box for quality adjustments
 <br>• Then simply click on the datamosh button and wait for a few seconds
 <br>• After conversions, your video will be moshed and saved in the same directory
-
+Important Tip: Press "q" key in the command line whenever you want to end a long running conversion process.
 ### A documentation is also available in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
 
 ## Gallery
