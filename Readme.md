@@ -26,7 +26,6 @@ It comes in two version, one paid windows version and one basic free source code
 # Effects Info
 ### Effects List available in the python version:
 
-<br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Custom Script   | You can add your own ffglitch script with this mode |
