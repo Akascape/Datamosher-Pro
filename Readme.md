@@ -25,7 +25,7 @@ It comes in two version, one paid windows version and one basic free source code
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
 # Effects Info
 ### Effects List available in the python version:
-<br> TIP: Major effects used for datamoshing are Classic, Bloom, Glide, Repeat, Motion Transfer, Rise, Fluid
+
 <br>
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
