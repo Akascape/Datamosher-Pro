@@ -29,7 +29,7 @@ It comes in two version, one paid windows version and one basic free source code
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Custom Script   | You can add your own ffglitch script with this mode |
-| Rise            | another classic frames removal effect|
+| Rise            | another classic frame removal effect|
 | Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
 | Buffer          | creates ring buffers to mosh|
 | Delay           | delaying mosh effect|
@@ -60,7 +60,7 @@ It comes in two version, one paid windows version and one basic free source code
 | Overlap         | copy group of c frames taken from every nth position|
 | Jiggle          | take frame from around current position. n parameter is spread size|
 | Void            | gives a clean output but with distortion|
-## More effects including these ones are all available in the paid version.
+## More effects including these are all available in the paid version.
 
 # UI (PYTHON VERSION)
 ![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
