@@ -16,7 +16,7 @@ It comes in two version, one paid windows version and one basic free source code
 
 # Installation?
 - For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
-- For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install)
+- For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install) page.
 
 # Documentation
 - A detailed documentation can be found in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
