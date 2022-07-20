@@ -55,7 +55,7 @@ It comes in two version, one paid windows version and one basic free source code
 | Random          | randomizes frame order|
 | Reverse         | reverses frame order|
 | Invert          | switches each consecutive frame witch each other|
-| Bloom           | duplicates c times p-frame number n (c=Glitch Size; n=Frame Frequency)|
+| Bloom           | duplicates c times p-frame number n (c=Frame Count; n=Position Frame)|
 | Pulse           | duplicates groups of c p-frames every n frames|
 | Overlap         | copy group of c frames taken from every nth position|
 | Jiggle          | take frame from around current position. n parameter is spread size|
