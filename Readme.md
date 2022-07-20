@@ -91,3 +91,5 @@ All the required licenses (mostly MIT) are provided in their folder/blocks respe
 ### Current Version-1.8
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
 [![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
+[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
+[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
