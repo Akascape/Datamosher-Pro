@@ -8,7 +8,7 @@ I was also searching for some good datamoshing software and I found that you hav
 It comes in two version, one paid windows version and one basic free source code version.
 # DOWNLOAD
 ### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* on Gumroad which have more features like video player, conversion settings, themes and new effects.
-### <p align='center'> WINDOWS VERSION(SEE DETAILS)
+### <p align='center'> WINDOWS VERSION (SEE DETAILS)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
 ### <p align='center'> FREE SOURCE CODE VERSIONS
