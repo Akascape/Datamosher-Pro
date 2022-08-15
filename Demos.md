@@ -30,13 +30,12 @@
 ](https://www.reddit.com/r/datamoshing/comments/vth2hb/toxic_galaxy_automosh_bloomvoid/?utm_source=share&utm_medium=web2x&context=3)
 ## Joker Mosh
 <br> [![Click to feel!](https://img.youtube.com/vi/nhdbZDrJiDs/0.jpg)](https://youtu.be/nhdbZDrJiDs)
+## Average Motion (Fluid Motion)
+[![Click to feel!](https://user-images.githubusercontent.com/89206401/184625834-93974859-d7bd-4539-99e4-dfbe9caac4c9.png)](https://www.reddit.com/r/glitch_art/comments/w3pthf/average_motion/?utm_source=share&utm_medium=web2x&context=3)
+
 ##  Some Fan Made Videos ❤️
-[![Click to watch!](https://img.youtube.com/vi/ULH_AMqz56c/0.jpg)](https://youtu.be/ULH_AMqz56c) [![Click to watch!](https://user-images.githubusercontent.com/89206401/165247108-08b7d7d6-233a-4167-a3ce-ff474eb414c9.jpg)](https://www.reddit.com/r/glitch_art/comments/u1jjn6/what_is_going_on_with_these_skeletons/?utm_source=share&utm_medium=web2x&context=3) 
 
-[![Click to watch!](https://img.youtube.com/vi/Rsrg3JupLXI/2.jpg)](https://youtu.be/Rsrg3JupLXI) [![Click to watch this short!](https://img.youtube.com/vi/XxFlon7_z9g/2.jpg)](https://youtu.be/XxFlon7_z9g) [![Click to watch!](https://img.youtube.com/vi/bA-QiGqMofA/2.jpg)](https://youtu.be/bA-QiGqMofA) [![Click to watch!](https://img.youtube.com/vi/qvOK6twezM8/2.jpg)](https://youtu.be/qvOK6twezM8)
-
-[![Click to watch!](https://user-images.githubusercontent.com/89206401/169638330-ebdbde2d-50ed-43ab-8d5f-4066c29318c1.png)
-](https://www.reddit.com/r/datamoshing/comments/uuf50b/shifting_mountains/?utm_source=share&utm_medium=web2x&context=3)
-[![Click to watch this short!](https://img.youtube.com/vi/EppD9SCVPQM/0.jpg)](https://youtube.com/shorts/EppD9SCVPQM?feature=share)
-[![Click to watch!](https://user-images.githubusercontent.com/89206401/184624177-2eb23a36-376c-4db8-83bf-acd822259581.png)](https://www.reddit.com/r/datamoshing/comments/wowkcg/just_a_short_mosh_video_i_made_with_datamosher_pro/?utm_source=share&utm_medium=web2x&context=3)
-
+[![Click to watch!](https://img.youtube.com/vi/ULH_AMqz56c/2.jpg)](https://youtu.be/ULH_AMqz56c) [<img src="https://user-images.githubusercontent.com/89206401/165247108-08b7d7d6-233a-4167-a3ce-ff474eb414c9.jpg" width=12% height=12%>](https://www.reddit.com/r/glitch_art/comments/u1jjn6/what_is_going_on_with_these_skeletons/?utm_source=share&utm_medium=web2x&context=3) [![Click to watch!](https://img.youtube.com/vi/Rsrg3JupLXI/2.jpg)](https://youtu.be/Rsrg3JupLXI) [![Click to watch this short!](https://img.youtube.com/vi/XxFlon7_z9g/2.jpg)](https://youtu.be/XxFlon7_z9g) [![Click to watch!](https://img.youtube.com/vi/bA-QiGqMofA/2.jpg)](https://youtu.be/bA-QiGqMofA) [![Click to watch!](https://img.youtube.com/vi/qvOK6twezM8/2.jpg)](https://youtu.be/qvOK6twezM8) [<img src="https://user-images.githubusercontent.com/89206401/184624177-2eb23a36-376c-4db8-83bf-acd822259581.png" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/wowkcg/just_a_short_mosh_video_i_made_with_datamosher_pro/?utm_source=share&utm_medium=web2x&context=3)
+[<img src="https://user-images.githubusercontent.com/89206401/169638330-ebdbde2d-50ed-43ab-8d5f-4066c29318c1.png" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/uuf50b/shifting_mountains/?utm_source=share&utm_medium=web2x&context=3)
+[![Click to watch this short!](https://img.youtube.com/vi/EppD9SCVPQM/2.jpg)](https://youtube.com/shorts/EppD9SCVPQM?feature=share) 
+[<img src="https://user-images.githubusercontent.com/89206401/184626130-ff9c788e-2da2-4c4c-b037-b04e063ce7c9.jpg" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/w57rib/moshed_two_loops_i_made_in_blender/?utm_source=share&utm_medium=web2x&context=3)
