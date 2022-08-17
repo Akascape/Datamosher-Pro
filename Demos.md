@@ -34,6 +34,9 @@
 [![Click to feel!](https://user-images.githubusercontent.com/89206401/184625834-93974859-d7bd-4539-99e4-dfbe9caac4c9.png)](https://www.reddit.com/r/glitch_art/comments/w3pthf/average_motion/?utm_source=share&utm_medium=web2x&context=3)
 ## WaterBloom Effect (New)
 [<img src=https://user-images.githubusercontent.com/89206401/184626602-20e2024c-8721-48bd-94b6-114294ffa84e.jpg width=50% height=50%>](https://www.reddit.com/r/datamoshing/comments/wovez8/new_waterbloom_effect_testing_datamosher_pro/?utm_source=share&utm_medium=web2x&context=3)
+## Rain Effect (New)
+[<img src=https://user-images.githubusercontent.com/89206401/185181791-53c82f6a-a504-4fc9-a1b5-3a5b92bf95d4.jpg width=50% height=50%>](https://www.reddit.com/r/glitch_art/comments/wqrynm/the_rain_effect/?utm_source=share&utm_medium=web2x&context=3)
+
 ##  Some Fan Made Videos ❤️
 
 [![Click to watch!](https://img.youtube.com/vi/ULH_AMqz56c/2.jpg)](https://youtu.be/ULH_AMqz56c) [<img src="https://user-images.githubusercontent.com/89206401/165247108-08b7d7d6-233a-4167-a3ce-ff474eb414c9.jpg" width=12% height=12%>](https://www.reddit.com/r/glitch_art/comments/u1jjn6/what_is_going_on_with_these_skeletons/?utm_source=share&utm_medium=web2x&context=3) [![Click to watch!](https://img.youtube.com/vi/Rsrg3JupLXI/2.jpg)](https://youtu.be/Rsrg3JupLXI) [![Click to watch this short!](https://img.youtube.com/vi/XxFlon7_z9g/2.jpg)](https://youtu.be/XxFlon7_z9g) [![Click to watch!](https://img.youtube.com/vi/bA-QiGqMofA/2.jpg)](https://youtu.be/bA-QiGqMofA) [![Click to watch!](https://img.youtube.com/vi/qvOK6twezM8/2.jpg)](https://youtu.be/qvOK6twezM8) [<img src="https://user-images.githubusercontent.com/89206401/184624177-2eb23a36-376c-4db8-83bf-acd822259581.png" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/wowkcg/just_a_short_mosh_video_i_made_with_datamosher_pro/?utm_source=share&utm_medium=web2x&context=3)
