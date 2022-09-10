@@ -1,6 +1,8 @@
 [![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=GALLERY&fontSize=90&fontAlignY=30&fontAlign=75&desc=Datamosher%20Pro&descAlign=80&descSize=30&animation=scaleIn)](https://akascape.gumroad.com/l/Datamosher-Pro)
 # This is the gallery page for Datamosher-Pro
 
+## Official Tutorial Video
+<br> [![Click to watch this tutorial!](https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg)](https://youtu.be/TQIQ1TmHUBY)
 ##  Basic i-frame removal examples (bloom, classic, rise)
 <br> [![Click to watch!](https://img.youtube.com/vi/_YZ32Wvl3hk/0.jpg)](https://youtu.be/_YZ32Wvl3hk)
 ##  Different P-frame duplication effects (classic, glide, repeat, pulse)
