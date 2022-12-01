@@ -172,7 +172,8 @@ def changeUI():
     global window_UI
     window_UI = customtkinter.CTkToplevel(self)
     window_UI.geometry("410x200")
-    window_UI.resizable(width=False, height=False)
+    window_UI.maxsize(410,200)
+    window_UI.minsize(410,200)
     window_UI.title("App Preferences")
     window_UI.iconphoto(False, icopath)
     uisetting.configure(state=tkinter.DISABLED)
