@@ -25,7 +25,7 @@ else:
     print("All folders available!")
 
 #Checking required modules
-required = {'imageio', 'imageio-ffmpeg', 'numpy', 'customtkinter', 'pillow', 'rangeslider', 'requests'}
+required = {'imageio', 'imageio-ffmpeg', 'numpy', 'customtkinter==4.6.3', 'pillow', 'rangeslider', 'requests'}
 installed = {pkg.key for pkg in pkg_resources.working_set}
 missing = required - installed
 missingset=[*missing,]
