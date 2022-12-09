@@ -23,6 +23,7 @@ def mosh(infile, outfile, m, c, n, a, f, k):
         audio = a
         firstframe = f
         kill = k
+
         if filein is None or os.path.exists(filein) == False:
                 print("> step 0/5: valid input file required!")
                 print("use -h to see help")
@@ -125,15 +126,33 @@ def mosh(infile, outfile, m, c, n, a, f, k):
 
         # keep first video frame or not
         if firstframe:
+                if mode == "bloom":
+                        if positframes==1:
+                                positframes=2
+                        for x in l[0:positframes]:
+                                if x[2] == 'video':
+                                        clean.append(x)
+                        # clean the list by killing "big" frames
+                        for x in l[positframes:]:
+                                if x[1] <= (max_frame_size * kill) :
+                                        clean.append(x)
+                else:
+                        for x in l[0:10]:
+                                if x[2] == 'video':
+                                        clean.append(x)
+                        # clean the list by killing "big" frames
+                        for x in l[10:]:
+                                if x[1] <= (max_frame_size * kill) :
+                                        clean.append(x)
+        else:
                 for x in l:
                         if x[2] == 'video':
                                 clean.append(x)
                                 break
-
-        # clean the list by killing "big" frames
-        for x in l:
-                if x[1] <= (max_frame_size * kill) :
-                        clean.append(x)
+                # clean the list by killing "big" frames
+                for x in l:
+                        if x[1] <= (max_frame_size * kill) :
+                                clean.append(x)
         # FX modes
         if mode == "void":
                 print('> step 3/5 : mode void')

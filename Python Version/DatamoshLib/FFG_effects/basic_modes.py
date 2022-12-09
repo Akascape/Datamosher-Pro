@@ -3,10 +3,10 @@ import os, shutil, subprocess, random, json
 from pathlib import Path
 import numpy as np
 DIRPATH = Path(os.path.dirname(os.path.realpath(__file__)))
-ffgac=str(DIRPATH.parent.parent).replace(os.sep, '/')+"/FFglitch/ffgac"
-ffedit=str(DIRPATH.parent.parent).replace(os.sep, '/')+"/FFglitch/ffedit"
+ffgac = str(DIRPATH.parent.parent).replace(os.sep, '/')+"/FFglitch/ffgac"
+ffedit = str(DIRPATH.parent.parent).replace(os.sep, '/')+"/FFglitch/ffedit"
 
-def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0, e=0, vh=0, gop=1000):
+def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0, e=0, vh=0, gop=1000, r=0, f=0):
         def get_vectors(input_video):
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -mpv_flags +nopimb+forcemv -qscale:v 0 -g "{gop}"' +
                             ' -vcodec mpeg2video -f rawvideo -y tmp.mpg', shell=True)
@@ -118,6 +118,34 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
                   fp.write(out_data)
                   fp.close()
             shutil.rmtree("cache")
+        def water_bloom(output):
+            if os.path.isdir("cache"):
+                shutil.rmtree("cache")
+            os.mkdir("cache")
+            base=os.path.basename(input_video)
+            fin="cache/"+base[:-4]+".mpg"
+            qua=''
+            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"')
+            os.mkdir("cache/raws")
+            framelist=[]
+            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache/raws/frames_%04d.raw')
+            repeat=r
+            po=f-1
+            frames=os.listdir("cache/raws")
+            for i in frames[:po]:
+                    framelist.append(i)
+            for i in range(repeat):
+                    framelist.append(frames[po])
+            for i in frames[po:]:
+                    framelist.append(i)
+            out_data = b''
+            for fn in framelist:
+               with open("cache/raws/"+fn, 'rb') as fp:
+                   out_data += fp.read()
+            with open(output, 'wb') as fp:
+                  fp.write(out_data)
+                  fp.close()
+            shutil.rmtree("cache")
         def average(frames):
             if not frames:
                 return []
@@ -152,3 +180,5 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             shuffle(output)
         elif(mode==5):
             rise(output)
+        elif(mode==6):
+            water_bloom(output)
