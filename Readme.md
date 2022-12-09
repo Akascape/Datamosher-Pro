@@ -12,7 +12,7 @@ It comes in two version, one paid windows version and one basic free source code
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
 ### <p align='center'> FREE SOURCE CODE VERSIONS
-<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.8%2C1/Datamosher-Pro_python-version.zip) <br> Don't forget to leave a ⭐ </p>
+<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.9/Datamosher-Pro_python-version.zip) <br> Don't forget to leave a ⭐ </p>
 
 # Installation?
 - For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
@@ -28,7 +28,8 @@ It comes in two version, one paid windows version and one basic free source code
 
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Custom Script   | You can add your own ffglitch script with this mode |
+| Custom Script   | You can experiment with your own ffglitch script with this mode|
+| Water Bloom     | this effect is similar to bloom but gives more detailed results at any frame|
 | Rise            | another classic frame removal effect|
 | Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
 | Buffer          | creates ring buffers to mosh|
@@ -88,7 +89,7 @@ All the required licenses (mostly MIT) are provided in their folder/blocks respe
 [<img src="https://img.shields.io/badge/-Twitter-informational?style=flat&logo=twitter&logoColor=black&color=blue">](https://twitter.com/Akascape)
 <br>
 ## DATAMOSHING MADE EASY!
-### Current Version-1.81
+### Current Version-1.9
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
 [![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
 [![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
