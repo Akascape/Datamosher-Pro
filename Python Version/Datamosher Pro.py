@@ -27,10 +27,7 @@ from DatamoshLib.FFG_effects import basic_modes, external_script
 
 #Resource Finder
 def resource(relative_path):
-    base_path = getattr(
-        sys,
-        '_MEIPASS',
-        os.path.dirname(os.path.abspath(__file__)))
+    base_path = os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base_path, relative_path)
 
 #Main Window size
@@ -58,7 +55,7 @@ icopath = ImageTk.PhotoImage(file=resource("Assets/Icons/Program_icon.png"))
 root.iconphoto(False, icopath)
 
 #FFMPEG path (using the imageio ffmpeg plugin)
-ffmpeg = resource(imageio_ffmpeg.get_ffmpeg_exe())
+ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
 
 #Effect List
 modelist = sorted(["Bloom", "Invert", "Jiggle", "Overlap", "Pulse", "Reverse",
