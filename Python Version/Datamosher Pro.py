@@ -27,7 +27,7 @@ from DatamoshLib.FFG_effects import basic_modes, external_script
 
 #Resource Finder
 def resource(relative_path):
-    base_path = os.path.dirname(os.path.abspath(__file__)))
+    base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, relative_path)
 
 #Main Window size
