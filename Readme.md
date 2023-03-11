@@ -1,30 +1,32 @@
 [![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=DATAMOSHER%20PRO&fontSize=90&fontAlignY=30&desc=Automatic%20Datamoshing!&descAlign=50&descSize=30&animation=scaleIn)](https://akascape.gumroad.com/l/Datamosher-Pro)
 # Datamosher Pro
-<b>Datamoshing is a cool video effect and if you want to achieve this glitch with your videos easily, then you are in the right place!
+<b> Datamosher Pro is an automatic video-glitching application for free! (python based) <br>
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
-<br> Datamosher Pro is an automatic glitching application for free (python version)! <br>
 ### Why I made this?
-I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. It contains `30+` different effects which can replicate any type of datamoshing style.
-It comes in two version, one paid windows version and one basic free source code version.
+I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. If you want to achieve datamosh effects in your videos easily, then you are in the right place!
+
+It contains `30+` different effects which can replicate any type of datamoshing style.
+It comes in two version, one paid windows version and one basic free source-code version.
+
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* on Gumroad which have more features like video player, conversion settings, themes and new effects.
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include more features like a video player, conversion settings, themes and some new glitch effects.
 ### <p align='center'> WINDOWS VERSION (SEE DETAILS)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
-### <p align='center'> FREE SOURCE CODE VERSIONS
+### <p align='center'> FREE SOURCE CODE VERSION
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.9/Datamosher-Pro_python-version_1.91.zip) <br> Don't forget to leave a ⭐ </p>
 
 # Installation?
 - For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
-- For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install) page.
+- For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install) guide.
 
 # Documentation
-- A detailed documentation can be found in the [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page
+- A detailed documentation can be found in this [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page.
 
-## Gallery
+## Gallery (Example Videos)
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
-# Effects Info
-### Effects List available in the python version:
+# Effects List
+### Effects available in the python version:
 
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
@@ -61,36 +63,32 @@ It comes in two version, one paid windows version and one basic free source code
 | Overlap         | copy group of c frames taken from every nth position|
 | Jiggle          | take frame from around current position. n parameter is spread size|
 | Void            | gives a clean output but with distortion|
-## More effects including these are all available in the paid version.
+## More effects are available in the paid version.
 
 # UI (PYTHON VERSION)
 ![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
 
-# UI (PAID VERSION ONLY WINDOWS)
-### This UI is available in the paid version only.
+# UI (PAID VERSION-ONLY FOR WINDOWS)
 ![newthemes](https://user-images.githubusercontent.com/89206401/174493211-febc4193-1090-4dbb-8eea-23d7d10e3741.png)
 
 ## Conclusion
 You will not find this type of software anywhere with so many effects only for datamoshing. This program can be your companion while editing cool glitchy videos :)
-<br> As it is a new piece of software some users may find some bugs, but updates will be on their way.
-<br> The effects are all inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato), Joe Friedl's [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
-All the logos and designs are created by me. <br>-Akash Bora
+<br> As it is a new piece of software some users may find small bugs, but updates will be on their way.
+<br> The effects are all inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato) script, [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
+All the logos and ui designs are created by me.
+
+<br>[<img src="https://img.shields.io/badge/-Follow_Akascape_on_Github-informational?style=flat&logo=github&logoColor=black&color=grey">](https://github.com/Akascape)
 <br>
 ## License
-[<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/LICENSE)
+[<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-master/LICENSE)
 
-Note that the **FFglitch** and **FFmpeg** part is not provided in the *releases* and is not placed under this license.
+Note that **FFglitch** and **FFmpeg** is not provided in the *releases* and is not placed under this license.
 All the required licenses (mostly MIT) are provided in their folder/blocks respectively and it must be taken into account that multiple licenses are involved.
 <br>
-## Follow me
-[<img src="https://img.shields.io/badge/-Github-informational?style=flat&logo=github&logoColor=black&color=grey">](https://github.com/Akascape)
-[<img src="https://img.shields.io/badge/-Reddit-informational?style=flat&logo=reddit&logoColor=black&color=orange">](https://www.reddit.com/user/Akascape)
-[<img src="https://img.shields.io/badge/-YouTube-informational?style=flat&logo=youtube&logoColor=black&color=red">](https://www.youtube.com/channel/UC7naboenYq9FAo80aPUkqSw)
-[<img src="https://img.shields.io/badge/-Twitter-informational?style=flat&logo=twitter&logoColor=black&color=blue">](https://twitter.com/Akascape)
-<br>
-## DATAMOSHING MADE EASY!
-### Current Version-1.9
+
+## DATAMOSH MADE EASY!
+### Current Version-1.91
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
-[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
-[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
-[![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)](https://opensourcelibs.com/lib/capsule-render)
+![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
+![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
+![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
