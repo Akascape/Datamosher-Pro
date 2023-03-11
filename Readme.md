@@ -1,6 +1,6 @@
 [![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=DATAMOSHER%20PRO&fontSize=90&fontAlignY=30&desc=Automatic%20Datamoshing!&descAlign=50&descSize=30&animation=scaleIn)](https://akascape.gumroad.com/l/Datamosher-Pro)
 # Datamosher Pro
-<b> Datamosher Pro is an automatic video-glitching application for free! (python based) <br>
+<b> Datamosher Pro is an automatic video-glitching application for free! (python version) <br>
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 ### Why I made this?
 I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. If you want to achieve datamosh effects in your videos easily, then you are in the right place!
