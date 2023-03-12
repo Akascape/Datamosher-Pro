@@ -105,9 +105,6 @@ Only python version is licensed under MIT. The paid version is closed source. No
 <br>
 ## Follow me
 [<img src="https://img.shields.io/badge/-Github-informational?style=flat&logo=github&logoColor=black&color=grey">](https://github.com/Akascape)
-[<img src="https://img.shields.io/badge/-Reddit-informational?style=flat&logo=reddit&logoColor=black&color=orange">](https://www.reddit.com/user/Akascape)
-[<img src="https://img.shields.io/badge/-YouTube-informational?style=flat&logo=youtube&logoColor=black&color=red">](https://www.youtube.com/channel/UC7naboenYq9FAo80aPUkqSw)
-[<img src="https://img.shields.io/badge/-Twitter-informational?style=flat&logo=twitter&logoColor=black&color=blue">](https://twitter.com/Akascape)
 <br> DATAMOSHING MADE EASY!
 ### Current Version-1.7
 <br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
