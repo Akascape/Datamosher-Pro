@@ -27,42 +27,51 @@ It comes in two version, one paid windows version and one basic free source-code
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
 # Effects List
 ### Effects available in the python version:
-
+**Main datamosh effects:**
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Custom Script   | You can experiment with your own ffglitch script with this mode|
-| Water Bloom     | this effect is similar to bloom but gives more detailed results at any frame|
-| Rise            | another classic frame removal effect|
-| Shuffle         | randomly shuffles chunks of video frames with the classic ffglitch datamosh|
-| Buffer          | creates ring buffers to mosh|
-| Delay           | delaying mosh effect|
-| Invert-Reverse  | applies both inverse and reverse mode randomly|
-| Mirror          | does the mosh with mirrored X|
-| Noise           | makes large noisy mosh|
+| Void            | gives the standard datamosh cuts based on video vectors (automatic i-frame removal) |
+| Classic         | gives the avidemux type datamosh within a range |
+| Rise            | gives you the ffglitch datamosh by manually removing a range of i frames |
+| Shuffle         | randomly shuffles chunks of frames and then moshes them with the normal ffglitch datamosh |
+| Sort            | sorts video frames by data size and merges them with the classic datamosh |
+| Motion Transfer | transfer the vector motion data from one video to another |
+
+**Frame Repeatation datamosh:**
+| Effect Name     | Description                                                           |
+| ----------------| --------------------------------------------------------------------- |
+| Bloom           | duplicates a key-frame multiple times with void mode|
+| Water Bloom     | duplicates any frame multiple times with ffglitch (more precise than bloom)|
+| Repeat          | repeats a **series** of frames multiple times |
+| Glide           | duplicates macroblocks multiple times in a continuos order |
+| Pulse           | duplicates groups of some p-frames every n times (heavy to render) |
+
+Other Glitch/datamosh modes
+| Effect Name     | Description                                                           |
+| ----------------| --------------------------------------------------------------------- |
+| Buffer          | creates glitchy ring buffers in the video |
+| Delay           | random delaying mosh effect |
+| Invert-Reverse  | randomly applies both inverse and reverse datamosh |
+| Mirror          | mosh with vertical mirrored part of the video|
+| Noise           | makes large noisy buffers |
 | Shear           | tilt and mosh the video clockwise |
-| Shift           | shifts random blocks of the video upwards|
-| Sink            | drowns the next frame of the video in the previous one|
-| Slam Zoom       | applies zoom with the sink effect|
-| Slice           | randomly zooms and slices the video in parts|
-| Stop            | similar to sink but stops the XY values randomly|
-| Vibrate         | works as a randomizer|
-| Zoom            | simply zooms inside the moshed video|
-| Fluid           | this is a ffglitch's average effect which gives a smooth liquid type motion in the video|
-| Repeat          | repeats a series of p frames which gives the melting effect|
-| Motion Transfer | a powerful ffglitch feature that can transfer the vector motion data from one video to another. Make sure both videos have the same resolution, this effect is also known as style transfer/swap motion.|
-| Stretch         | stretches the p-frames horizontally and vertically|
-| Glide           | duplicates number of n frames and show it as a flow before reaching the p-frame|
-| Sort            | sorts video frames by data size in a rapid movement|
-| Echo            | duplicates the single video and apply the mosh effect in the midpoint|
-| Classic         | uses the traditional ffmpeg way to convert and corrupt the video by removing the i-frames|
-| Random          | randomizes frame order|
-| Reverse         | reverses frame order|
-| Invert          | switches each consecutive frame witch each other|
-| Bloom           | duplicates c times p-frame number n (c=Frame Count; n=Position Frame)|
-| Pulse           | duplicates groups of c p-frames every n frames|
-| Overlap         | copy group of c frames taken from every nth position|
-| Jiggle          | take frame from around current position. n parameter is spread size|
-| Void            | gives a clean output but with distortion|
+| Shift           | shifts random blocks of the video againt the gravity |
+| Sink            | drowns the next frame of the video with the previous one|
+| Slam Zoom       | applies zoom with the sink effect |
+| Slice           | randomly slices the video into multiple parts |
+| Stop            | similar to sink but stops the XY values randomly |
+| Vibrate         | randomize the pixels continuosly |
+| Zoom            | simply zooms inside the moshed video |
+| Fluid           | ffglitch's average motion effect which gives a smooth liquid type effect |
+| Stretch         | stretches the macroblock of video both horizontally and vertically |
+| Echo            | duplicates the single video and apply the mosh effect in the midpoint  
+| Random          | randomizes frame order |
+| Reverse         | reverses frame order |
+| Invert          | switches each consecutive frame witch each other |
+| Overlap         | copy group of some frames taken from every nth position |
+| Jiggle          | take frame from around current position |
+| Custom Script   | You can experiment with your own ffglitch script with this mode |
+
 ## More effects are available in the paid version.
 
 # UI (PYTHON VERSION)
