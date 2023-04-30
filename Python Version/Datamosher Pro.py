@@ -1,31 +1,30 @@
 #Author: Akash Bora
-#License: MIT | Copyright (c) 2022 Akash Bora
+#License: MIT | Copyright (c) 2023 Akash Bora
 
-currentversion = 1.9
+currentversion = 2.0
 
 #Import required modules
 import tkinter
-import tkinter.messagebox
 import customtkinter
-from tkinter import ttk, messagebox, filedialog
 import sys
 import os
 import imageio_ffmpeg
 import subprocess
 import imageio
-from PIL import Image, ImageTk #Upgrade pillow if you are facing any import error with PIL (pip install pillow --upgrade)
-from RangeSlider.RangeSlider import RangeSliderH, RangeSliderV
+from PIL import Image, ImageTk
+from RangeSlider.RangeSlider import RangeSliderH
 import threading
 import webbrowser
 import requests
 import time
+import random
 
 #Import the local datamosh library
 from DatamoshLib.Tomato import tomato
 from DatamoshLib.Original import classic, repeat, pymodes
 from DatamoshLib.FFG_effects import basic_modes, external_script
 
-#Resource Finder
+#Get base path
 def resource(relative_path):
     base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, relative_path)
@@ -36,10 +35,13 @@ HEIGHT = 520
 
 if sys.platform.startswith("win"):
     import ctypes
-    ctypes.windll.shcore.SetProcessDpiAwareness(0)
-
-customtkinter.set_appearance_mode("Dark")
-customtkinter.set_default_color_theme("blue")
+    try:
+        ctypes.windll.shcore.SetProcessDpiAwareness(0)
+    except:
+        pass
+    
+customtkinter.set_appearance_mode("System") 
+customtkinter.set_default_color_theme(random.choice(["blue","green","dark-blue"]))
 root = customtkinter.CTk()
 root.title("Datamosher Pro (python version)")
 root.geometry(f"{WIDTH}x{HEIGHT}")
@@ -51,10 +53,11 @@ frame_left = customtkinter.CTkFrame(master=root,width=180,corner_radius=0)
 frame_left.grid(row=0, column=0, sticky="nswe")
 frame_right = customtkinter.CTkFrame(master=root)
 frame_right.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
-icopath = ImageTk.PhotoImage(file=resource("Assets/Icons/Program_icon.png"))
+icopath = ImageTk.PhotoImage(file=resource(os.path.join("Assets","Icons","Program_icon.png")))
+root.wm_iconbitmap()
 root.iconphoto(False, icopath)
 
-#FFMPEG path (using the imageio ffmpeg plugin)
+#get FFMPEG path (using the imageio_ffmpeg plugin)
 ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
 
 #Effect List
@@ -86,14 +89,14 @@ frame_info.place(x=20,y=20)
 mode_info = customtkinter.CTkLabel(master=frame_info,text=current, corner_radius=10, width=320, height=50, fg_color=("white", "gray38"))
 mode_info.place(x=100,y=25)
 
-play_icon = Image.open(resource("Assets/Icons/right_icon.png")).resize((20, 20), Image.Resampling.LANCZOS)
+play_icon = Image.open(resource(os.path.join("Assets","Icons","right_icon.png"))).resize((20, 20), Image.Resampling.LANCZOS)
 
 left_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkImage(play_icon.transpose(Image.Transpose.FLIP_LEFT_RIGHT)),
-                                   text="", width=50, height=50, corner_radius=10, fg_color="gray40", hover_color="gray25", command=ChangeModeLeft)
+                                   text="", width=50, height=50, corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeLeft)
 left_but.place(x=20,y=25)
 
 right_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkImage(play_icon), text="", width=50, height=50,
-                                   corner_radius=10, fg_color="gray40", hover_color="gray25", command=ChangeModeRight)
+                                   corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeRight)
 right_but.place(x=450,y=25)
 
 #Open video function
@@ -105,34 +108,33 @@ def open_function():
     ofile = tkinter.filedialog.askopenfilename(filetypes =[('Video', ['*.mp4','*.avi','*.mov','*.mkv','*gif']),('All Files', '*.*')])
     #Check the video type
     supported = ["mp4","avi","mov","gif","mkv","wmv","m4v"]
+    
     if ofile:
+        if ofile[-3:].lower() not in supported:
+            print("This file type is not supported!")
+            return
         previous = ofile
-        pass
     else:
         ofile = previous
         return
-    if ofile[-3:].lower() in supported:
-            pass
-    else:
-        print("This file type is not supported!")
-        return
+    
     if len(os.path.basename(ofile))>=20:
-            showinput=os.path.basename(ofile)[:10]+"..."+os.path.basename(ofile)[-3:]
+        showinput=os.path.basename(ofile)[:10]+"..."+os.path.basename(ofile)[-3:]
     else:
-            showinput=os.path.basename(ofile)[:20]
+        showinput=os.path.basename(ofile)[:20]
             
     #Change the thumbnail
     button_open.configure(fg_color='grey', text=showinput)
-    outpng = "Assets/thumbnail_cache/vid_thumbnail.jpg"
+    outpng = resource(os.path.join("Assets","thumbnail_cache","vid_thumbnail.jpg"))
     button_thumbnail.configure(image=vid_image)
-    if os.path.exists("Assets/thumbnail_cache/vid_thumbnail.jpg"):
-            os.remove("Assets/thumbnail_cache/vid_thumbnail.jpg")
+    if os.path.exists(outpng):
+            os.remove(outpng)
     subprocess.call(f'"{ffmpeg}" -loglevel quiet -ss 00:00:01 -t 00:00:01 -i "{ofile}" -qscale:v 2 -r 10.0 "{outpng}"', shell=True)
-    vid_image2 = ImageTk.PhotoImage(Image.open(outpng).resize((167, 100), Image.Resampling.LANCZOS))
+    vid_image2 = customtkinter.CTkImage(Image.open(outpng), size=(170,100))
     button_thumbnail.configure(image=vid_image2)
-    vid=imageio.get_reader(ofile,  'ffmpeg')
+    vid = imageio.get_reader(ofile, 'ffmpeg')
     
-    #Update the widget parameters
+    #Update the widgets data
     position_frame.configure(to=vid.count_frames(), number_of_steps=vid.count_frames())
     duration = vid.get_meta_data()['duration']
     rangebar.max_val = duration
@@ -144,97 +146,136 @@ def open_function():
     end_frame_mosh.set(vid.count_frames())
     
 #Left Frame Widgets
-label_appname = customtkinter.CTkLabel(master=frame_left,text="DATAMOSHER PRO")
+label_appname = customtkinter.CTkLabel(master=frame_left, text="DATAMOSHER PRO")
 label_appname.place(x=35,y=10)
 
-vid_image = ImageTk.PhotoImage(Image.open(resource("Assets/thumbnail_cache/offline_image.png")).resize((167, 100), Image.Resampling.LANCZOS))
+vid_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","thumbnail_cache","offline_image.png"))), size=(170,100))
 
-button_thumbnail = tkinter.Label(master=frame_left, image=vid_image, width=167, height=100, text="", bg="grey")
+button_thumbnail = customtkinter.CTkLabel(master=frame_left, image=vid_image, width=172, height=102, text="", bg_color="grey30")
 button_thumbnail.place(x=5,y=40)
 
-add_video_image = customtkinter.CTkImage(Image.open(resource("Assets/Icons/video_icon.png")).resize((20, 15), Image.Resampling.LANCZOS))
+add_video_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","video_icon.png"))), size=(20,15))
 
 button_open = customtkinter.CTkButton(master=frame_left, image=add_video_image, text="IMPORT VIDEO", width=160, height=35,
                                       compound="right", command=open_function)
-button_open.place(x=10,y=170)
+button_open.place(x=10,y=165)
 
 label_export = customtkinter.CTkLabel(master=frame_left,anchor="w",text="Export Format")
-label_export.place(x=12,y=215)
+label_export.place(x=12,y=205)
 
-optionmenu_1 = customtkinter.CTkOptionMenu(master=frame_left, fg_color="#4d4d4d",width=160, height=35, values=["mp4","avi","mov","mkv"])
+optionmenu_1 = customtkinter.CTkComboBox(master=frame_left, width=160, height=35, values=["mp4","avi","mov","mkv"], state="readonly")
 optionmenu_1.set("mp4")
-optionmenu_1.place(x=10,y=250)
+optionmenu_1.place(x=10,y=235)
 
-settingpng = customtkinter.CTkImage(Image.open(resource("Assets/Icons/settings.png")).resize((20, 20), Image.Resampling.LANCZOS))
-
-#Setting Window
-def close_top3():
+#Info Window
+def close_top():
     window_UI.destroy()
-    uisetting.configure(state=tkinter.NORMAL)
+    info_setting.configure(state=tkinter.NORMAL)
     
-def changeUI():
+def view_info():
     global window_UI
     window_UI = customtkinter.CTkToplevel(root)
     window_UI.geometry("410x200")
     window_UI.maxsize(410,200)
     window_UI.minsize(410,200)
     window_UI.title("About")
+    window_UI.wm_iconbitmap()
     window_UI.iconphoto(False, icopath)
-    uisetting.configure(state=tkinter.DISABLED)
+    info_setting.configure(state=tkinter.DISABLED)
     window_UI.wm_transient(root)
     
     def check():
         URL = "https://raw.githubusercontent.com/Akascape/Datamosher-Pro/Miscellaneous/VERSIONPY.txt"
         try:
             response = requests.get(URL)
-            open("Assets\\version\\VERSIONPY.txt", "wb").write(response.content)
+            open(resource(os.path.join("Assets","version","VERSIONPY.txt")), "wb").write(response.content)
         except:
             tkinter.messagebox.showinfo("Unable to connect!", "Unable to get information, please check your internet connection or visit the github repository.")
             return
         time.sleep(1)
-        with open("Assets\\version\\VERSIONPY.txt", 'r') as uf:
+        
+        with open(resource(os.path.join("Assets","version","VERSIONPY.txt")), 'r') as uf:
             nver=float(uf.read())
             if nver>currentversion:
                 tkinter.messagebox.showinfo("New Version available!","A new version "+ str(nver) +
                                             " is available, \nPlease visit the github repository or the original download page!")
             else:
                 tkinter.messagebox.showinfo("No Updates!", "You are on the latest version!")
+                
     def docs():
         webbrowser.open_new_tab("https://github.com/Akascape/Datamosher-Pro/wiki")
+        
     def repo():
         webbrowser.open_new_tab("https://github.com/Akascape/Datamosher-Pro/issues")
         
-    logo_image = customtkinter.CTkImage(Image.open("Assets/Icons/Logo.png"), size=(210,200))
+    logo_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","Logo.png"))), size=(210,200))
     logo = customtkinter.CTkLabel(master=window_UI, image=logo_image, text="",
-                                  bg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1])
+                                  bg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
     logo.place(x=200,y=0)
     
-    visit = customtkinter.CTkButton(window_UI, text="Report Bug", width=150, height=35,
-                                   corner_radius=10, fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][1], hover_color="gray25",command=repo)
+    visit = customtkinter.CTkButton(window_UI, text="Report Bug", width=150, height=35, corner_radius=10, command=repo)
     visit.place(x=20,y=30)
     
-    checkupdate = customtkinter.CTkButton(window_UI, text="Check For Updates", width=150, height=35,
-                                   corner_radius=10, fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][1], hover_color="gray25",command=check)
+    checkupdate = customtkinter.CTkButton(window_UI, text="Check For Updates", width=150, height=35, corner_radius=10, command=check)
     checkupdate.place(x=20,y=80)
     
-    helpbutton=customtkinter.CTkButton(window_UI, text="Help", width=150, height=35,
-                                   corner_radius=10, fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][1], hover_color="gray25",command=docs)
+    helpbutton=customtkinter.CTkButton(window_UI, text="Help", width=150, height=35, corner_radius=10,command=docs)
     helpbutton.place(x=20,y=130)
     
-    version_label = customtkinter.CTkLabel(window_UI,anchor="w",width=1,fg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1],
-                                         text="v"+str(currentversion), bg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1])
+    version_label = customtkinter.CTkLabel(window_UI,anchor="w",width=1, text="v"+str(currentversion),
+                                           fg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
     version_label.place(x=365, y=2)
     
-    dvname = customtkinter.CTkLabel(window_UI,anchor="w",width=1,fg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1],
-                                         text="Developer: Akash Bora", bg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1])
+    dvname = customtkinter.CTkLabel(window_UI,anchor="w",width=1, text="Developer: Akash Bora")
     dvname.place(x=30,y=170)
     
-    window_UI.protocol("WM_DELETE_WINDOW", close_top3)
+    window_UI.protocol("WM_DELETE_WINDOW", close_top)
+
+infopng = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","info.png"))).resize((20, 20), Image.Resampling.LANCZOS))
+
+info_setting = customtkinter.CTkButton(master=frame_left, image=infopng, text="", width=40, height=40, corner_radius=10,
+                                       fg_color=customtkinter.ThemeManager.theme["CTkButton"]["text_color_disabled"],
+                                       hover_color=("grey50","gray25"), command=view_info)
+info_setting.place(x=10,y=470)
+
+def close_top2():
+    window_UI2.destroy()
+    ff_setting.configure(state=tkinter.NORMAL)
     
-uisetting = customtkinter.CTkButton(master=frame_left, image=settingpng, text="", width=40, height=40, corner_radius=10,
-                                    fg_color=customtkinter.ThemeManager.theme["CTkButton"]["text_color_disabled"][1],
-                                    hover_color="gray25", command=changeUI)
-uisetting.place(x=10,y=470)
+def change_param():
+    global window_UI2
+    
+    def set_param():
+        global param
+        param = text_box.get("0.0", tkinter.END)
+        if len(param)==1:
+            param = ""
+        close_top2()
+        
+    window_UI2 = customtkinter.CTkToplevel(root)
+    window_UI2.geometry("410x200")
+    window_UI2.maxsize(410,200)
+    window_UI2.minsize(410,200)
+    window_UI2.title("Custom FFmpeg Parameters")
+    window_UI2.wm_iconbitmap()
+    window_UI2.iconphoto(False, icopath)
+    ff_setting.configure(state=tkinter.DISABLED)
+    window_UI2.wm_transient(root)
+
+    text_box = customtkinter.CTkTextbox(window_UI2, border_width=3,height=140)
+    text_box.pack(padx=10, pady=(10,0), fill="x")
+    if len(param)>1: text_box.insert("0.0", param)
+    ok_button = customtkinter.CTkButton(window_UI2, text="OK", command=set_param)
+    ok_button.pack(padx=10, pady=10, fill="x")
+    
+    window_UI2.protocol("WM_DELETE_WINDOW", close_top2)
+    
+settingpng = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","settings.png"))).resize((20, 20), Image.Resampling.LANCZOS))
+
+ff_setting = customtkinter.CTkButton(master=frame_left, image=settingpng, text="", width=40, height=40, corner_radius=10,
+                                    fg_color=customtkinter.ThemeManager.theme["CTkButton"]["text_color_disabled"],
+                                    hover_color=("grey50","gray25"), command=change_param)
+ff_setting.place(x=120,y=470)
 
 #Validation for entries
 def only_numbers(char):
@@ -247,17 +288,16 @@ validation = root.register(only_numbers)
 ### Dynamimc widgets that change with modes ###
 
 #Kill Frame Widget
-def changekill(value):
-    label_kill.configure(text="Kill Frame Size: "+str(round(value,4)))
     
 label_kill = customtkinter.CTkLabel(master=frame_right,anchor="w",text="Kill Frame Size: 0.6")
-slider_kill = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=100, command=changekill)
+slider_kill = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=100,
+                                      command=lambda value: label_kill.configure(text="Kill Frame Size: "+str(round(value,4))))
 slider_kill.set(0.6)
 
 #N-frameWidget
-varn=tkinter.IntVar()
+varn = tkinter.IntVar()
 label_ctime = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Frame Count:",width=1)
-ctime=customtkinter.CTkEntry(frame_right,textvariable=varn, validate='key', validatecommand=(validation, '%P'), placeholder_text="1",
+ctime = customtkinter.CTkEntry(frame_right,textvariable=varn, validate='key', validatecommand=(validation, '%P'), placeholder_text="1",
                              width=100, placeholder_text_color="grey70", height=30, border_width=2, corner_radius=10)
 varn.set(1)
 
@@ -268,23 +308,19 @@ keepframe = customtkinter.CTkCheckBox(master=frame_right, text="Keep First Frame
 #Count Frame widget
 label_frame1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Position Frame: 1",width=1)
 
-def framework(value):
-    if previous=="":
-        return
-    label_frame1.configure(text="Position Frame: "+str(int(value)))
-    
-position_frame = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black", from_=1, to=0, number_of_steps=1, command=framework)
+position_frame = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black", from_=1, to=1.1,
+                                         number_of_steps=1, command=lambda value: label_frame1.configure(text="Position Frame: "+str(int(value))))
 position_frame.set(1)
 
 #Classic Rangebar
 start_mosh = tkinter.DoubleVar()
-end_mosh  = tkinter.DoubleVar()
+end_mosh = tkinter.DoubleVar()
 
 rangebar = RangeSliderH(frame_right, [start_mosh, end_mosh], Width=510, Height=63,
-                            bgColor=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1],line_color="black",
-                            bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                            bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value= False,
-                            line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
+                        bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
+                        bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
+                        bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
+                        line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
 
 label_seconds1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start: 0s",width=1)
 label_seconds2 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="End: 0s",width=1)
@@ -315,13 +351,13 @@ varp.set(1)
 
 #Frame Rangebar for repeat and rise modes
 start_frame_mosh = tkinter.DoubleVar()
-end_frame_mosh  = tkinter.DoubleVar()
+end_frame_mosh = tkinter.DoubleVar()
 
 rangebar2 = RangeSliderH(frame_right, [start_frame_mosh, end_frame_mosh], Width=510, Height=63,
-                            bgColor=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"][1],line_color="black",
-                             bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                            bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value= False,
-                            line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
+                         bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
+                         bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
+                         bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
+                         line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
 
 label_showframe1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start Frame: 0",width=1)
 label_showframe2 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="End: 0",width=1)
@@ -331,6 +367,7 @@ def show3(*args):
         if previous=="":
             return
         label_showframe2.configure(text="End: "+str(int(end_frame_mosh.get())))
+        
 def show4(*args):
         if previous=="":
             return
@@ -340,10 +377,10 @@ start_frame_mosh.trace_add('write', show4)
 end_frame_mosh.trace_add('write', show3)
 
 #slider for echo mode
-def midwork(value):
-    label_mid.configure(text="Start Point: "+str(round(value,1)))
+    
 label_mid = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start Point: 0.5",width=1)
-mid_point = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black", from_=0, to=1, number_of_steps=10,command=midwork)
+mid_point = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black",
+                                    from_=0, to=1, number_of_steps=10, command=lambda value: label_mid.configure(text="Start Point: "+str(round(value,1))))
 mid_point.set(0.5)
 
 #Some options for sort mode
@@ -353,21 +390,19 @@ reversesort = customtkinter.CTkCheckBox(master=frame_right, text="Reverse", onva
 #Options for ffglitch modes
 hw_auto = customtkinter.CTkSwitch(master=frame_right,text="HW Acceleration \n(Auto)",onvalue=1, offvalue=0)
 labelk = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Keyframes:",width=1)
-kf = customtkinter.CTkComboBox(master=frame_right,height=30, width=150, 
-                                     values=["1000","100","10", "1"])
-#Widget for Shuffle mde
-def changeshuf(value):
-    shuf_label.configure(text="Chunk Size: "+str(int(value)))
+kf = customtkinter.CTkComboBox(master=frame_right,height=30, width=150, values=["1000", "100", "10", "1"])
+kf._entry.config(validate='key', validatecommand=(validation, '%P'))
+
+#Widget for Shuffle mode 
 shuf_label = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Chunk Size: 1",width=1)
-shuf_slider = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=1, command=changeshuf)
+shuf_slider = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=1,
+                                      command=lambda value:shuf_label.configure(text="Chunk Size: "+str(int(value))))
 shuf_slider.set(1)
 
 #Widget for Fluid mode
-def changefluid(value):
-    fluid_label.configure(text="Amount: "+str(int(value)))
-    
 fluid_label = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Amount: 5",width=1)
-slider_fluid = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=20, number_of_steps=100, command=changefluid)
+slider_fluid = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=20, number_of_steps=100,
+                                       command=lambda value:fluid_label.configure(text="Amount: "+str(int(value))))
 slider_fluid.set(5)
 
 #Stretch mode widget
@@ -380,7 +415,8 @@ def open_MT():
     if vfile:
         mt_button.configure(fg_color='grey', text=os.path.basename(vfile))
     else:
-        return
+        mt_button.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], text="OPEN VIDEO")
+        vfile = ''
     
 mt_button = customtkinter.CTkButton(master=frame_right, text="OPEN VIDEO", width=520, height=30, compound="right",command=open_MT)
 
@@ -393,7 +429,7 @@ def open_script():
     if scriptfile:
         scriptbutton.configure(fg_color='grey', text=os.path.basename(scriptfile))
     else:
-        scriptbutton.configure(fg_color=customtkinter.ThemeManager.theme["color"]["button"], text='OPEN SCRIPT')
+        scriptbutton.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], text='OPEN SCRIPT')
         scriptfile = ''
         
 scriptbutton = customtkinter.CTkButton(master=frame_right, text="OPEN SCRIPT", width=520, height=30, compound="right",command=open_script)
@@ -533,7 +569,7 @@ def custom(x):
     else:
         scriptbutton.place_forget()
 
-#Main Function to update the widgets
+#Main function to update the widgets
 def dynamic():
     global current, showwidgets
     allwidgets = [audiokeep, positionslider, killoption, framekeep,
@@ -597,8 +633,9 @@ def dynamic():
             
 dynamic()
 keepframe.select()
+param = ""
 
-#autosave video function
+#autosave video name
 def savename():
     global sfile
     if ofile:
@@ -611,31 +648,36 @@ def savename():
         except:
             sfile = ""
             
-#A function that will thread the main mosh function to separate the processes
+#function that will thread the main process
 def Threadthis():
     global varp, varn
     if delta.get()=='' or delta.get()<'1':
         varp.set(1)
     if ctime.get()=='' or ctime.get()<'1':
         varn.set(1)
-    threading.Thread(target=Do_the_mosh).start()
+    threading.Thread(target=do_the_mosh).start()
     
 #Converter function
 def ffmpeg_convert(inputpath, parameters, outputpath, extra=''):
-        subprocess.call(f'"{ffmpeg}" {extra} -i "{inputpath}" {parameters} -y "{outputpath}"', shell=True)
+    subprocess.call(f'"{ffmpeg}" {extra} -i "{inputpath}" {parameters} -y "{outputpath}"', shell=True)
 
-#Main Function of the whole program
-def Do_the_mosh():
-    global ofile, sfile, param, param2
-    button_mosh.configure(state=tkinter.DISABLED)
+#Main function of the whole program
+def do_the_mosh():
+    global ofile, sfile, param
+    
     if previous=="":
         tkinter.messagebox.showinfo("No Video imported!","Please import a video file!")
-        button_mosh.configure(state=tkinter.NORMAL) 
         return
+    button_mosh.configure(state=tkinter.DISABLED)
+    button_open.configure(state=tkinter.DISABLED)
     try:
         savename()
         ProcessLabel.configure(text='STEP 1/3 CONVERTING...')
-        param = "-c:v libx264 -preset medium -b:v 2M -minrate 2M -maxrate 2M -bufsize 2M" #Add other ffmpeg parameters in this line only
+        if param=="":         
+            param = "-c:v libx264 -preset medium -b:v 2M -minrate 2M -maxrate 2M -bufsize 2M" # Default ffmpeg parameter
+            changed = False
+        else:
+            changed = True
         if ((current=="Bloom") or  (current=="Pulse") or (current=="Pulse") or(current=="Overlap")
             or (current=="Void") or (current=="Reverse") or (current=="Invert") or (current=="Random") or (current=="Jiggle")):
             ifile = sfile[:-4]+".avi"
@@ -650,7 +692,8 @@ def Do_the_mosh():
             ffmpeg_convert(mfile,param,sfile)
             os.remove(mfile)
         elif ((current=="Classic") or (current=="Repeat") or (current=="Glide") or (current=="Sort") or (current=="Echo")):
-            param = "-bf 0 -b 10000k" #Add other ffmpeg parameters in this line only for the above modes
+            if not changed:
+                param = "-bf 0 -b 10000k" # Default ffmpeg parameter for the above modes
             ifile = sfile[:-4]+".avi"
             ffmpeg_convert(ofile,param,ifile)
             ProcessLabel.configure(text='STEP 2/3 MOSHING...')
@@ -683,6 +726,7 @@ def Do_the_mosh():
                     else:
                         tkinter.messagebox.showinfo("No Vector File imported!", "Please choose the video from where you want to extract the vector motion.")
                         button_mosh.configure(state=tkinter.NORMAL)
+                        button_open.configure(state=tkinter.NORMAL)
                         ProcessLabel.configure(text='Choose any secondary video file for transfering the vectors!')
                         return
             elif current=="Shuffle":
@@ -702,6 +746,8 @@ def Do_the_mosh():
                 hw_type=''
             ffmpeg_convert(mfile,param,sfile,extra=hw_type)
             os.remove(mfile)
+        if not changed:
+            param=""
     except:
         pass
     
@@ -709,11 +755,13 @@ def Do_the_mosh():
     if os.path.exists(sfile):
         tkinter.messagebox.showinfo("Exported!", "File exported successfully, \nFile Location:" +str(sfile))
         ProcessLabel.configure(text="Last used: "+current)
-        button_mosh.configure(state=tkinter.NORMAL)
     else:
         tkinter.messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.")
         ProcessLabel.configure(text='Recheck the settings and try again!')
-        button_mosh.configure(state=tkinter.NORMAL)
+        
+    button_open.configure(state=tkinter.NORMAL)
+    button_mosh.configure(state=tkinter.NORMAL)
+        
         
 #Bottom Widgets
 ProcessLabel = customtkinter.CTkLabel(master=frame_right, width=400, height=30,corner_radius=10, text="START DATAMOSHING!", fg_color=("white", "gray38"))
