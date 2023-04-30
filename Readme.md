@@ -14,7 +14,7 @@ It comes in two version, one paid windows version and one basic free source-code
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
 ### <p align='center'> FREE SOURCE CODE VERSION
-<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov1.9/Datamosher-Pro_python-version_1.91.zip) <br> Don't forget to leave a ⭐ </p>
+<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov2.0/Datamosher-Pro_python-version_2.0.zip) <br> Don't forget to leave a ⭐ </p>
 
 # Installation?
 - For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
