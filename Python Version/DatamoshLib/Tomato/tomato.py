@@ -33,9 +33,9 @@ def mosh(infile, outfile, m, c, n, a, f, k):
         #define temp directory and files
         temp_nb = random.randint(10000, 99999)
         temp_dir = "temp-" + str(temp_nb)
-        temp_hdrl = temp_dir +"\\hdrl.bin"
-        temp_movi = temp_dir +"\\movi.bin"
-        temp_idx1 = temp_dir +"\\idx1.bin"
+        temp_hdrl = os.path.join(temp_dir,"hdrl.bin")
+        temp_movi = os.path.join(temp_dir,"movi.bin")
+        temp_idx1 = os.path.join(temp_dir,"idx1.bin")
 
         os.mkdir(temp_dir)
 
