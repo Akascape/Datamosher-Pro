@@ -65,10 +65,10 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             os.mkdir("cache_ffg")
             base = os.path.basename(input_video)
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
-            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"')
+            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
             os.mkdir(os.path.join("cache_ffg","raws"))
             framelist=[]
-            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw')
+            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
             frames=os.listdir(os.path.join("cache_ffg","raws"))
             siz=size
             framelist.extend(frames)
@@ -100,10 +100,10 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             base = os.path.basename(input_video)
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
             qua=''
-            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"')
+            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
             os.mkdir(os.path.join("cache_ffg","raws"))
             framelist=[]
-            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw')
+            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
             kil=e
             po=s
             if po==0:
@@ -130,10 +130,10 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             base = os.path.basename(input_video)
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
             qua=''
-            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"')
-            os.mkdir("cache_ffg/raws")
+            subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
+            os.mkdir(os.path.join("cache_ffg","raws"))
             framelist=[]
-            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw')
+            subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
             repeat=r
             po=f-1
             frames=os.listdir(os.path.join("cache_ffg","raws"))

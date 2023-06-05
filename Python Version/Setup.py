@@ -46,12 +46,12 @@ if missing:
                 else:
                     subprocess.call('python3 -m pip install '+y, shell=True)
         except:
-            print("Unable to download! \nThis are the required ones: "+str(required)+"\nUse 'pip install module_name' to download the modules one by one")
+            print("Unable to download! \nThis are the required ones: "+str(required)+"\nUse 'pip install module_name' to download the modules one by one.")
             time.sleep(3)
             sys.exit()
     elif res=="N" or res=="n":
         print("Without the modules you can't open this program. Please install them first! \nThis are the required one: "+str(required)
-              +"\nUse 'pip install module_name' to download modules one by one manually")
+              +"\nUse 'pip install module_name' to download modules one by one manually.")
         time.sleep(3)
         sys.exit()       
 else:
@@ -85,7 +85,7 @@ if (os.path.exists(os.path.join("FFglitch","ffgac")) or
     checkffglitch()
 else:
     print("ffgac/ffedit not found inside ffglitch folder, you cannot run the ffglitch modes without these programs")
-    res2 = input("Do you want to download ffglitch now? (Y/N): ")
+    res2 = input("Do you want to download ffglitch modes? (Y/N): ")
     while not ((res2=="Y") or (res2=="y") or (res2=="N") or (res2=="n")):
         print("Please choose a valid option!")
         res2 = input("Do you want to download ffglitch now? (Y/N): ")
@@ -102,9 +102,10 @@ else:
             try:
                 import requests
                 response = requests.get(URL)
-                open("FFglitch//ffglitch.zip", "wb").write(response.content)
+                open(os.path.join("FFglitch","ffglitch.zip"), "wb").write(response.content)
             except:
-                print("Unable to download ffglitch from site! Check your connection or download it manually from: | https://github.com/Akascape/FFglitch-0.9.3-executables |")
+                print("Unable to download ffglitch from site, try again running this setup!")
+                print("Check your connection or download it manually from: | https://github.com/Akascape/FFglitch-0.9.3-executables |")
                 print("Paste the files (ffgac and ffedit) inside FFglitch folder.")
                 time.sleep(3)
                 sys.exit()
@@ -125,7 +126,7 @@ else:
         except:
             print("Something went wrong!")
     elif res2=="N" or res2=="n":
-        print("ffglitch modes cannot run without ffgac and ffedit, download them manually and paste them inside the FFglitch folder.")
+        print("ffglitch modes cannot run without ffgac and ffedit packages, download them manually and paste them inside the FFglitch folder.")
 
 #Everything done!
 print("Setup Complete!")

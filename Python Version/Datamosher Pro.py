@@ -1,7 +1,7 @@
 #Author: Akash Bora
 #License: MIT | Copyright (c) 2023 Akash Bora
 
-currentversion = 2.0
+currentversion = 2.01
 
 #Import required modules
 import tkinter
@@ -18,6 +18,7 @@ import webbrowser
 import requests
 import time
 import random
+import warnings
 
 #Import the local datamosh library
 from DatamoshLib.Tomato import tomato
@@ -84,20 +85,20 @@ def ChangeModeLeft():
     dynamic()
     
 frame_info = customtkinter.CTkFrame(master=frame_right, width=520, height=100)
-frame_info.place(x=20,y=20)
-
-mode_info = customtkinter.CTkLabel(master=frame_info,text=current, corner_radius=10, width=320, height=50, fg_color=("white", "gray38"))
-mode_info.place(x=100,y=25)
+frame_info.pack(padx=10, pady=10, fill="x", expand=True, anchor="n")
 
 play_icon = Image.open(resource(os.path.join("Assets","Icons","right_icon.png"))).resize((20, 20), Image.Resampling.LANCZOS)
 
 left_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkImage(play_icon.transpose(Image.Transpose.FLIP_LEFT_RIGHT)),
                                    text="", width=50, height=50, corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeLeft)
-left_but.place(x=20,y=25)
+left_but.pack(padx=10, pady=10, fill="x", side="left", anchor="n")
+
+mode_info = customtkinter.CTkLabel(master=frame_info,text=current, corner_radius=10, width=320, height=50, fg_color=("white", "gray38"))
+mode_info.pack(padx=10, pady=10, fill="x", expand=True, side="left", anchor="n")
 
 right_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkImage(play_icon), text="", width=50, height=50,
                                    corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeRight)
-right_but.place(x=450,y=25)
+right_but.pack(padx=10, pady=10, fill="x", side="right", anchor="n")
 
 #Open video function
 previous = ""
@@ -180,8 +181,9 @@ def view_info():
     window_UI.minsize(410,200)
     window_UI.title("About")
     window_UI.wm_iconbitmap()
-    window_UI.iconphoto(False, icopath)
+    window_UI.after(300, lambda: window_UI.iconphoto(False, icopath))
     info_setting.configure(state=tkinter.DISABLED)
+    window_UI.resizable(False, False)
     window_UI.wm_transient(root)
     
     def check():
@@ -236,7 +238,7 @@ infopng = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icon
 info_setting = customtkinter.CTkButton(master=frame_left, image=infopng, text="", width=40, height=40, corner_radius=10,
                                        fg_color=customtkinter.ThemeManager.theme["CTkButton"]["text_color_disabled"],
                                        hover_color=("grey50","gray25"), command=view_info)
-info_setting.place(x=10,y=470)
+info_setting.pack(padx=10, pady=10, anchor="s", side="left")
 
 def close_top2():
     window_UI2.destroy()
@@ -258,7 +260,8 @@ def change_param():
     window_UI2.minsize(410,200)
     window_UI2.title("Custom FFmpeg Parameters")
     window_UI2.wm_iconbitmap()
-    window_UI2.iconphoto(False, icopath)
+    window_UI2.resizable(False, False)
+    window_UI2.after(300, lambda: window_UI2.iconphoto(False, icopath))
     ff_setting.configure(state=tkinter.DISABLED)
     window_UI2.wm_transient(root)
 
@@ -275,7 +278,7 @@ settingpng = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","I
 ff_setting = customtkinter.CTkButton(master=frame_left, image=settingpng, text="", width=40, height=40, corner_radius=10,
                                     fg_color=customtkinter.ThemeManager.theme["CTkButton"]["text_color_disabled"],
                                     hover_color=("grey50","gray25"), command=change_param)
-ff_setting.place(x=120,y=470)
+ff_setting.pack(padx=(65,10), pady=10, anchor="s", side="right")
 
 #Validation for entries
 def only_numbers(char):
@@ -664,7 +667,7 @@ def ffmpeg_convert(inputpath, parameters, outputpath, extra=''):
 #Main function of the whole program
 def do_the_mosh():
     global ofile, sfile, param
-    
+    last_used = current
     if previous=="":
         tkinter.messagebox.showinfo("No Video imported!","Please import a video file!")
         return
@@ -748,27 +751,26 @@ def do_the_mosh():
             os.remove(mfile)
         if not changed:
             param=""
-    except:
-        pass
+    except Exception as e:
+        warnings.warn(str(e))
     
     #Check the result and complete the task
     if os.path.exists(sfile):
         tkinter.messagebox.showinfo("Exported!", "File exported successfully, \nFile Location:" +str(sfile))
-        ProcessLabel.configure(text="Last used: "+current)
+        ProcessLabel.configure(text="Last used: "+last_used)
     else:
         tkinter.messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.")
         ProcessLabel.configure(text='Recheck the settings and try again!')
         
     button_open.configure(state=tkinter.NORMAL)
     button_mosh.configure(state=tkinter.NORMAL)
-        
-        
+            
 #Bottom Widgets
 ProcessLabel = customtkinter.CTkLabel(master=frame_right, width=400, height=30,corner_radius=10, text="START DATAMOSHING!", fg_color=("white", "gray38"))
-ProcessLabel.place(x=20,y=430)
+ProcessLabel.pack(padx=10, pady=10, fill="x", expand=True, side="left")
 
 button_mosh = customtkinter.CTkButton(master=frame_right, height=30,width=110,corner_radius=10, text="MOSH", command=Threadthis)
-button_mosh.place(x=430,y=430)
+button_mosh.pack(padx=(0,10), pady=10, fill="x", side="right")
 
 root.mainloop()
 

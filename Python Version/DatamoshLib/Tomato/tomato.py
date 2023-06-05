@@ -25,11 +25,8 @@ def mosh(infile, outfile, m, c, n, a, f, k):
         kill = k
 
         if filein is None or os.path.exists(filein) == False:
-                print("> step 0/5: valid input file required!")
-                print("use -h to see help")
-                exit()
+                return
                 
-
         #define temp directory and files
         temp_nb = random.randint(10000, 99999)
         temp_dir = "temp-" + str(temp_nb)
