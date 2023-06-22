@@ -1,7 +1,7 @@
 #Author: Akash Bora
 #License: MIT | Copyright (c) 2023 Akash Bora
 
-currentversion = 2.01
+currentversion = 2.02
 
 #Import required modules
 import tkinter
