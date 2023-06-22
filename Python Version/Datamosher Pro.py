@@ -322,7 +322,7 @@ end_mosh = tkinter.DoubleVar()
 rangebar = RangeSliderH(frame_right, [start_mosh, end_mosh], Width=510, Height=63,
                         bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
                         bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                        bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
+                        bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckBox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
                         line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
 
 label_seconds1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start: 0s",width=1)
@@ -359,7 +359,7 @@ end_frame_mosh = tkinter.DoubleVar()
 rangebar2 = RangeSliderH(frame_right, [start_frame_mosh, end_frame_mosh], Width=510, Height=63,
                          bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
                          bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                         bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckbox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
+                         bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckBox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
                          line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
 
 label_showframe1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start Frame: 0",width=1)
