@@ -79,6 +79,7 @@ Other Glitch/datamosh modes
 
 # UI (PAID VERSION-ONLY FOR WINDOWS)
 ![newthemes](https://user-images.githubusercontent.com/89206401/174493211-febc4193-1090-4dbb-8eea-23d7d10e3741.png)
+![features](https://github.com/Akascape/Datamosher-Pro/assets/89206401/76e41806-5d02-4995-ace7-74c3927af463)
 
 ## Conclusion
 You will not find this type of software anywhere with so many effects only for datamoshing. This program can be your companion while editing cool glitchy videos :)
