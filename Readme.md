@@ -74,7 +74,7 @@ Other Glitch/datamosh modes
 
 ## More effects are available in the paid version.
 
-# UI (PYTHON VERSION)
+# UI (FREE PYTHON VERSION)
 ![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
 
 # UI (PAID VERSION-ONLY FOR WINDOWS)
