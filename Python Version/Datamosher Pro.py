@@ -1,7 +1,7 @@
 #Author: Akash Bora
 #License: MIT | Copyright (c) 2023 Akash Bora
 
-currentversion = 2.02
+currentversion = 2.1
 
 #Import required modules
 import tkinter
@@ -11,21 +11,21 @@ import os
 import imageio_ffmpeg
 import subprocess
 import imageio
-from PIL import Image, ImageTk
-from RangeSlider.RangeSlider import RangeSliderH
 import threading
 import webbrowser
 import requests
 import time
 import random
 import warnings
+from Assets.CTkRangeSlider import CTkRangeSlider
+from PIL import Image, ImageTk
 
 #Import the local datamosh library
 from DatamoshLib.Tomato import tomato
 from DatamoshLib.Original import classic, repeat, pymodes
 from DatamoshLib.FFG_effects import basic_modes, external_script
 
-#Get base path
+#Get full base path
 def resource(relative_path):
     base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, relative_path)
@@ -34,13 +34,6 @@ def resource(relative_path):
 WIDTH = 780
 HEIGHT = 520
 
-if sys.platform.startswith("win"):
-    import ctypes
-    try:
-        ctypes.windll.shcore.SetProcessDpiAwareness(0)
-    except:
-        pass
-    
 customtkinter.set_appearance_mode("System") 
 customtkinter.set_default_color_theme(random.choice(["blue","green","dark-blue"]))
 root = customtkinter.CTk()
@@ -49,7 +42,6 @@ root.geometry(f"{WIDTH}x{HEIGHT}")
 root.bind("<1>", lambda event: event.widget.focus_set())
 root.grid_columnconfigure(1, weight=1)
 root.grid_rowconfigure(0, weight=1)
-root.resizable(width=False, height=False)
 frame_left = customtkinter.CTkFrame(master=root,width=180,corner_radius=0)
 frame_left.grid(row=0, column=0, sticky="nswe")
 frame_right = customtkinter.CTkFrame(master=root)
@@ -84,8 +76,8 @@ def ChangeModeLeft():
     mode_info.configure(text=current)
     dynamic()
     
-frame_info = customtkinter.CTkFrame(master=frame_right, width=520, height=100)
-frame_info.pack(padx=10, pady=10, fill="x", expand=True, anchor="n")
+frame_info = customtkinter.CTkFrame(master=frame_right, width=520)
+frame_info.pack(padx=10, pady=10, fill="x", anchor="n")
 
 play_icon = Image.open(resource(os.path.join("Assets","Icons","right_icon.png"))).resize((20, 20), Image.Resampling.LANCZOS)
 
@@ -138,35 +130,39 @@ def open_function():
     #Update the widgets data
     position_frame.configure(to=vid.count_frames(), number_of_steps=vid.count_frames())
     duration = vid.get_meta_data()['duration']
-    rangebar.max_val = duration
+    rangebar.configure(from_=0, to=int(duration), number_of_steps=int(duration))
+    rangebar.set([0,duration])
     label_seconds2.configure(text="End: "+str(int(duration))+"s")
-    rangebar2.max_val = vid.count_frames()
+    rangebar2.configure(from_=1, to=vid.count_frames(),number_of_steps=vid.count_frames())
+    rangebar2.set([0,vid.count_frames()])
     label_showframe2.configure(text="End: "+str(vid.count_frames()))
     shuf_slider.configure(to=vid.count_frames(), number_of_steps=vid.count_frames())
     end_mosh.set(duration)
     end_frame_mosh.set(vid.count_frames())
+    position_frame.set(1)
+    position_frame._command(position_frame.get())
     
 #Left Frame Widgets
-label_appname = customtkinter.CTkLabel(master=frame_left, text="DATAMOSHER PRO")
-label_appname.place(x=35,y=10)
+label_appname = customtkinter.CTkLabel(master=frame_left, text="DATAMOSHER PRO", font=("",14,"bold"))
+label_appname.pack(pady=10, padx=5)
 
 vid_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","thumbnail_cache","offline_image.png"))), size=(170,100))
 
 button_thumbnail = customtkinter.CTkLabel(master=frame_left, image=vid_image, width=172, height=102, text="", bg_color="grey30")
-button_thumbnail.place(x=5,y=40)
+button_thumbnail.pack(pady=0, padx=5)
 
 add_video_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","video_icon.png"))), size=(20,15))
 
-button_open = customtkinter.CTkButton(master=frame_left, image=add_video_image, text="IMPORT VIDEO", width=160, height=35,
+button_open = customtkinter.CTkButton(master=frame_left, image=add_video_image, text="IMPORT VIDEO", height=35,
                                       compound="right", command=open_function)
-button_open.place(x=10,y=165)
+button_open.pack(pady=(20,5), padx=10, fill="x")
 
 label_export = customtkinter.CTkLabel(master=frame_left,anchor="w",text="Export Format")
-label_export.place(x=12,y=205)
+label_export.pack(padx=10, anchor="w")
 
-optionmenu_1 = customtkinter.CTkComboBox(master=frame_left, width=160, height=35, values=["mp4","avi","mov","mkv"], state="readonly")
+optionmenu_1 = customtkinter.CTkComboBox(master=frame_left, height=35, values=["mp4","avi","mov","mkv"], state="readonly")
 optionmenu_1.set("mp4")
-optionmenu_1.place(x=10,y=235)
+optionmenu_1.pack(padx=10, fill="x")
 
 #Info Window
 def close_top():
@@ -210,7 +206,6 @@ def view_info():
     def repo():
         webbrowser.open_new_tab("https://github.com/Akascape/Datamosher-Pro/issues")
         
-    logo_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","Logo.png"))), size=(210,200))
     logo = customtkinter.CTkLabel(master=window_UI, image=logo_image, text="",
                                   bg_color=customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
     logo.place(x=200,y=0)
@@ -232,6 +227,8 @@ def view_info():
     dvname.place(x=30,y=170)
     
     window_UI.protocol("WM_DELETE_WINDOW", close_top)
+
+logo_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","Logo.png"))), size=(210,200))
 
 infopng = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","info.png"))).resize((20, 20), Image.Resampling.LANCZOS))
 
@@ -290,44 +287,45 @@ validation = root.register(only_numbers)
 
 ### Dynamimc widgets that change with modes ###
 
+widget_frame = customtkinter.CTkFrame(master=frame_right, fg_color="transparent")
+widget_frame.pack(padx=10, pady=(50,10), expand=True, fill="both")
+
+widget_frame.columnconfigure((0,1,2,3), weight=1)
+
 #Kill Frame Widget
     
-label_kill = customtkinter.CTkLabel(master=frame_right,anchor="w",text="Kill Frame Size: 0.6")
-slider_kill = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=100,
+label_kill = customtkinter.CTkLabel(master=widget_frame,anchor="w",text="Kill Frame Size: 0.6")
+slider_kill = customtkinter.CTkSlider(master=widget_frame, from_=1, to=0, number_of_steps=100,
                                       command=lambda value: label_kill.configure(text="Kill Frame Size: "+str(round(value,4))))
 slider_kill.set(0.6)
 
 #N-frameWidget
-varn = tkinter.IntVar()
-label_ctime = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Frame Count:",width=1)
-ctime = customtkinter.CTkEntry(frame_right,textvariable=varn, validate='key', validatecommand=(validation, '%P'), placeholder_text="1",
+varn = tkinter.StringVar()
+label_ctime = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Frame Count:",width=1)
+ctime = customtkinter.CTkEntry(widget_frame,textvariable=varn, validate='key', validatecommand=(validation, '%P'), placeholder_text="1",
                              width=100, placeholder_text_color="grey70", height=30, border_width=2, corner_radius=10)
 varn.set(1)
 
 #Keep frame & Keep audio widgets
-keepaudio = customtkinter.CTkCheckBox(master=frame_right, text="Keep Audio", onvalue=1, offvalue=0)
-keepframe = customtkinter.CTkCheckBox(master=frame_right, text="Keep First Frame", onvalue=1, offvalue=0)
+keepaudio = customtkinter.CTkCheckBox(master=widget_frame, text="Keep Audio", onvalue=1, offvalue=0)
+keepframe = customtkinter.CTkCheckBox(master=widget_frame, text="Keep First Frame", onvalue=1, offvalue=0)
 
 #Count Frame widget
-label_frame1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Position Frame: 1",width=1)
+label_frame1 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Position Frame: 1",width=1)
 
-position_frame = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black", from_=1, to=1.1,
+position_frame = customtkinter.CTkSlider(master=widget_frame, progress_color="black", fg_color="black", from_=1, to=1.1,
                                          number_of_steps=1, command=lambda value: label_frame1.configure(text="Position Frame: "+str(int(value))))
 position_frame.set(1)
 
 #Classic Rangebar
-start_mosh = tkinter.DoubleVar()
-end_mosh = tkinter.DoubleVar()
+start_mosh = tkinter.DoubleVar(value=0)
+end_mosh = tkinter.DoubleVar(value=1)
 
-rangebar = RangeSliderH(frame_right, [start_mosh, end_mosh], Width=510, Height=63,
-                        bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
-                        bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                        bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckBox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
-                        line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
+rangebar = CTkRangeSlider(widget_frame, variables=[start_mosh, end_mosh], number_of_steps=1)
 
-label_seconds1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start: 0s",width=1)
-label_seconds2 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="End: 0s",width=1)
-label_segment = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Choose Segment:",width=1)
+label_seconds1 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Start: 0s",width=1)
+label_seconds2 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="End: 0s",width=1)
+label_segment = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Choose Segment:",width=1)
 
 def show2(*args):
         if previous=="":
@@ -343,28 +341,24 @@ start_mosh.trace_add('write', show)
 end_mosh.trace_add('write', show2)
 
 #Delta entry widget
-label_p = customtkinter.CTkLabel(master=frame_right,anchor='w',text="P-frames (Delta):",width=1)
-label_segment = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Choose Segment:",width=1)
+label_p = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="P-frames (Delta):",width=1)
+label_segment = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Choose Segment:",width=1)
 
-varp = tkinter.IntVar()
-delta = customtkinter.CTkEntry(frame_right, placeholder_text="1",validate='key', validatecommand=(validation, '%P'),
+varp = tkinter.StringVar()
+delta = customtkinter.CTkEntry(widget_frame, placeholder_text="1",validate='key', validatecommand=(validation, '%P'),
                                width=100, textvariable=varp, placeholder_text_color="grey70", height=30, border_width=2,
                                corner_radius=10)
 varp.set(1)
 
 #Frame Rangebar for repeat and rise modes
-start_frame_mosh = tkinter.DoubleVar()
-end_frame_mosh = tkinter.DoubleVar()
+start_frame_mosh = tkinter.DoubleVar(value=0)
+end_frame_mosh = tkinter.DoubleVar(value=1)
 
-rangebar2 = RangeSliderH(frame_right, [start_frame_mosh, end_frame_mosh], Width=510, Height=63,
-                         bgColor=root._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"]),line_color="black",
-                         bar_color_outer=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0],
-                         bar_color_inner=customtkinter.ThemeManager.theme["CTkCheckBox"]["checkmark_color"][1],min_val=0, max_val=1, show_value=False,
-                         line_s_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"][0])
+rangebar2 = CTkRangeSlider(widget_frame, variables=[start_frame_mosh, end_frame_mosh], number_of_steps=1)
 
-label_showframe1 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start Frame: 0",width=1)
-label_showframe2 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="End: 0",width=1)
-label_segment2 = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Choose Frame Segment:",width=1)
+label_showframe1 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Start Frame: 0",width=1)
+label_showframe2 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="End: 0",width=1)
+label_segment2 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Choose Frame Segment:",width=1)
 
 def show3(*args):
         if previous=="":
@@ -381,35 +375,35 @@ end_frame_mosh.trace_add('write', show3)
 
 #slider for echo mode
     
-label_mid = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Start Point: 0.5",width=1)
-mid_point = customtkinter.CTkSlider(master=frame_right, width=500,progress_color="black", fg_color="black",
+label_mid = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Start Point: 0.5",width=1)
+mid_point = customtkinter.CTkSlider(master=widget_frame, progress_color="black", fg_color="black",
                                     from_=0, to=1, number_of_steps=10, command=lambda value: label_mid.configure(text="Start Point: "+str(round(value,1))))
 mid_point.set(0.5)
 
 #Some options for sort mode
-keepsort = customtkinter.CTkCheckBox(master=frame_right, text="Keep First Frames", onvalue=0, offvalue=1)
-reversesort = customtkinter.CTkCheckBox(master=frame_right, text="Reverse", onvalue=False, offvalue=True)
+keepsort = customtkinter.CTkCheckBox(master=widget_frame, text="Keep First Frames", onvalue=0, offvalue=1)
+reversesort = customtkinter.CTkCheckBox(master=widget_frame, text="Reverse", onvalue=False, offvalue=True)
 
 #Options for ffglitch modes
-hw_auto = customtkinter.CTkSwitch(master=frame_right,text="HW Acceleration \n(Auto)",onvalue=1, offvalue=0)
-labelk = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Keyframes:",width=1)
-kf = customtkinter.CTkComboBox(master=frame_right,height=30, width=150, values=["1000", "100", "10", "1"])
+hw_auto = customtkinter.CTkSwitch(master=widget_frame,text="HW Acceleration \n(Auto)",onvalue=1, offvalue=0)
+labelk = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Keyframes:",width=1)
+kf = customtkinter.CTkComboBox(master=widget_frame,height=30, width=150, values=["1000", "100", "10", "1"])
 kf._entry.config(validate='key', validatecommand=(validation, '%P'))
 
 #Widget for Shuffle mode 
-shuf_label = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Chunk Size: 1",width=1)
-shuf_slider = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=0, number_of_steps=1,
+shuf_label = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Chunk Size: 1",width=1)
+shuf_slider = customtkinter.CTkSlider(master=widget_frame, from_=1, to=0, number_of_steps=1,
                                       command=lambda value:shuf_label.configure(text="Chunk Size: "+str(int(value))))
 shuf_slider.set(1)
 
 #Widget for Fluid mode
-fluid_label = customtkinter.CTkLabel(master=frame_right,anchor='w',text="Amount: 5",width=1)
-slider_fluid = customtkinter.CTkSlider(master=frame_right, width=500, from_=1, to=20, number_of_steps=100,
+fluid_label = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Amount: 5",width=1)
+slider_fluid = customtkinter.CTkSlider(master=widget_frame, width=500, from_=1, to=20, number_of_steps=100,
                                        command=lambda value:fluid_label.configure(text="Amount: "+str(int(value))))
 slider_fluid.set(5)
 
 #Stretch mode widget
-v_h = customtkinter.CTkSwitch(frame_right,text="Horizontal Stretch", onvalue=1, offvalue=0)
+v_h = customtkinter.CTkSwitch(widget_frame,text="Horizontal Stretch", onvalue=1, offvalue=0)
 
 #Button for motion transfer mode
 def open_MT():
@@ -421,7 +415,7 @@ def open_MT():
         mt_button.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], text="OPEN VIDEO")
         vfile = ''
     
-mt_button = customtkinter.CTkButton(master=frame_right, text="OPEN VIDEO", width=520, height=30, compound="right",command=open_MT)
+mt_button = customtkinter.CTkButton(master=widget_frame, text="OPEN VIDEO", height=30, compound="right",command=open_MT)
 
 #Button for custom script mode
 scriptfile = ''
@@ -435,142 +429,142 @@ def open_script():
         scriptbutton.configure(fg_color=customtkinter.ThemeManager.theme["CTkButton"]["fg_color"], text='OPEN SCRIPT')
         scriptfile = ''
         
-scriptbutton = customtkinter.CTkButton(master=frame_right, text="OPEN SCRIPT", width=520, height=30, compound="right",command=open_script)
+scriptbutton = customtkinter.CTkButton(master=widget_frame, text="OPEN SCRIPT", height=30, compound="right",command=open_script)
 
 #Dynamic UI functions for each widget
 def rangeslider(x):
     if x==1:
-        rangebar.place(x=20,y=210)
-        label_seconds1.place(x=25,y=200)
-        label_seconds2.place(x=470,y=200)
-        label_segment.place(x=25,y=170)
+        rangebar.grid(row=2, column=0, columnspan=4, sticky="ew", padx=5)
+        label_seconds1.grid(row=1, column=0, sticky="w", padx=10)
+        label_seconds2.grid(row=1, column=3, sticky="e", padx=10)
+        label_segment.grid(row=0, column=0, sticky="w", padx=10)
     else:
-        rangebar.place_forget()
-        label_segment.place_forget()
-        label_seconds1.place_forget()
-        label_seconds2.place_forget()
+        rangebar.grid_forget()
+        label_segment.grid_forget()
+        label_seconds1.grid_forget()
+        label_seconds2.grid_forget()
 def rangeslider2(x):
     if x==1:
         if (current=="Rise"):
-            rangebar2.place(x=20,y=260)
-            label_showframe1.place(x=25,y=250)
-            label_showframe2.place(x=470,y=250)
-            label_segment2.place(x=25,y=220)
+            rangebar2.grid(row=3, column=0, columnspan=4, sticky="ew", padx=5)
+            label_showframe1.grid(row=2, column=0, sticky="w", padx=10)
+            label_showframe2.grid(row=2, column=3, sticky="e", padx=10)
+            label_segment2.grid(row=1, column=0, sticky="w", padx=10, pady=(10,0))
         else:
-            rangebar2.place(x=20,y=210)
-            label_showframe1.place(x=25,y=200)
-            label_showframe2.place(x=470,y=200)
-            label_segment2.place(x=25,y=170)
+            rangebar2.grid(row=2, column=0, columnspan=4, sticky="ew", padx=5)
+            label_showframe1.grid(row=1, column=0, sticky="w", padx=10)
+            label_showframe2.grid(row=1, column=3, sticky="e", padx=10)
+            label_segment2.grid(row=0, column=0, sticky="w", padx=10)
     else:
-        rangebar2.place_forget()
-        label_showframe1.place_forget()
-        label_showframe2.place_forget()
-        label_segment2.place_forget()
+        rangebar2.grid_forget()
+        label_showframe1.grid_forget()
+        label_showframe2.grid_forget()
+        label_segment2.grid_forget()
 def mid(x):
     if x==1:
-        mid_point.place(x=20,y=210)
-        label_mid.place(x=25,y=170)
+        mid_point.grid(row=1, columnspan=4, padx=10, sticky="ew")
+        label_mid.grid(row=0, padx=15, sticky="w")
     else:
-        mid_point.place_forget()
-        label_mid.place_forget()
+        mid_point.grid_forget()
+        label_mid.grid_forget()
 def killoption(x):
     if x==1 or x==2 or x==3:
-        label_kill.place(x=25,y=170)
-        slider_kill.place(x=20,y=200)
+        label_kill.grid(row=0, column=0, sticky="w", padx=10)
+        slider_kill.grid(row=1, column=0, columnspan=4, padx=5, sticky="ew")
     else:
-        label_kill.place_forget()
-        slider_kill.place_forget()
+        label_kill.grid_forget()
+        slider_kill.grid_forget()
 def positionslider(x):
     if x==1:
-        label_frame1.place(x=25,y=230)
-        position_frame.place(x=20,y=260)
+        label_frame1.grid(row=2, column=0, sticky="w", padx=10, pady=(10,0))
+        position_frame.grid(row=3, column=0, columnspan=4, padx=5, sticky="ew")
     else:
-        label_frame1.place_forget()
-        position_frame.place_forget()
+        label_frame1.grid_forget()
+        position_frame.grid_forget()
 def framekeep(x):
     if x==1:
-        keepframe.place(x=250,y=300)
+        keepframe.grid(row=4, column=2, sticky="e", padx=10, pady=15)
     elif x==2:
-        keepframe.place(x=250,y=240)
+        keepframe.grid(row=4, column=2, sticky="e", padx=10, pady=15)
     else:
-        keepframe.place_forget()
+        keepframe.grid_forget()
 def audiokeep(x):
     if x==1:     
-        keepaudio.place(x=400,y=300)
+        keepaudio.grid(row=4, column=3, sticky="e", padx=10, pady=15)
     elif x==2:
-        keepaudio.place(x=400,y=240)
+        keepaudio.grid(row=4, column=3, sticky="e", padx=10, pady=15)
     else:
-        keepaudio.place_forget()
+        keepaudio.grid_forget()
 def ctimes(x):
     if x==1:
-        ctime.place(x=110,y=300)
-        label_ctime.place(x=25,y=300)
+        ctime.grid(row=4, column=0, sticky="w", padx=(100,10), pady=10)
+        label_ctime.grid(row=4, column=0, sticky="w", padx=10, pady=10)
         if current=="Water Bloom":
             varn.set(20)
         else:
             varn.set(1)
     else:
-        ctime.place_forget()
-        label_ctime.place_forget()
+        ctime.grid_forget()
+        label_ctime.grid_forget()
 def pdelta(x):
     if x==1:
-        delta.place(x=135,y=275)
-        label_p.place(x=25,y=275)
+        delta.grid(row=3, column=0, sticky="w", padx=(120,10), pady=10)
+        label_p.grid(row=3, column=0, sticky="w", padx=10, pady=10)
         if current=="Repeat":
             varp.set(5)
     elif x==2:
-        delta.place(x=135,y=170)
-        label_p.place(x=25,y=170)
+        delta.grid(row=3, column=0, sticky="w", padx=(120,10), pady=10)
+        label_p.grid(row=3, column=0, sticky="w", padx=10, pady=10)
         if current=="Glide":
             varp.set(5)
     else:
-        delta.place_forget()
-        label_p.place_forget()
+        delta.grid_forget()
+        label_p.grid_forget()
 def sortoptions(x):
     if x==1:
-        keepsort.place(x=30, y=170)
-        reversesort.place(x=300, y=170)
+        keepsort.grid(row=0, column=0,sticky="w", padx=10)
+        reversesort.grid(row=0, column=1,sticky="w", padx=10)
     else:
-        keepsort.place_forget()
-        reversesort.place_forget()
+        keepsort.grid_forget()
+        reversesort.grid_forget()
 def ffgassist(x):
     if x==1:
-        hw_auto.place(x=25, y=170)
-        labelk.place(x=300,y=170)
-        kf.place(x=380,y=170)
+        hw_auto.grid(row=0, column=0, sticky="w", padx=10)
+        labelk.grid(row=0, column=3, sticky="e", padx=(10,170))
+        kf.grid(row=0, column=3, sticky="e", padx=10)
     else:
-        hw_auto.place_forget()
-        labelk.place_forget()
-        kf.place_forget()
+        hw_auto.grid_forget()
+        labelk.grid_forget()
+        kf.grid_forget()
 def shuf(x):
     if x==1:
-        shuf_label.place(x=25,y=220)
-        shuf_slider.place(x=20,y=250)
+        shuf_label.grid(row=1, column=0, sticky="w", padx=10, pady=(15,0))
+        shuf_slider.grid(row=2, column=0, sticky="ew", columnspan=4, padx=5)
     else:
-        shuf_label.place_forget()
-        shuf_slider.place_forget()
+        shuf_label.grid_forget()
+        shuf_slider.grid_forget()
 def fluidwidget(x):
     if x==1:
-        fluid_label.place(x=25,y=220)
-        slider_fluid.place(x=20,y=250)
+        fluid_label.grid(row=1, column=0, sticky="w", padx=10, pady=(15,0))
+        slider_fluid.grid(row=2, column=0, sticky="ew", columnspan=4, padx=5)
     else:
-        fluid_label.place_forget()
-        slider_fluid.place_forget()
+        fluid_label.grid_forget()
+        slider_fluid.grid_forget()
 def h_v(x):
     if x==1:
-        v_h.place(x=25,y=220)
+        v_h.grid(sticky="w", pady=15, padx=10)
     else:
-        v_h.place_forget()
+        v_h.grid_forget()
 def mtwid(x):
     if x==1:
-        mt_button.place(x=20,y=230)
+        mt_button.grid(row=1, columnspan=4, sticky="ew", padx=10, pady=20)
     else:
-        mt_button.place_forget()
+        mt_button.grid_forget()
 def custom(x):
     if x==1:
-        scriptbutton.place(x=20,y=230)
+        scriptbutton.grid(row=1, columnspan=4, sticky="ew", padx=10, pady=20)
     else:
-        scriptbutton.place_forget()
+        scriptbutton.grid_forget()
 
 #Main function to update the widgets
 def dynamic():
@@ -687,7 +681,7 @@ def do_the_mosh():
             ffmpeg_convert(ofile,param,ifile)
             ProcessLabel.configure(text='STEP 2/3 MOSHING...')
             mfile = sfile[:-4]+"_corrupted.avi"
-            tomato.mosh(infile=ifile, outfile=mfile, m=current.lower(), c=varn.get(), n=int(position_frame.get()),
+            tomato.mosh(infile=ifile, outfile=mfile, m=current.lower(), c=int(varn.get()), n=int(position_frame.get()),
                         k=round(slider_kill.get(),4), a=keepaudio.get(), f=keepframe.get())
             time.sleep(1)
             os.remove(ifile)
@@ -702,9 +696,9 @@ def do_the_mosh():
             ProcessLabel.configure(text='STEP 2/3 MOSHING...')
             mfile = sfile[:-4]+"_corrupted.avi"
             if current=="Classic":
-                classic.Datamosh(ifile, mfile,s=int(start_mosh.get()),e=int(end_mosh.get()),p=varp.get(), fps=vid.get_meta_data()['fps'])
+                classic.Datamosh(ifile, mfile,s=int(start_mosh.get()),e=int(end_mosh.get()),p=int(varp.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Repeat":         
-                repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()), p=varp.get(), fps=vid.get_meta_data()['fps'])
+                repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()), p=int(varp.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Glide":
                 pymodes.library.glide(varp.get(), ifile, mfile)
             elif current=="Sort":
