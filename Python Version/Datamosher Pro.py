@@ -700,7 +700,7 @@ def do_the_mosh():
             elif current=="Repeat":         
                 repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()), p=int(varp.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Glide":
-                pymodes.library.glide(varp.get(), ifile, mfile)
+                pymodes.library.glide(int(varp.get()), ifile, mfile)
             elif current=="Sort":
                 pymodes.library.avi_sort(ifile, mfile, mode=keepsort.get(), rev=reversesort.get())
             elif current=="Echo":
@@ -731,7 +731,7 @@ def do_the_mosh():
             elif current=="Rise":
                     basic_modes.library(ofile, mfile, mode=5, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()-start_frame_mosh.get()), gop=kf.get())
             elif current=="Water Bloom":
-                    basic_modes.library(ofile, mfile, mode=6, f=int(position_frame.get()), r=varn.get(), gop=kf.get())
+                    basic_modes.library(ofile, mfile, mode=6, f=int(position_frame.get()), r=int(varn.get()), gop=kf.get())
             elif current=="Custom Script":
                     external_script.mosh(ofile, mfile, mode=1, scriptfile=scriptfile, gop=kf.get())
             else:
