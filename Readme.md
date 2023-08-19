@@ -24,7 +24,7 @@ It comes in two version, one paid windows version and one basic free source-code
 - A detailed documentation can be found in this [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page.
 
 ## Gallery (Example Videos)
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
+[<img src="https://img.shields.io/badge/View-Gallery-informational?&color=darkblue&style=for-the-badge" width="150">](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
 # Effects List
 ### Effects available in the python version:
 **Main datamosh effects:**
@@ -98,7 +98,7 @@ All the required licenses (mostly MIT) are provided in their folder/blocks respe
 
 ## DATAMOSH MADE EASY!
 ### Current Version: 2.1
-<br> [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Akascape/Datamosher-Pro) [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://github.com/Akascape/Datamosher-Pro)
+
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
