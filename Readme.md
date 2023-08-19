@@ -25,6 +25,14 @@ It comes in two version, one paid windows version and one basic free source-code
 
 ## Gallery (Example Videos)
 [<img src="https://img.shields.io/badge/View-Gallery-informational?&color=darkblue&style=for-the-badge" width="150">](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
+
+# UI (FREE PYTHON VERSION)
+![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
+
+# UI (PAID VERSION-ONLY FOR WINDOWS)
+![newthemes](https://user-images.githubusercontent.com/89206401/174493211-febc4193-1090-4dbb-8eea-23d7d10e3741.png)
+![features](https://github.com/Akascape/Datamosher-Pro/assets/89206401/76e41806-5d02-4995-ace7-74c3927af463)
+
 # Effects List
 ### Effects available in the python version:
 **Main datamosh effects:**
@@ -74,25 +82,18 @@ Other Glitch/datamosh modes
 
 ## More effects are available in the paid version.
 
-# UI (FREE PYTHON VERSION)
-![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
-
-# UI (PAID VERSION-ONLY FOR WINDOWS)
-![newthemes](https://user-images.githubusercontent.com/89206401/174493211-febc4193-1090-4dbb-8eea-23d7d10e3741.png)
-![features](https://github.com/Akascape/Datamosher-Pro/assets/89206401/76e41806-5d02-4995-ace7-74c3927af463)
-
 ## Conclusion
 You will not find this type of software anywhere with so many effects only for datamoshing. This program can be your companion while editing cool glitchy videos :)
 <br> As it is a new piece of software some users may find small bugs, but updates will be on their way.
 <br> The effects are all inspired from ItsKaspar's [tomato.py](https://github.com/itsKaspar/tomato) script, [pymosh](https://github.com/grampajoe/pymosh) and [FFglitch](https://ffglitch.org/). 
-All the logos and ui designs are created by me.
+All the logos and ui designs are created by me. 
 
 <br>[<img src="https://img.shields.io/badge/-Follow_Akascape_on_Github-informational?style=flat&logo=github&logoColor=black&color=grey">](https://github.com/Akascape)
 <br>
 ## License
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-master/LICENSE)
 
-Note that **FFglitch** and **FFmpeg** is not provided in the *releases* and is not placed under this license.
+Note that **FFglitch** and **FFmpeg** are not provided in the *releases* and is not placed under this license.
 All the required licenses (mostly MIT) are provided in their folder/blocks respectively and it must be taken into account that multiple licenses are involved.
 <br>
 
