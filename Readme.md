@@ -9,7 +9,7 @@ It contains `30+` different effects which can replicate any type of datamoshing 
 It comes in two version, one paid windows version and one basic free source-code version.
 
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include more features like a video player, conversion settings, themes and some new glitch effects.
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include more features like a video player, conversion settings, themes and many new glitch effects.
 ### <p align='center'> WINDOWS VERSION (SEE DETAILS)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 <br>
