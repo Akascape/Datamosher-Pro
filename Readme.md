@@ -12,7 +12,6 @@ It comes in two version, one paid windows version and one basic free source-code
 ### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include more features like a video player, conversion settings, themes and many new glitch effects.
 ### <p align='center'> WINDOWS VERSION (SEE DETAILS)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
-<br>
 ### <p align='center'> FREE SOURCE CODE VERSION
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov2.1/Datamosher-Pro_python-version_2.1.zip) <br> Don't forget to leave a ⭐ </p>
 
@@ -98,7 +97,8 @@ All the required licenses (mostly MIT) are provided in their folder/blocks respe
 <br>
 
 ## DATAMOSH MADE EASY!
-### Current Version: 2.1
+### Current Py Version: 2.1 
+### Current Win Version: 2.4
 
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
