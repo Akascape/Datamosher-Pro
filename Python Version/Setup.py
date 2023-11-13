@@ -3,12 +3,20 @@
 
 #Importing some built in modules
 import subprocess
-import pkg_resources
 import sys
 import time
 import os
 from zipfile import ZipFile
 
+try:
+    import pkg_resources
+except ImportError:
+    if sys.platform.startswith("win"):
+        subprocess.call('python -m pip install setuptools', shell=True)
+    else:
+        subprocess.call('python3 -m pip install setuptools', shell=True)
+    import pkg_resources
+    
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
 
 #Checking the required folders
