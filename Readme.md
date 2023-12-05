@@ -20,7 +20,7 @@ It comes in two version, one paid windows version and one basic free source-code
 - For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install) guide.
 
 **Official Videos**
-<br> [![Click to watch this tutorial!](https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg)](https://youtu.be/TQIQ1TmHUBY) [![Click to watch this tutorial!](https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg)](https://www.youtube.com/watch?v=eO-w-I-oCnc)
+<br> [<img src="https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg" width=40% height=40%>](https://youtu.be/TQIQ1TmHUBY) [<img src="https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg" width=40% height=40%>](https://www.youtube.com/watch?v=eO-w-I-oCnc)
 
 # Documentation 📑
 - A detailed documentation can also be found in this [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page.
