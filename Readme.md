@@ -1,15 +1,15 @@
 [![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=DATAMOSHER%20PRO&fontSize=90&fontAlignY=30&desc=Automatic%20Datamoshing!&descAlign=50&descSize=30&animation=scaleIn)](https://akascape.gumroad.com/l/Datamosher-Pro)
 # Datamosher Pro
-<b> Datamosher Pro is an automatic video-glitching application for free! (python version) <br>
+<b> Datamosher Pro is an automatic video-glitching application for free! (python) <br>
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 ### Why I made this?
-I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. If you want to achieve datamosh effects in your videos easily, then you are in the right place!
+I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. If you want to easily achieve datamosh effects in your videos, then you are in the right place!
 
-It contains `30+` different effects which can replicate any type of datamoshing style.
+Datamosher Pro contains `30+` different effects which can replicate almost any type of datamoshing style.
 It comes in two version, one paid windows version and one basic free source-code version.
 
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include more features like a video player, conversion settings, themes and many new glitch effects.
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include new features like a video player, conversion settings, themes and more glitch effects.
 ### <p align='center'> WINDOWS VERSION (SEE DETAILS)
 <br> <p align='center'> [<img src="https://img.shields.io/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=Microsoft&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 ### <p align='center'> FREE SOURCE CODE VERSION
@@ -19,11 +19,14 @@ It comes in two version, one paid windows version and one basic free source-code
 - For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
 - For Python version, you need to install some stuff, check the [installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install) guide.
 
-# Documentation
-- A detailed documentation can be found in this [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page.
+**Official Videos**
+<br> [![Click to watch this tutorial!](https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg)](https://youtu.be/TQIQ1TmHUBY) [![Click to watch this tutorial!](https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg)](https://www.youtube.com/watch?v=eO-w-I-oCnc)
 
-## Gallery (Example Videos)
-[<img src="https://img.shields.io/badge/View-Gallery-informational?&color=darkblue&style=for-the-badge" width="150">](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
+# Documentation 📑
+- A detailed documentation can also be found in this [Wiki](https://github.com/Akascape/Datamosher-Pro/wiki) page.
+
+## Gallery (Example Videos) 🖼️
+[<img src="https://img.shields.io/badge/View-Gallery-informational?&color=darkblue&style=for-the-badge" width="200">](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-v1.7/Demos.md)
 
 # UI (FREE PYTHON VERSION)
 ![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
@@ -47,13 +50,13 @@ It comes in two version, one paid windows version and one basic free source-code
 **Frame Repeatation datamosh:**
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
-| Bloom           | duplicates a key-frame multiple times with void mode|
-| Water Bloom     | duplicates any frame multiple times with ffglitch (more precise than bloom)|
+| Bloom           | duplicates a key-frame multiple times with void mode |
+| Water Bloom     | duplicates any frame multiple times with ffglitch (more precise than bloom) |
 | Repeat          | repeats a **series** of frames multiple times |
 | Glide           | duplicates macroblocks multiple times in a continuos order |
 | Pulse           | duplicates groups of some p-frames every n times (heavy to render) |
 
-Other Glitch/datamosh modes
+Other glitch/datamosh modes
 | Effect Name     | Description                                                           |
 | ----------------| --------------------------------------------------------------------- |
 | Buffer          | creates glitchy ring buffers in the video |
@@ -91,6 +94,7 @@ All the logos and ui designs are created by me.
 <br>
 ## License
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-master/LICENSE)
+<br> Copyright (c) 2023 Akash Bora
 
 Note that **FFglitch** and **FFmpeg** are not provided in the *releases* and is not placed under this license.
 All the required licenses (mostly MIT) are provided in their folder/blocks respectively and it must be taken into account that multiple licenses are involved.
