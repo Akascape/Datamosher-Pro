@@ -42,7 +42,7 @@ It comes in two version, one paid windows version and one basic free source-code
 | ----------------| --------------------------------------------------------------------- |
 | Void            | gives the standard datamosh cuts based on video vectors (automatic i-frame removal) |
 | Classic         | gives the avidemux type datamosh within a range |
-| Combine         | combine multiple video and mosh them together |
+| Combine         | combine multiple videos and mosh them together |
 | Rise            | gives you the ffglitch datamosh by manually removing a range of i frames |
 | Shuffle         | randomly shuffles chunks of frames and then moshes them with the normal ffglitch datamosh |
 | Sort            | sorts video frames by data size and merges them with the classic datamosh |
