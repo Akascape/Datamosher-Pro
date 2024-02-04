@@ -1,10 +1,14 @@
-#Author: Akash Bora
-#License: MIT | Copyright (c) 2023 Akash Bora
+"""
+DATAMOSHER PRO Py version 2.2
+Author: Akash Bora (Akascape)
+License: MIT | Copyright (c) 2024 Akash Bora
+"""
 
-currentversion = 2.1
+currentversion = 2.2
 
-#Import required modules
+#Import installed modules
 import tkinter
+from tkinter import messagebox, filedialog
 import customtkinter
 import sys
 import os
@@ -25,7 +29,7 @@ from DatamoshLib.Tomato import tomato
 from DatamoshLib.Original import classic, repeat, pymodes
 from DatamoshLib.FFG_effects import basic_modes, external_script
 
-#Get full base path
+# get full base path
 def resource(relative_path):
     base_path = os.path.dirname(os.path.abspath(__file__))
     return os.path.join(base_path, relative_path)
@@ -36,29 +40,34 @@ HEIGHT = 520
 
 customtkinter.set_appearance_mode("System") 
 customtkinter.set_default_color_theme(random.choice(["blue","green","dark-blue"]))
+
 root = customtkinter.CTk()
 root.title("Datamosher Pro (python version)")
 root.geometry(f"{WIDTH}x{HEIGHT}")
 root.bind("<1>", lambda event: event.widget.focus_set())
 root.grid_columnconfigure(1, weight=1)
 root.grid_rowconfigure(0, weight=1)
-frame_left = customtkinter.CTkFrame(master=root,width=180,corner_radius=0)
+
+frame_left = customtkinter.CTkFrame(master=root, width=180, corner_radius=0)
 frame_left.grid(row=0, column=0, sticky="nswe")
+
 frame_right = customtkinter.CTkFrame(master=root)
 frame_right.grid(row=0, column=1, sticky="nswe", padx=20, pady=20)
+
 icopath = ImageTk.PhotoImage(file=resource(os.path.join("Assets","Icons","Program_icon.png")))
 root.wm_iconbitmap()
 root.iconphoto(False, icopath)
 
-#get FFMPEG path (using the imageio_ffmpeg plugin)
+#Get FFMPEG path (using the imageio_ffmpeg plugin)
 ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
 
 #Effect List
 modelist = sorted(["Bloom", "Invert", "Jiggle", "Overlap", "Pulse", "Reverse",
-       "Random", "Classic", "Glide", "Sort", "Echo", "Void",
-       "Fluid", "Stretch", "Motion Transfer", "Repeat", "Shear", "Delay", "Sink",
-       "Mirror", "Vibrate", "Slam Zoom", "Zoom","Invert-Reverse", "Shift",
-       "Noise", "Stop", "Buffer", "Slice", "Shuffle", "Rise", "Custom Script", "Water Bloom"])
+                   "Random", "Classic", "Glide", "Sort", "Echo", "Void",
+                   "Fluid", "Stretch", "Motion Transfer", "Repeat", "Shear", "Delay", "Sink",
+                   "Mirror", "Vibrate", "Slam Zoom", "Zoom","Invert-Reverse", "Shift",
+                   "Noise", "Stop", "Buffer", "Slice", "Shuffle", "Rise", "Custom Script",
+                   "Water Bloom", "Combine"])
 current = modelist[0] 
 
 #Making the top widgets for changing the modes dynamically
@@ -82,7 +91,8 @@ frame_info.pack(padx=10, pady=10, fill="x", anchor="n")
 play_icon = Image.open(resource(os.path.join("Assets","Icons","right_icon.png"))).resize((20, 20), Image.Resampling.LANCZOS)
 
 left_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkImage(play_icon.transpose(Image.Transpose.FLIP_LEFT_RIGHT)),
-                                   text="", width=50, height=50, corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeLeft)
+                                   text="", width=50, height=50, corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"),
+                                   command=ChangeModeLeft)
 left_but.pack(padx=10, pady=10, fill="x", side="left", anchor="n")
 
 mode_info = customtkinter.CTkLabel(master=frame_info,text=current, corner_radius=10, width=320, height=50, fg_color=("white", "gray38"))
@@ -92,13 +102,21 @@ right_but = customtkinter.CTkButton(master=frame_info, image=customtkinter.CTkIm
                                    corner_radius=10, fg_color=("white", "gray38"), hover_color=("gray90","gray25"), command=ChangeModeRight)
 right_but.pack(padx=10, pady=10, fill="x", side="right", anchor="n")
 
+mode_type = customtkinter.CTkLabel(master=frame_right, text="")
+mode_type.place(x=20, y=100)
+
 #Open video function
 previous = ""
+ofile = ""
+sfile = ""
 
-def open_function():
+def open_function(file=None):
     global ofile, vid_image2, previous, duration, vid
     
-    ofile = tkinter.filedialog.askopenfilename(filetypes =[('Video', ['*.mp4','*.avi','*.mov','*.mkv','*gif']),('All Files', '*.*')])
+    if not file:
+        ofile = filedialog.askopenfilename(filetypes=[('Video', ['*.mp4','*.avi','*.mov','*.mkv','*gif']),('All Files', '*.*')])
+    else:
+        ofile = file
     #Check the video type
     supported = ["mp4","avi","mov","gif","mkv","wmv","m4v"]
     
@@ -133,7 +151,7 @@ def open_function():
     rangebar.configure(from_=0, to=int(duration), number_of_steps=int(duration))
     rangebar.set([0,duration])
     label_seconds2.configure(text="End: "+str(int(duration))+"s")
-    rangebar2.configure(from_=1, to=vid.count_frames(),number_of_steps=vid.count_frames())
+    rangebar2.configure(from_=1, to=vid.count_frames(), number_of_steps=vid.count_frames())
     rangebar2.set([0,vid.count_frames()])
     label_showframe2.configure(text="End: "+str(vid.count_frames()))
     shuf_slider.configure(to=vid.count_frames(), number_of_steps=vid.count_frames())
@@ -141,6 +159,14 @@ def open_function():
     end_frame_mosh.set(vid.count_frames())
     position_frame.set(1)
     position_frame._command(position_frame.get())
+    video_tbox.insert("end", ofile+"\n\n")
+
+def reuse_video():
+    if os.path.exists(sfile):
+        open_function(file=sfile)
+    else:
+        messagebox.showinfo("No Output", "The moshed file is not found")
+    button_reuse.place_forget()
     
 #Left Frame Widgets
 label_appname = customtkinter.CTkLabel(master=frame_left, text="DATAMOSHER PRO", font=("",14,"bold"))
@@ -164,6 +190,11 @@ optionmenu_1 = customtkinter.CTkComboBox(master=frame_left, height=35, values=["
 optionmenu_1.set("mp4")
 optionmenu_1.pack(padx=10, fill="x")
 
+up_arrow_image = customtkinter.CTkImage(Image.open(resource(os.path.join("Assets","Icons","up_arrow.png"))), size=(20,15))
+
+button_reuse = customtkinter.CTkButton(master=frame_left, image=up_arrow_image, text="Import Moshed", height=35, width=160, fg_color="transparent",
+                                      compound="right", command=reuse_video, border_width=2, text_color=["black", "white"])
+
 #Info Window
 def close_top():
     window_UI.destroy()
@@ -186,19 +217,18 @@ def view_info():
         URL = "https://raw.githubusercontent.com/Akascape/Datamosher-Pro/Miscellaneous/VERSIONPY.txt"
         try:
             response = requests.get(URL)
-            open(resource(os.path.join("Assets","version","VERSIONPY.txt")), "wb").write(response.content)
+            new_version = float(response.content)
         except:
-            tkinter.messagebox.showinfo("Unable to connect!", "Unable to get information, please check your internet connection or visit the github repository.")
+            messagebox.showinfo("Unable to connect!",
+                                "Unable to get information, please check your internet connection or visit the github repository.")
             return
         time.sleep(1)
         
-        with open(resource(os.path.join("Assets","version","VERSIONPY.txt")), 'r') as uf:
-            nver=float(uf.read())
-            if nver>currentversion:
-                tkinter.messagebox.showinfo("New Version available!","A new version "+ str(nver) +
-                                            " is available, \nPlease visit the github repository or the original download page!")
-            else:
-                tkinter.messagebox.showinfo("No Updates!", "You are on the latest version!")
+        if new_version>currentversion:
+            messagebox.showinfo("New Version available!","A new version "+ str(new_version) +
+                                " is available, \nPlease visit the github repository or the original download page!")
+        else:
+            messagebox.showinfo("No Updates!", "You are on the latest version!")
                 
     def docs():
         webbrowser.open_new_tab("https://github.com/Akascape/Datamosher-Pro/wiki")
@@ -216,7 +246,7 @@ def view_info():
     checkupdate = customtkinter.CTkButton(window_UI, text="Check For Updates", width=150, height=35, corner_radius=10, command=check)
     checkupdate.place(x=20,y=80)
     
-    helpbutton=customtkinter.CTkButton(window_UI, text="Help", width=150, height=35, corner_radius=10,command=docs)
+    helpbutton = customtkinter.CTkButton(window_UI, text="Help", width=150, height=35, corner_radius=10,command=docs)
     helpbutton.place(x=20,y=130)
     
     version_label = customtkinter.CTkLabel(window_UI,anchor="w",width=1, text="v"+str(currentversion),
@@ -262,7 +292,7 @@ def change_param():
     ff_setting.configure(state=tkinter.DISABLED)
     window_UI2.wm_transient(root)
 
-    text_box = customtkinter.CTkTextbox(window_UI2, border_width=3,height=140)
+    text_box = customtkinter.CTkTextbox(window_UI2, border_width=3, height=140, undo=True)
     text_box.pack(padx=10, pady=(10,0), fill="x")
     if len(param)>1: text_box.insert("0.0", param)
     ok_button = customtkinter.CTkButton(window_UI2, text="OK", command=set_param)
@@ -291,6 +321,7 @@ widget_frame = customtkinter.CTkFrame(master=frame_right, fg_color="transparent"
 widget_frame.pack(padx=10, pady=(50,10), expand=True, fill="both")
 
 widget_frame.columnconfigure((0,1,2,3), weight=1)
+widget_frame.rowconfigure(5, weight=1)
 
 #Kill Frame Widget
     
@@ -313,8 +344,8 @@ keepframe = customtkinter.CTkCheckBox(master=widget_frame, text="Keep First Fram
 #Count Frame widget
 label_frame1 = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Position Frame: 1",width=1)
 
-position_frame = customtkinter.CTkSlider(master=widget_frame, progress_color="black", fg_color="black", from_=1, to=1.1,
-                                         number_of_steps=1, command=lambda value: label_frame1.configure(text="Position Frame: "+str(int(value))))
+position_frame = customtkinter.CTkSlider(master=widget_frame, progress_color="black", fg_color="black", from_=1, to=1.1, number_of_steps=1,
+                                         command=lambda value: label_frame1.configure(text="Position Frame: "+str(int(value))))
 position_frame.set(1)
 
 #Classic Rangebar
@@ -377,7 +408,8 @@ end_frame_mosh.trace_add('write', show3)
     
 label_mid = customtkinter.CTkLabel(master=widget_frame,anchor='w',text="Start Point: 0.5",width=1)
 mid_point = customtkinter.CTkSlider(master=widget_frame, progress_color="black", fg_color="black",
-                                    from_=0, to=1, number_of_steps=10, command=lambda value: label_mid.configure(text="Start Point: "+str(round(value,1))))
+                                    from_=0, to=1, number_of_steps=10,
+                                    command=lambda value: label_mid.configure(text="Start Point: "+str(round(value,1))))
 mid_point.set(0.5)
 
 #Some options for sort mode
@@ -408,7 +440,7 @@ v_h = customtkinter.CTkSwitch(widget_frame,text="Horizontal Stretch", onvalue=1,
 #Button for motion transfer mode
 def open_MT():
     global vfile
-    vfile = tkinter.filedialog.askopenfilename(filetypes =[('Vector File', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
+    vfile = filedialog.askopenfilename(filetypes=[('Vector File', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
     if vfile:
         mt_button.configure(fg_color='grey', text=os.path.basename(vfile))
     else:
@@ -422,7 +454,7 @@ scriptfile = ''
 
 def open_script():
     global scriptfile
-    scriptfile = tkinter.filedialog.askopenfilename(filetypes =[('Script File', ['*.js','*.py']),('All Files', '*.*')])
+    scriptfile = filedialog.askopenfilename(filetypes=[('Script File', ['*.js','*.py']),('All Files', '*.*')])
     if scriptfile:
         scriptbutton.configure(fg_color='grey', text=os.path.basename(scriptfile))
     else:
@@ -430,6 +462,20 @@ def open_script():
         scriptfile = ''
         
 scriptbutton = customtkinter.CTkButton(master=widget_frame, text="OPEN SCRIPT", height=30, compound="right",command=open_script)
+
+#Combine mode widgets
+
+def open_multiple_videos():
+    files = filedialog.askopenfilenames(filetypes=[('Vector File', ['*.mp4','*.avi','*.mov','*.mkv']),('All Files', '*.*')])
+    if files:
+        supported = ["mp4","avi","mov","gif","mkv","wmv","m4v"]
+        for i in files:
+            if i[-3:].lower() in supported:
+                video_tbox.insert("end", i+"\n\n")
+    
+import_bt = customtkinter.CTkButton(master=widget_frame, text="Add Videos", fg_color="transparent", border_width=2,
+                                    command=open_multiple_videos, text_color=["black", "white"])
+video_tbox = customtkinter.CTkTextbox(master=widget_frame, undo=True)
 
 #Dynamic UI functions for each widget
 def rangeslider(x):
@@ -443,6 +489,7 @@ def rangeslider(x):
         label_segment.grid_forget()
         label_seconds1.grid_forget()
         label_seconds2.grid_forget()
+        
 def rangeslider2(x):
     if x==1:
         if (current=="Rise"):
@@ -460,6 +507,7 @@ def rangeslider2(x):
         label_showframe1.grid_forget()
         label_showframe2.grid_forget()
         label_segment2.grid_forget()
+        
 def mid(x):
     if x==1:
         mid_point.grid(row=1, columnspan=4, padx=10, sticky="ew")
@@ -467,6 +515,7 @@ def mid(x):
     else:
         mid_point.grid_forget()
         label_mid.grid_forget()
+        
 def killoption(x):
     if x==1 or x==2 or x==3:
         label_kill.grid(row=0, column=0, sticky="w", padx=10)
@@ -474,6 +523,7 @@ def killoption(x):
     else:
         label_kill.grid_forget()
         slider_kill.grid_forget()
+        
 def positionslider(x):
     if x==1:
         label_frame1.grid(row=2, column=0, sticky="w", padx=10, pady=(10,0))
@@ -481,6 +531,7 @@ def positionslider(x):
     else:
         label_frame1.grid_forget()
         position_frame.grid_forget()
+        
 def framekeep(x):
     if x==1:
         keepframe.grid(row=4, column=2, sticky="e", padx=10, pady=15)
@@ -488,6 +539,7 @@ def framekeep(x):
         keepframe.grid(row=4, column=2, sticky="e", padx=10, pady=15)
     else:
         keepframe.grid_forget()
+        
 def audiokeep(x):
     if x==1:     
         keepaudio.grid(row=4, column=3, sticky="e", padx=10, pady=15)
@@ -495,6 +547,7 @@ def audiokeep(x):
         keepaudio.grid(row=4, column=3, sticky="e", padx=10, pady=15)
     else:
         keepaudio.grid_forget()
+        
 def ctimes(x):
     if x==1:
         ctime.grid(row=4, column=0, sticky="w", padx=(100,10), pady=10)
@@ -506,6 +559,7 @@ def ctimes(x):
     else:
         ctime.grid_forget()
         label_ctime.grid_forget()
+        
 def pdelta(x):
     if x==1:
         delta.grid(row=3, column=0, sticky="w", padx=(120,10), pady=10)
@@ -520,6 +574,7 @@ def pdelta(x):
     else:
         delta.grid_forget()
         label_p.grid_forget()
+        
 def sortoptions(x):
     if x==1:
         keepsort.grid(row=0, column=0,sticky="w", padx=10)
@@ -527,6 +582,7 @@ def sortoptions(x):
     else:
         keepsort.grid_forget()
         reversesort.grid_forget()
+        
 def ffgassist(x):
     if x==1:
         hw_auto.grid(row=0, column=0, sticky="w", padx=10)
@@ -536,6 +592,7 @@ def ffgassist(x):
         hw_auto.grid_forget()
         labelk.grid_forget()
         kf.grid_forget()
+        
 def shuf(x):
     if x==1:
         shuf_label.grid(row=1, column=0, sticky="w", padx=10, pady=(15,0))
@@ -543,6 +600,7 @@ def shuf(x):
     else:
         shuf_label.grid_forget()
         shuf_slider.grid_forget()
+        
 def fluidwidget(x):
     if x==1:
         fluid_label.grid(row=1, column=0, sticky="w", padx=10, pady=(15,0))
@@ -550,16 +608,27 @@ def fluidwidget(x):
     else:
         fluid_label.grid_forget()
         slider_fluid.grid_forget()
+        
 def h_v(x):
     if x==1:
         v_h.grid(sticky="w", pady=15, padx=10)
     else:
         v_h.grid_forget()
+        
 def mtwid(x):
     if x==1:
         mt_button.grid(row=1, columnspan=4, sticky="ew", padx=10, pady=20)
     else:
         mt_button.grid_forget()
+
+def cbwidget(x):
+    if x==1:
+        import_bt.grid(row=1, column=0, columnspan=4, sticky="we", padx=10, pady=10)
+        video_tbox.grid(row=5, column=0, columnspan=4, rowspan=3, sticky="news", padx=10)
+    else:
+        import_bt.grid_forget()
+        video_tbox.grid_forget()
+        
 def custom(x):
     if x==1:
         scriptbutton.grid(row=1, columnspan=4, sticky="ew", padx=10, pady=20)
@@ -570,7 +639,10 @@ def custom(x):
 def dynamic():
     global current, showwidgets
     allwidgets = [audiokeep, positionslider, killoption, framekeep,
-                ctimes, pdelta, rangeslider, rangeslider2, mid, sortoptions, ffgassist, fluidwidget, h_v, custom, mtwid, shuf]
+                ctimes, pdelta, rangeslider, rangeslider2, mid,
+                  sortoptions, ffgassist, fluidwidget, h_v, custom,
+                  mtwid, shuf, cbwidget]
+    
     for i in allwidgets:
         i(0)
         
@@ -578,53 +650,88 @@ def dynamic():
     if (current=="Bloom") or  (current=="Pulse") or (current=="Pulse") or(current=="Overlap"):
         showwidgets=[audiokeep, positionslider, killoption, framekeep, ctimes]
         u=1
+        mode_type.configure(text="Mode Type: Automosh (Tomato)")
+        
     elif (current=="Jiggle"):
         showwidgets=[positionslider, audiokeep, killoption, framekeep]
         u=1
+        mode_type.configure(text="Mode Type: Automosh (Tomato)")
+        
     elif (current=="Void") or (current=="Reverse") or (current=="Invert") or (current=="Random"):
         showwidgets=[killoption,audiokeep, framekeep]
         u=2
+        mode_type.configure(text="Mode Type: Automosh (Tomato)")
+        
     elif (current=="Classic"):
         showwidgets=[rangeslider, pdelta]
         u=1
+        mode_type.configure(text="Mode Type: FFmpeg")
+        
     elif (current=="Glide"):
         showwidgets=[pdelta]
         u=2
+        mode_type.configure(text="Mode Type: FFmpeg")
+        
     elif (current=="Repeat") or (current=="Rise"):
         if (current=="Rise"): 
             showwidgets=[rangeslider2, ffgassist]
         else:
             showwidgets=[rangeslider2, pdelta]
         u=1
+        mode_type.configure(text="Mode Type: FFmpeg")
+        
     elif (current=="Echo"):
         showwidgets=[mid]
         u=1
+        mode_type.configure(text="Mode Type: FFmpeg")
+        
     elif (current=="Sort"):
         showwidgets=[sortoptions]
         u=1
+        mode_type.configure(text="Mode Type: FFmpeg")
+        
     elif ((current=="Buffer") or (current=="Sink") or (current=="Mirror") or (current=="Shear") or (current=="Noise")
          or (current=="Delay") or (current=="Slam Zoom") or (current=="Invert-Reverse") or (current=="Shift") or (current=="Zoom")
          or (current=="Slice")or (current=="Vibrate") or (current=="Stop")):
         showwidgets=[ffgassist]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Fluid"):
         showwidgets=[ffgassist, fluidwidget]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Stretch"):
         showwidgets=[ffgassist, h_v]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Motion Transfer"):
         showwidgets=[ffgassist, mtwid]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Custom Script"):
         showwidgets=[ffgassist, custom]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Shuffle"):
         showwidgets=[ffgassist, shuf]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
+    elif (current=="Combine"):
+        showwidgets=[ffgassist, cbwidget]
+        u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     elif (current=="Water Bloom"):
         showwidgets=[ffgassist, positionslider, ctimes]
         u=1
+        mode_type.configure(text="Mode Type: FFglitch")
+        
     for widgets in showwidgets:
             widgets(u)
             
@@ -637,11 +744,15 @@ def savename():
     global sfile
     if ofile:
         try:
-            sfile = ofile[:-4]+"_datamoshed_"+current+'.'+optionmenu_1.get()
+            if str(ofile).find("_datamoshed_")>0:
+                extra_keyword = "_"
+            else:
+                extra_keyword = "_datamoshed_"
+            sfile = ofile[:-4]+extra_keyword+current+'.'+optionmenu_1.get()
             nf = 0
             while os.path.exists(sfile):
                 nf = nf+1
-                sfile = ofile[:-4]+"_datamoshed_"+current+'('+str(nf)+')'+'.'+optionmenu_1.get()
+                sfile = ofile[:-4]+extra_keyword+current+'('+str(nf)+')'+'.'+optionmenu_1.get()
         except:
             sfile = ""
             
@@ -663,7 +774,7 @@ def do_the_mosh():
     global ofile, sfile, param
     last_used = current
     if previous=="":
-        tkinter.messagebox.showinfo("No Video imported!","Please import a video file!")
+        messagebox.showinfo("No Video imported!","Please import a video file!")
         return
     button_mosh.configure(state=tkinter.DISABLED)
     button_open.configure(state=tkinter.DISABLED)
@@ -698,7 +809,8 @@ def do_the_mosh():
             if current=="Classic":
                 classic.Datamosh(ifile, mfile,s=int(start_mosh.get()),e=int(end_mosh.get()),p=int(varp.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Repeat":         
-                repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()), p=int(varp.get()), fps=vid.get_meta_data()['fps'])
+                repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()),
+                                p=int(varp.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Glide":
                 pymodes.library.glide(int(varp.get()), ifile, mfile)
             elif current=="Sort":
@@ -713,27 +825,41 @@ def do_the_mosh():
             time.sleep(1)
             ProcessLabel.configure(text='STEP 2/3 MOSHING...')
             mfile = sfile[:-4]+"_corrupted.mpg"
-            if current=="Fluid":  
-                    basic_modes.library(ofile, mfile, mode=3, fluidity=int(slider_fluid.get()), gop=kf.get())
+            if current=="Fluid":
+                basic_modes.library(ofile, mfile, mode=3, fluidity=int(slider_fluid.get()), gop=kf.get())
             elif current=="Stretch":
-                    basic_modes.library(ofile, mfile, mode=2, vh=v_h.get(), gop=kf.get())
+                basic_modes.library(ofile, mfile, mode=2, vh=v_h.get(), gop=kf.get())
             elif current=="Motion Transfer":
-                    if vfile:
-                        basic_modes.library(ofile, mfile, mode=1, extract_from=vfile, gop=kf.get())
-                    else:
-                        tkinter.messagebox.showinfo("No Vector File imported!", "Please choose the video from where you want to extract the vector motion.")
-                        button_mosh.configure(state=tkinter.NORMAL)
-                        button_open.configure(state=tkinter.NORMAL)
-                        ProcessLabel.configure(text='Choose any secondary video file for transfering the vectors!')
-                        return
+                if vfile:
+                    basic_modes.library(ofile, mfile, mode=1, extract_from=vfile, gop=kf.get())
+                else:
+                    messagebox.showinfo("No Vector File imported!", "Please choose the video from where you want to extract the vector motion.")
+                    button_mosh.configure(state=tkinter.NORMAL)
+                    button_open.configure(state=tkinter.NORMAL)
+                    ProcessLabel.configure(text='Choose any secondary video file for transfering the vectors!')
+                    return
             elif current=="Shuffle":
-                    basic_modes.library(ofile, mfile, mode=4, size=int(shuf_slider.get()), gop=kf.get())
+                basic_modes.library(ofile, mfile, mode=4, size=int(shuf_slider.get()), gop=kf.get())
             elif current=="Rise":
-                    basic_modes.library(ofile, mfile, mode=5, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()-start_frame_mosh.get()), gop=kf.get())
+                basic_modes.library(ofile, mfile, mode=5, s=int(start_frame_mosh.get()),
+                                    e=int(end_frame_mosh.get()-start_frame_mosh.get()), gop=kf.get())
             elif current=="Water Bloom":
-                    basic_modes.library(ofile, mfile, mode=6, f=int(position_frame.get()), r=int(varn.get()), gop=kf.get())
+                basic_modes.library(ofile, mfile, mode=6, f=int(position_frame.get()), r=int(varn.get()), gop=kf.get())
+            elif current=="Combine":
+                all_files = video_tbox.get('1.0', 'end').split('\n')
+                real_files = []
+                for i in all_files:
+                    if os.path.isfile(i):
+                        real_files.append(i)
+                if len(real_files)<=1:
+                    messagebox.showinfo("No files added", "Please import 2 or more videos to use combine mode!")
+                    button_mosh.configure(state=tkinter.NORMAL)
+                    button_open.configure(state=tkinter.NORMAL)
+                    ProcessLabel.configure(text='Add 2 or more videos in combine mode!')
+                    return
+                basic_modes.library(real_files, mfile, mode=7, gop=kf.get())
             elif current=="Custom Script":
-                    external_script.mosh(ofile, mfile, mode=1, scriptfile=scriptfile, gop=kf.get())
+                external_script.mosh(ofile, mfile, mode=1, scriptfile=scriptfile, gop=kf.get())
             else:
                 external_script.mosh(ofile, mfile, mode=2, effect=current, gop=kf.get())
             ProcessLabel.configure(text='STEP 3/3 FIXING THE CORRUPTED FILE...')
@@ -745,25 +871,30 @@ def do_the_mosh():
             os.remove(mfile)
         if not changed:
             param=""
-    except Exception as e:
-        warnings.warn(str(e))
+    except Exception as errors:
+        warnings.warn(str(errors))
     
     #Check the result and complete the task
     if os.path.exists(sfile):
-        tkinter.messagebox.showinfo("Exported!", "File exported successfully, \nFile Location:" +str(sfile))
+        messagebox.showinfo("Exported!", "File exported successfully, \nFile Location: " +str(sfile))
         ProcessLabel.configure(text="Last used: "+last_used)
+        try: os.startfile(sfile)
+        except: pass
     else:
-        tkinter.messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.")
+        messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.")
         ProcessLabel.configure(text='Recheck the settings and try again!')
         
     button_open.configure(state=tkinter.NORMAL)
     button_mosh.configure(state=tkinter.NORMAL)
-            
+    button_reuse.place(x=10, y=290)
+    
 #Bottom Widgets
-ProcessLabel = customtkinter.CTkLabel(master=frame_right, width=400, height=30,corner_radius=10, text="START DATAMOSHING!", fg_color=("white", "gray38"))
+ProcessLabel = customtkinter.CTkLabel(master=frame_right, width=400, height=30,corner_radius=10,
+                                      text="START DATAMOSHING!", fg_color=("white", "gray38"))
 ProcessLabel.pack(padx=10, pady=10, fill="x", expand=True, side="left")
 
-button_mosh = customtkinter.CTkButton(master=frame_right, height=30,width=110,corner_radius=10, text="MOSH", command=Threadthis)
+button_mosh = customtkinter.CTkButton(master=frame_right, height=30,width=110,corner_radius=10,
+                                      text="MOSH", command=Threadthis)
 button_mosh.pack(padx=(0,10), pady=10, fill="x", side="right")
 
 root.mainloop()

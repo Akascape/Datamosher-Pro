@@ -2,13 +2,15 @@
 CTkRangeSlider
 Range slider for customtkinter
 Author: Akash Bora
-Version: 0.1
+Version: 0.2
 """
+
+from __future__ import annotations
 
 import math
 import tkinter
 import sys
-from typing import Union, Tuple, Callable, Optional
+from typing import Union, Tuple, Callable, Optional, List
 
 from customtkinter.windows.widgets.core_rendering import DrawEngine
 from customtkinter.windows.widgets.theme import ThemeManager
@@ -533,7 +535,7 @@ class CTkRangeSlider(CTkBaseClass):
         """ set necessary bindings for functionality of widget, will overwrite other bindings """
         if sequence is None or sequence == "<Enter>":
             self._canvas.bind("<Enter>", self._on_enter)
-        if sequence is None or sequnece == "<Motion>":
+        if sequence is None or sequence == "<Motion>":
             self._canvas.bind("<Motion>", self._on_enter)
         if sequence is None or sequence == "<Leave>":
             self._canvas.bind("<Leave>", self._on_leave)
@@ -740,7 +742,7 @@ class CTkRangeSlider(CTkBaseClass):
     def get(self) -> float:
         return self._output_values
 
-    def set(self, output_values: list[float], from_variable_callback=False):
+    def set(self, output_values: List[float], from_variable_callback=False):
 
         if self._from_ < self._to:
             output_values = [max(min(x, self._to), self._from_) for x in output_values]
@@ -839,7 +841,19 @@ class CTkRangeSlider(CTkBaseClass):
                 self._variables = None
 
             del kwargs["variables"]
+            
+        if "corner_radius" in kwargs:
+            self._corner_radius = kwargs.pop("corner_radius")
+            require_redraw = True
 
+        if "button_corner_radius" in kwargs:
+            self._button_corner_radius = kwargs.pop("button_corner_radius")
+            require_redraw = True
+
+        if "button_length" in kwargs:
+            self._button_length = kwargs.pop("button_length")
+            require_redraw = True
+            
         super().configure(require_redraw=require_redraw, **kwargs)
         
     def cget(self, attribute_name: str) -> any:
@@ -859,7 +873,7 @@ class CTkRangeSlider(CTkBaseClass):
         elif attribute_name == "progress_color":
             return self._progress_color
         elif attribute_name == "button_color":
-            return self._button_color
+            return self._button_color_0
         elif attribute_name == "button_hover_color":
             return self._button_hover_color
 

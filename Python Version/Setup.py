@@ -8,6 +8,7 @@ import time
 import os
 from zipfile import ZipFile
 
+print("Datamosher Pro Python Setup")
 try:
     import pkg_resources
 except ImportError:
@@ -20,17 +21,17 @@ except ImportError:
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
 
 #Checking the required folders
-folders= ["Assets","FFglitch","DatamoshLib","pymosh"]
+folders = ["Assets","FFglitch","DatamoshLib","pymosh"]
 missingfolder=[]
 for i in folders:
     if not os.path.exists(i):
         missingfolder.append(i)
 if missingfolder:
-    print("These folder(s) not available: "+str(missingfolder))
+    print("These folders are not available: "+str(missingfolder))
     print("Download them from the repository properly")
     sys.exit()
 else:
-    print("All folders available!")
+    print("All required folders available!")
 
 #Checking required modules
 required = {'imageio', 'imageio-ffmpeg', 'numpy', 'customtkinter', 'pillow', 'requests', 'packaging'}
@@ -114,8 +115,8 @@ else:
             except:
                 print("Unable to download ffglitch from site, try again running this setup!")
                 print("Check your connection or download it manually from: | https://github.com/Akascape/FFglitch-0.9.3-executables |")
-                print("Paste the files (ffgac and ffedit) inside FFglitch folder.")
-                time.sleep(3)
+                print("Then paste the files (ffgac and ffedit) inside FFglitch folder.")
+                time.sleep(5)
                 sys.exit()
             time.sleep(1)
             print("Exctracting the files...")
@@ -123,7 +124,7 @@ else:
                 with ZipFile(os.path.join('FFglitch','ffglitch.zip'), 'r') as zip: 
                     zip.extractall('FFglitch/')
             except:
-                print("Failed to extract ffglitch.zip, please extract it manually in the FFglitch folder.")
+                print("Failed to extract ffglitch.zip, please extract it manually inside the FFglitch folder.")
                 time.sleep(3)
                 sys.exit()
             if os.path.exists(os.path.join("FFglitch","ffgac")) or os.path.exists(os.path.join("FFglitch","ffgac.exe")):

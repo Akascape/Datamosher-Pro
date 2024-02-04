@@ -8,6 +8,7 @@ ffgac = os.path.join(str(DIRPATH.parent.parent),"FFglitch","ffgac")
 ffedit = os.path.join(str(DIRPATH.parent.parent),"FFglitch","ffedit")
 
 def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0, e=0, vh=0, gop=1000, r=0, f=0):
+        
         def get_vectors(input_video):
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -mpv_flags +nopimb+forcemv -qscale:v 0 -g "{gop}"' +
                             ' -vcodec mpeg2video -f rawvideo -y tmp.mpg', shell=True)
@@ -25,7 +26,7 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
                 except:
                     vectors.append([])
             return vectors
-        
+
         def apply_vectors(vectors, input_video, output_video, method='add'):
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -mpv_flags +nopimb+forcemv -qscale:v 0 -g "{gop}"' +
                             ' -vcodec mpeg2video -f rawvideo -y tmp.mpg', shell=True)
@@ -67,13 +68,13 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
             os.mkdir(os.path.join("cache_ffg","raws"))
-            framelist=[]
+            framelist = []
             subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
-            frames=os.listdir(os.path.join("cache_ffg","raws"))
-            siz=size
+            frames = os.listdir(os.path.join("cache_ffg","raws"))
+            siz = size
             framelist.extend(frames)
-            chunked_list=[]
-            chunk_size=siz
+            chunked_list = []
+            chunk_size = siz
             for i in range(0, len(framelist), chunk_size):
                     chunked_list.append(framelist[i:i+chunk_size])
             random.shuffle(chunked_list)
@@ -99,20 +100,20 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             os.mkdir("cache_ffg")
             base = os.path.basename(input_video)
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
-            qua=''
+            qua = ''
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
             os.mkdir(os.path.join("cache_ffg","raws"))
-            framelist=[]
+            framelist = []
             subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
-            kil=e
-            po=s
+            kil = e
+            po = s
             if po==0:
-                    po=1
+                    po = 1
             frames=os.listdir(os.path.join("cache_ffg","raws"))  
             for i in frames[po:(po+kil)]:
                 os.remove(os.path.join("cache_ffg","raws",i))
             frames.clear()
-            frames=os.listdir(os.path.join("cache_ffg","raws"))
+            frames = os.listdir(os.path.join("cache_ffg","raws"))
             framelist.extend(frames)
             out_data = b''
             for fn in framelist:
@@ -122,20 +123,67 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
                   fp.write(out_data)
                   fp.close()
             shutil.rmtree("cache_ffg")
+
+        def combine(output):
+            if os.path.isdir("cache_ffg"):
+                shutil.rmtree("cache_ffg")
+            os.mkdir("cache_ffg")
+            qua=''
+            num = 0
+            frames = []
+            converted = {}
+            for i in input_video:
+                if i in list(converted.keys()):
+                    continue
+                base=os.path.basename(i)
+                num +=1
+                fin=os.path.join("cache_ffg",base[:-4]+f"_{num}.mpg")
+                os.mkdir(os.path.join("cache_ffg",f"raws_{num}"))
+                
+                subprocess.call(f'"{ffgac}" -i "{i}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -s 1920x1080 -g "{gop}" -y "{fin}"', shell=True)
+               
+                subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws_{num}/frames_%04d.raw', shell=True)
+                converted.update({i:os.path.join("cache_ffg",f"raws_{num}")})
+        
+            num = 0
+            for i in input_video:
+                num +=1    
+                raw_frames = os.listdir(converted[i])
+                if num == 1:
+                    n = 0
+                else:
+                    if len(raw_frames)>10:
+                        n=5
+                    else:
+                        n=1
+                for frame in raw_frames[n:]:
+                    frames.append(os.path.join(converted[i],frame))
             
+            out_data = b''
+            for fn in frames:
+               with open(os.path.join(fn), 'rb') as fp:
+                   out_data += fp.read()
+            with open(output, 'wb') as fp:
+                  fp.write(out_data)
+                  fp.close()
+            try:
+                if os.path.isdir("cache_ffg"):
+                    shutil.rmtree("cache_ffg")
+            except: pass
+
         def water_bloom(output):
             if os.path.isdir("cache_ffg"):
                 shutil.rmtree("cache_ffg")
             os.mkdir("cache_ffg")
             base = os.path.basename(input_video)
             fin = os.path.join("cache_ffg",base[:-4]+".mpg")
-            qua=''
+            qua = ''
             subprocess.call(f'"{ffgac}" -i "{input_video}" -an -vcodec mpeg2video -f rawvideo -mpv_flags +nopimb -qscale:v 6 -r 30 -g "{gop}" -y "{fin}"', shell=True)
             os.mkdir(os.path.join("cache_ffg","raws"))
-            framelist=[]
+            framelist = []
             subprocess.call(f'"{ffgac}" -i "{fin}" -vcodec copy cache_ffg/raws/frames_%04d.raw', shell=True)
-            repeat=r
-            po=f-1
+            repeat = r
+            po = f-1
             frames=os.listdir(os.path.join("cache_ffg","raws"))
             for i in frames[:po]:
                     framelist.append(i)
@@ -156,13 +204,13 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             if not frames:
                 return []
             return np.mean(np.array([x for x in frames if x != []]), axis=0).tolist()
-        
+
         def fluid(frames):
             average_length = fluidity
             if average_length==1:
                 average_length=2
             return [average(frames[i + 1 - average_length: i + 1]) for i in range(len(frames))]
-        
+
         def movement(frames):
             for frame in frames:
                 if not frame:
@@ -171,9 +219,9 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
                     for col in row:
                         col[vh] = 0
             return frames
-        
+
         if(mode==1):
-            transfer_to=input_video
+            transfer_to = input_video
             vectors = []
             if extract_from:
                 vectors = get_vectors(extract_from)
@@ -191,3 +239,5 @@ def library(input_video, output, mode, extract_from="", fluidity=0, size=0, s=0,
             rise(output)
         elif(mode==6):
             water_bloom(output)
+        elif(mode==7):
+            combine(output)

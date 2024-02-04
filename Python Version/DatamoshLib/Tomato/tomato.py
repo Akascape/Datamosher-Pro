@@ -4,14 +4,9 @@ import os, re, random, struct
 from itertools import chain
 from itertools import repeat
 def mosh(infile, outfile, m, c, n, a, f, k):
-        print (" _                        _        ")
-        print ("| |                      | |       ")
-        print ("| |_ ___  _ __ ___   __ _| |_ ___  ")
-        print ("| __/ _ \| '_ ` _ \ / _` | __/ _ \ ")
-        print ("| || (_) | | | | | | (_| | || (_) |")
-        print (" \__\___/|_| |_| |_|\__,_|\__\___/ ")
+
         print ("Tomato Automosh v2.0")
-        print ("\\\\ Audio Video Interleave breaker")
+        print ("Audio Video Interleave breaker")
         print (" ")
         print ("glitch tool made with love for the glitch art community <3")
         print ("___________________________________")
