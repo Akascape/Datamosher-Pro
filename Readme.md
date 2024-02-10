@@ -95,7 +95,7 @@ All the logos and ui designs are created by me.
 <br>
 ## License
 [<img src="https://user-images.githubusercontent.com/89206401/168461242-884f25ce-eb67-406a-9d98-cf8d0f28cb43.png" width=100>](https://github.com/Akascape/Datamosher-Pro/blob/Datamosher-Pro-master/LICENSE)
-<br> Copyright (c) 2023 Akash Bora
+<br> Copyright (c) 2024 Akash Bora
 
 Note that **FFglitch** and **FFmpeg** are not provided in the *releases* and is not placed under this license.
 All the required licenses (mostly MIT) are provided in their folder/blocks respectively and it must be taken into account that multiple licenses are involved.
