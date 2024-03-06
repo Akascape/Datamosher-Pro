@@ -5,6 +5,11 @@
 <br> [![Click to watch this tutorial!](https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg)](https://youtu.be/TQIQ1TmHUBY)
 <br> [![Click to watch!](https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg)](https://www.youtube.com/watch?v=eO-w-I-oCnc)
 
+## Live Session 
+<br> [![Click to watch this tutorial!](https://img.youtube.com/vi/KxSP3y7lDQA/0.jpg)](https://youtu.be/KxSP3y7lDQA)
+
+A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for making this live stream.
+
 ##  Basic i-frame removal examples (bloom, classic, rise)
 <br> [![Click to watch!](https://img.youtube.com/vi/_YZ32Wvl3hk/0.jpg)](https://youtu.be/_YZ32Wvl3hk)
 ##  Basic P-frame duplication effects (classic, glide, repeat, pulse)
@@ -35,7 +40,7 @@
 [![Click to feel!](https://user-images.githubusercontent.com/89206401/184625834-93974859-d7bd-4539-99e4-dfbe9caac4c9.png)](https://www.reddit.com/r/glitch_art/comments/w3pthf/average_motion/?utm_source=share&utm_medium=web2x&context=3)
 ## WaterBloom Effect
 [<img src=https://user-images.githubusercontent.com/89206401/184626602-20e2024c-8721-48bd-94b6-114294ffa84e.jpg width=50% height=50%>](https://www.reddit.com/r/datamoshing/comments/wovez8/new_waterbloom_effect_testing_datamosher_pro/?utm_source=share&utm_medium=web2x&context=3)
-## Another Effect
+## Another Rain Effect
 [<img src=https://user-images.githubusercontent.com/89206401/185181791-53c82f6a-a504-4fc9-a1b5-3a5b92bf95d4.jpg width=50% height=50%>](https://www.reddit.com/r/glitch_art/comments/wqrynm/the_rain_effect/?utm_source=share&utm_medium=web2x&context=3)
 ## Glitch Experiment
 [<img src=https://user-images.githubusercontent.com/89206401/187367851-b7326e07-a365-4c84-9f38-9654565c4dbd.jpg width=50% height=50%>](https://www.reddit.com/r/glitch_art/comments/wzv15p/way_too_high/)
