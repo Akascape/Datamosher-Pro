@@ -3,9 +3,9 @@
 <b> Datamosher Pro is an automatic video-glitching application for free! (python) <br>
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 ### Why I made this?
-I was also searching for some good datamoshing software and I found that you have to either use those old softwares like Avidemux or have to look for some paid plugins, so I created my own python based application 'Datamosher Pro'. If you want to easily achieve datamosh effects in your videos, then you are in the right place!
+I was also searching for some good datamoshing software and I found that you have to either use those outdated softwares like Avidemux or have to look for some plugins, so I created my own python based application 'Datamosher Pro'. If you want to easily achieve datamosh effects in your videos, then you are in the right place!
 
-Datamosher Pro contains `30+` different effects which can replicate almost any type of datamoshing style.
+Datamosher Pro contains `30+` different effects/algorithms which can replicate almost any type of datamoshing style.
 It comes in two version, one paid windows version and one basic free source-code version.
 
 # DOWNLOAD
