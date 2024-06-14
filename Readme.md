@@ -8,8 +8,8 @@
 <br> There are two versions available: a premium paid version for Windows and a basic free version with source code. 
 <br> If you’re aiming to easily create datamosh effects in your videos, you’re in the right spot!
 
-### Story behind the development
-I was searching for some good datamoshing software and I noticed that we either have to use those outdated programs like Avidemux or look for some paid plugins. 
+### Story behind the Software
+I was also searching for some good datamoshing software and I noticed that we either have to use those outdated programs like Avidemux or look for some paid plugins. 
 Then I found some scripts and algorithms available for datamoshing which gives accurate results, but not everyone knows how to run those scripts on their system, hence I developed this GUI application for those scripts and added lots of new features which make this datamoshing process super easy. Just import the video and click the mosh button.
 
 # DOWNLOAD
