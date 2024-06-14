@@ -105,7 +105,7 @@ All the logos and ui designs are created by me.
 
 The main app files written by the Author is MIT licensed
 
-Note that **FFglitch** and **FFmpeg** are not provided in the *releases* directly and are not placed under this license, the library code remains totally separate from this program, and no modifications have been made to those binaries. (should be treated as external components)
+Note that **FFglitch** and **FFmpeg** are not provided in the *releases* directly and are not placed under this license, these binaries should be treated as external components because the library code remains totally separate them without doing any modification. 
 
 All the other required component licenses (mostly MIT) are provided in their folder/block respectively and it must be taken into account that multiple licenses are involved.
 <br>
