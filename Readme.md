@@ -10,7 +10,7 @@
 
 ### Story behind the development
 I was searching for some good datamoshing software and I noticed that we either have to use those outdated programs like Avidemux or look for some paid plugins. 
-Then I also found various scripts and algorithms available for datamoshing which gives accurate results, but not everyone knows how to run those scripts on their system, hence I developed this GUI application for those scripts and added lots of new features which make this datamoshing process easy. Just import the video and click the mosh button.
+Then I found some scripts and algorithms available for datamoshing which gives accurate results, but not everyone knows how to run those scripts on their system, hence I developed this GUI application for those scripts and added lots of new features which make this datamoshing process super easy. Just import the video and click the mosh button.
 
 # DOWNLOAD
 ### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include features like video player, conversion settings, themes and more glitch effects.
