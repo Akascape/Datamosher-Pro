@@ -17,7 +17,7 @@ Add your logs shown in the console (except the ffmpeg logs)
 Steps to reproduce the behavior:
 1. Mode(s) used: 
 2. Settings: [e.g default]
-3. Video metadata: 
+3. Video used (metadata): 
 
 **Screenshots**
 If possible, add screenshots of console to help explain your problem.
