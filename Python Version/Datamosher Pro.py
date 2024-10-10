@@ -1,10 +1,10 @@
 """
-DATAMOSHER PRO Py version 2.2
+DATAMOSHER PRO Py version 2.3
 Author: Akash Bora (Akascape)
 License: MIT | Copyright (c) 2024 Akash Bora
 """
 
-currentversion = 2.2
+currentversion = 2.3
 
 #Import installed modules
 import tkinter
@@ -26,7 +26,7 @@ from PIL import Image, ImageTk
 
 #Import the local datamosh library
 from DatamoshLib.Tomato import tomato
-from DatamoshLib.Original import classic, repeat, pymodes
+from DatamoshLib.Original import classic, repeat, pymodes, classic_new
 from DatamoshLib.FFG_effects import basic_modes, external_script
 
 # get full base path
@@ -63,7 +63,7 @@ ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
 
 #Effect List
 modelist = sorted(["Bloom", "Invert", "Jiggle", "Overlap", "Pulse", "Reverse",
-                   "Random", "Classic", "Glide", "Sort", "Echo", "Void",
+                   "Random", "Classic", "Classic2", "Glide", "Sort", "Echo", "Void",
                    "Fluid", "Stretch", "Motion Transfer", "Repeat", "Shear", "Delay", "Sink",
                    "Mirror", "Vibrate", "Slam Zoom", "Zoom","Invert-Reverse", "Shift",
                    "Noise", "Stop", "Buffer", "Slice", "Shuffle", "Rise", "Custom Script",
@@ -666,6 +666,11 @@ def dynamic():
         showwidgets=[rangeslider, pdelta]
         u=1
         mode_type.configure(text="Mode Type: FFmpeg")
+
+    elif (current=="Classic2"):
+        showwidgets=[rangeslider2]
+        u=1
+        mode_type.configure(text="Mode Type: FFmpeg")
         
     elif (current=="Glide"):
         showwidgets=[pdelta]
@@ -799,7 +804,7 @@ def do_the_mosh():
             ProcessLabel.configure(text='STEP 3/3 FIXING THE CORRUPTED FILE...')
             ffmpeg_convert(mfile,param,sfile)
             os.remove(mfile)
-        elif ((current=="Classic") or (current=="Repeat") or (current=="Glide") or (current=="Sort") or (current=="Echo")):
+        elif ((current=="Classic") or (current=="Classic2") or (current=="Repeat") or (current=="Glide") or (current=="Sort") or (current=="Echo")):
             if not changed:
                 param = "-bf 0 -b 10000k" # Default ffmpeg parameter for the above modes
             ifile = sfile[:-4]+".avi"
@@ -808,6 +813,8 @@ def do_the_mosh():
             mfile = sfile[:-4]+"_corrupted.avi"
             if current=="Classic":
                 classic.Datamosh(ifile, mfile,s=int(start_mosh.get()),e=int(end_mosh.get()),p=int(varp.get()), fps=vid.get_meta_data()['fps'])
+            elif current=="Classic2":
+                classic_new.Datamosh(ifile, mfile,  s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()), fps=vid.get_meta_data()['fps'])
             elif current=="Repeat":         
                 repeat.Datamosh(ifile, mfile, s=int(start_frame_mosh.get()), e=int(end_frame_mosh.get()),
                                 p=int(varp.get()), fps=vid.get_meta_data()['fps'])
@@ -876,7 +883,7 @@ def do_the_mosh():
     
     #Check the result and complete the task
     if os.path.exists(sfile):
-        messagebox.showinfo("Exported!", "File exported successfully, \nFile Location: " +str(sfile))
+        res = messagebox.showinfo("Exported!", "File exported successfully, \nFile Location: " +str(sfile))
         ProcessLabel.configure(text="Last used: "+last_used)
         try: os.startfile(sfile)
         except: pass
