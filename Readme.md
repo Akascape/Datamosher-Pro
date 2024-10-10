@@ -48,6 +48,7 @@ Find more Examples and Tutorial Videos here 👇
 | ----------------| --------------------------------------------------------------------- |
 | Void            | gives the standard datamosh cuts based on video vectors (automatic i-frame removal) |
 | Classic         | gives the avidemux type datamosh within a range |
+| Classic2        | similar to classic mode, but more precise results (uses frame numbers) |
 | Combine         | combine multiple videos and mosh them together |
 | Rise            | gives you the ffglitch datamosh by manually removing a range of i frames |
 | Shuffle         | randomly shuffles chunks of frames and then moshes them with the normal ffglitch datamosh |
@@ -111,8 +112,8 @@ All the other required component licenses (mostly MIT) are provided in their fol
 <br>
 
 ## DATAMOSH MADE EASY!
-### Current Py Version: 2.2
-### Current Win Version: 2.6
+### Current Py Version: 2.3
+### Current Win Version: 2.7
 
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
