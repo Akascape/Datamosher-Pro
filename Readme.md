@@ -111,9 +111,11 @@ Note that **FFglitch** and **FFmpeg** are not provided in the *releases* directl
 All the other required component licenses (mostly MIT) are provided in their folder/block respectively and it must be taken into account that multiple licenses are involved.
 <br>
 
-## DATAMOSH MADE EASY!
-### Current Py Version: 2.3
-### Current Win Version: 2.7
+## DATAMOSH MADE EASY
+
+| Current Py Version: | 2.3 |
+| ----------------| --------- |
+| Current Win Version: | 2.7 |
 
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
