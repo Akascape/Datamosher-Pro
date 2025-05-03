@@ -59,7 +59,6 @@ A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for 
 [<img src="https://user-images.githubusercontent.com/89206401/184626130-ff9c788e-2da2-4c4c-b037-b04e063ce7c9.jpg" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/w57rib/moshed_two_loops_i_made_in_blender/?utm_source=share&utm_medium=web2x&context=3)
 [<img src="https://user-images.githubusercontent.com/89206401/177772212-9bb66bc8-c04f-43df-a766-e6b37e1a513d.jpg" width=12% height=12%>](https://www.reddit.com/r/datamoshing/comments/vth2hb/toxic_galaxy_automosh_bloomvoid/?utm_source=share&utm_medium=web2x&context=3)
 [![Click to watch!](https://img.youtube.com/vi/9JkiakPllrQ/2.jpg)](https://youtu.be/9JkiakPllrQ)
-[![Click to watch!](https://img.youtube.com/vi/EEBDSfHso2g/2.jpg)](https://youtu.be/EEBDSfHso2g)
 [![Click to watch!](https://img.youtube.com/vi/ZiMmAngSM9U/3.jpg)](https://youtu.be/ZiMmAngSM9U)
 [![Click to watch!](https://img.youtube.com/vi/UF98OViF9WI/3.jpg)](https://youtu.be/UF98OViF9WI)
 [![Click to watch!](https://img.youtube.com/vi/8K0cnNZTmSc/3.jpg)](https://youtu.be/8K0cnNZTmSc)
