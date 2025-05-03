@@ -8,7 +8,7 @@
 ## Live Session 
 <br> [![Click to watch this tutorial!](https://img.youtube.com/vi/KxSP3y7lDQA/0.jpg)](https://youtu.be/KxSP3y7lDQA)
 
-A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for making this live stream.
+A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for this live stream.
 
 ## Live Webcam Glitch
 [![Click to watch!](https://img.youtube.com/vi/Is74N3Uh4_M/0.jpg)](https://youtu.be/Is74N3Uh4_M)
