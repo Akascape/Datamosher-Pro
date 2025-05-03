@@ -8,10 +8,10 @@
 ## Live Session 
 <br> [![Click to watch this tutorial!](https://img.youtube.com/vi/KxSP3y7lDQA/0.jpg)](https://youtu.be/KxSP3y7lDQA)
 
+A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for making this live stream.
+
 ## Live Webcam Glitch
 [![Click to watch!](https://img.youtube.com/vi/Is74N3Uh4_M/0.jpg)](https://youtu.be/Is74N3Uh4_M)
-
-A big thanks to [Mr.ShiftGlitch](https://www.youtube.com/@Mr.ShiftGlitchFX) for making this live stream.
 
 ##  Basic i-frame removal examples (bloom, classic, rise)
 <br> [![Click to watch!](https://img.youtube.com/vi/_YZ32Wvl3hk/0.jpg)](https://youtu.be/_YZ32Wvl3hk)
