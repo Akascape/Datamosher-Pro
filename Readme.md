@@ -13,7 +13,7 @@ I was also searching for some good datamoshing software and I noticed that we ei
 Then I found some scripts and algorithms available for datamoshing which gives accurate results, but not everyone knows how to run those scripts on their system, hence I developed this GUI application for those scripts and added lots of new features which make this datamoshing process super easy. Just import the video and click the mosh button.
 
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include features like video player, conversion settings, themes and more glitch effects.
+### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include features like video player, conversion settings, themes, live mosh and more glitch effects.
 ### <p align='center'> WINDOWS VERSION ⚡
 <br> <p align='center'> [<img src="https://custom-icon-badges.demolab.com/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=windows2&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 
