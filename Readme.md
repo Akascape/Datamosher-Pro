@@ -5,7 +5,7 @@
 <br><img align="right" src="https://user-images.githubusercontent.com/89206401/141642297-7c62cf6f-7024-430f-88a2-c9cbbf0dc655.png" width="300">
 
 <br> It contains over `30+` different effects/algorithms/scripts that can emulate any style of datamoshing.
-<br> There are two versions available: a premium paid version for Windows and a basic free version with source code. 
+<br> There are two versions available: a premium paid version for Windows/MacOS and a basic free version with source code. 
 <br> If you’re aiming to easily create datamosh effects in your videos, you’re in the right spot!
 
 ### Story behind the Software
@@ -13,15 +13,15 @@ I was also searching for some good datamoshing software and I noticed that we ei
 Then I found some scripts and algorithms available for datamoshing which gives accurate results, but not everyone knows how to run those scripts on their system, hence I developed this GUI application for those scripts and added lots of new features which make this datamoshing process super easy. Just import the video and click the mosh button.
 
 # DOWNLOAD
-### <p align='center'> Support Datamosher-Pro Development by purchashing its executable version for *windows* which include features like video player, conversion settings, themes, live mosh and more glitch effects.
-### <p align='center'> WINDOWS VERSION ⚡
-<br> <p align='center'> [<img src="https://custom-icon-badges.demolab.com/badge/WINDOWS-DATAMOSHER_PRO-informational?&logo=windows2&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
+### <p align='center'> Support Datamosher-Pro Development by purchashing its premium version which include features like video player, conversion settings, themes, live mosh and more glitch effects.
+### <p align='center'> PREMIUM VERSION ⚡
+<br> <p align='center'> [<img src="https://custom-icon-badges.demolab.com/badge/WINDOWS/MAC-DATAMOSHER_PRO-informational?&logo=Datamosher_Pro&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 
 ### <p align='center'> FREE SOURCE CODE VERSION 🔻
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov2.3/Datamosher-Pro_python-version_2.3.zip) <br> Don't forget to leave a ⭐ </p>
 
 # Installation? ⚙️
-- For the window version, just extract the downloaded zip file and run the "Datamosher Pro.exe" application.
+- For the premium version, just extract the downloaded zip file and run the "Datamosher Pro" application.
 - For Python version, you need to install some stuff, not so difficult, check this >[installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install)< guide.
 
 **Official Tutorial Videos**
@@ -38,7 +38,7 @@ Find more Examples and Tutorial Videos here 👇
 # UI (FREE VERSION)
 ![Screenshot 2022-07-18 182425](https://user-images.githubusercontent.com/89206401/179515655-29efba5e-a860-428f-a032-41ebd90c5e3d.png)
 
-# UI (PAID VERSION - ONLY FOR WINDOWS)
+# UI (PREMIUM VERSION)
 ![newthemes](https://user-images.githubusercontent.com/89206401/174493211-febc4193-1090-4dbb-8eea-23d7d10e3741.png)
 ![features](https://github.com/Akascape/Datamosher-Pro/assets/89206401/76e41806-5d02-4995-ace7-74c3927af463)
 
