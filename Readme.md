@@ -114,9 +114,9 @@ All the other required component licenses (mostly MIT) are provided in their fol
 
 ## DATAMOSH MADE EASY
 
-| Current Py Version: | 2.3 |
+| Current Python Version: | 2.3 |
 | ----------------| --------- |
-| Current Win Version: | 2.8 |
+| Current Premium Version: | 2.8 |
 
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
 ![footer](https://capsule-render.vercel.app/api?type=rect&color=timeGradient&height=2)
