@@ -1,6 +1,8 @@
 [![header](https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=300&section=header&text=GALLERY&fontSize=90&fontAlignY=30&fontAlign=75&desc=Datamosher%20Pro&descAlign=80&descSize=30&animation=scaleIn)](https://akascape.gumroad.com/l/Datamosher-Pro)
 # This is the gallery page for Datamosher-Pro
 
+New Gallery Page: https://datamosherpro.akascape.com/gallery
+
 ## Official Tutorial Videos
 <br> [![Click to watch this tutorial!](https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg)](https://youtu.be/TQIQ1TmHUBY)
 <br> [![Click to watch!](https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg)](https://www.youtube.com/watch?v=eO-w-I-oCnc)
