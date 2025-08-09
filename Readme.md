@@ -18,7 +18,7 @@ Then I found some scripts and algorithms available for datamoshing which gives a
 <br> <p align='center'> [<img src="https://custom-icon-badges.demolab.com/badge/WINDOWS/MAC-DATAMOSHER_PRO-informational?&logo=Datamosher_Pro&logoColor=blue&color=007ec6" width="500">](https://akascape.gumroad.com/l/Datamosher-Pro)  </br>
 
 ### <p align='center'> FREE SOURCE CODE VERSION 🔻
-<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov2.3/Datamosher-Pro_python-version_2.3.zip) <br> Don't forget to leave a ⭐ </p>
+<br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Pro-v2.4/Datamosher-Pro_python-version_2.4.zip) <br> Don't forget to leave a ⭐ </p>
 
 # Installation? ⚙️
 - For the premium version, just extract the downloaded zip file and run the "Datamosher Pro" application.
