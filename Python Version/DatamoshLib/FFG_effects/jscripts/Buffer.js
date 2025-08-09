@@ -1,4 +1,4 @@
-// dd_ring_buffer.js
+// buffer.js
 // works kinda like an audio delay
 // stacks the previous n frames into a buffer
 

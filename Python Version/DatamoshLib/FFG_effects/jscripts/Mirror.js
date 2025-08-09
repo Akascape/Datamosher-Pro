@@ -1,4 +1,4 @@
-// dd_mirror_X.js
+// mirror_X.js
 
 // clean buffer :
 var buffer = [ ];

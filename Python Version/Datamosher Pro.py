@@ -1,10 +1,10 @@
 """
-DATAMOSHER PRO Py version 2.3
+DATAMOSHER PRO Py version 2.4
 Author: Akash Bora (Akascape)
-License: MIT | Copyright (c) 2024 Akash Bora
+License: MIT | Copyright (c) 2025 Akash Bora
 """
 
-currentversion = 2.3
+currentversion = 2.4
 
 #Import installed modules
 import tkinter
@@ -744,6 +744,14 @@ dynamic()
 keepframe.select()
 param = ""
 
+def open_file(sfile):
+    if sys.platform.startswith('darwin'):  # macOS
+        subprocess.call(('open', sfile))
+    elif os.name == 'nt':  # Windows
+        os.startfile(sfile)
+    elif os.name == 'posix':  # Linux
+        subprocess.call(('xdg-open', sfile))
+
 #autosave video name
 def savename():
     global sfile
@@ -885,10 +893,10 @@ def do_the_mosh():
     if os.path.exists(sfile):
         res = messagebox.showinfo("Exported!", "File exported successfully, \nFile Location: " +str(sfile))
         ProcessLabel.configure(text="Last used: "+last_used)
-        try: os.startfile(sfile)
+        try: open_file(sfile)
         except: pass
     else:
-        messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.")
+        messagebox.showerror("Oops!", "Something went wrong! \nPlease recheck the settings and try again.\nView error logs for more information.")
         ProcessLabel.configure(text='Recheck the settings and try again!')
         
     button_open.configure(state=tkinter.NORMAL)
@@ -903,6 +911,8 @@ ProcessLabel.pack(padx=10, pady=10, fill="x", expand=True, side="left")
 button_mosh = customtkinter.CTkButton(master=frame_right, height=30,width=110,corner_radius=10,
                                       text="MOSH", command=Threadthis)
 button_mosh.pack(padx=(0,10), pady=10, fill="x", side="right")
+
+root.after(100, root.focus_force)
 
 root.mainloop()
 

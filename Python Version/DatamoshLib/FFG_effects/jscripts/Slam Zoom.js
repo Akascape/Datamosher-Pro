@@ -1,4 +1,4 @@
-// dd_slam_zoom_in.js
+// slam_zoom.js
 
 var ZOOM = 20;
 

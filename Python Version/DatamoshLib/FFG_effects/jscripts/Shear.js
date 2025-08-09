@@ -1,4 +1,4 @@
-// dd_sheer.js
+// sheer.js
 
 var ZOOM = -20;
 

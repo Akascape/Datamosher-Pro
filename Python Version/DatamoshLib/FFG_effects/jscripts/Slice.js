@@ -1,4 +1,4 @@
-// dd_RandomDamage(progZoom).js
+// slice.js
 // progressive Zoom x and y components of mv if threshold met for frame
 
 let threshold = 95;

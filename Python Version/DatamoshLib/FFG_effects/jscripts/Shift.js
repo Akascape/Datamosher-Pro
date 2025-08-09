@@ -1,5 +1,5 @@
-// dd_RandomDamage(antiGrav).js
-// anitgravityify if threshold met for frame
+// shift.js
+// anitgravitify if threshold met for frame
 
 let threshold = 98;
 // global variable holding forward motion vectors from previous frames

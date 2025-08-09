@@ -1,0 +1,7 @@
+imageio
+imageio-ffmpeg
+numpy
+customtkinter
+pillow
+requests
+packaging

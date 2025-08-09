@@ -20,6 +20,27 @@ except ImportError:
     
 DIRPATH = os.path.dirname(os.path.realpath(__file__))
 
+#Set executable permissions for macOS
+def set_mac_permissions():
+    if sys.platform.startswith("darwin"):
+        print("Setting executable permissions for macOS...")
+        ffgac = os.path.join(DIRPATH,"FFglitch","ffgac")
+        ffedit = os.path.join(DIRPATH,"FFglitch","ffedit")
+        
+        try:
+            if os.path.exists(ffgac):
+                os.chmod(ffgac, 0o755)
+                print("Permissions set for ffgac")
+        except Exception as e:
+            print(f"Failed to set permissions for ffgac: {e} \nPlease go to System Settings -> Security & Privacy -> scroll down and give permission to the ffgac file")
+            
+        try:
+            if os.path.exists(ffedit):
+                os.chmod(ffedit, 0o755)
+                print("Permissions set for ffedit")
+        except Exception as e:
+            print(f"Failed to set permissions for ffedit: {e} \nPlease go to System Settings -> Security & Privacy -> scroll down and give permission to the ffedit file")
+
 #Checking the required folders
 folders = ["Assets","FFglitch","DatamoshLib","pymosh"]
 missingfolder=[]
@@ -69,6 +90,8 @@ else:
 #Check FFglitch Status
 def checkffglitch():
     print("Checking FFglitch:")
+    # Set permissions for macOS before running
+    set_mac_permissions()
     print("Running ffgac...")
     ffgac = os.path.join(DIRPATH,"FFglitch","ffgac")
     ffedit = os.path.join(DIRPATH,"FFglitch","ffedit")
@@ -130,6 +153,8 @@ else:
             if os.path.exists(os.path.join("FFglitch","ffgac")) or os.path.exists(os.path.join("FFglitch","ffgac.exe")):
                 os.remove(os.path.join("FFglitch","ffglitch.zip"))
             time.sleep(1)
+            # Set permissions after extraction for macOS
+            set_mac_permissions()
             checkffglitch()
             print("FFglitch setup complete!")
         except:
@@ -138,6 +163,7 @@ else:
         print("ffglitch modes cannot run without ffgac and ffedit packages, download them manually and paste them inside the FFglitch folder.")
 
 #Everything done!
+time.sleep(1)
 print("Setup Complete!")
 time.sleep(5)
 sys.exit()

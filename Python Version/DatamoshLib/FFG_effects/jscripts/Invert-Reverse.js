@@ -1,4 +1,4 @@
-// dd_RandomDamage(invertRandomN).js
+// invertReverse.js
 // invert x and y component of mv for random number of frames if threshold met for frame
 
 let threshold = 95;

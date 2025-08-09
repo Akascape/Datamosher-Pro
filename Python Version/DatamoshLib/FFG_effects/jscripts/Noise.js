@@ -1,4 +1,4 @@
-// dd_MultiplySlowest_50.js
+// noise.js
 // Multiply slowest moving mv's
 var LARGEST = 0;
 var SOME_PERCENTAGE = 0.5;

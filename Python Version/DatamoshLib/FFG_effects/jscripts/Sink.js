@@ -1,4 +1,4 @@
-// dd_zero.js
+// sink.js
 // only mess frames if mv > movement_threshold
 var movement_threshold = 3;
 function glitch_frame(frame)

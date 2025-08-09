@@ -1,4 +1,4 @@
-// dd_zoom_in.js
+// zoom.js
 
 var ZOOM = 20;
 

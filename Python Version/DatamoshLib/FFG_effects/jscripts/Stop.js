@@ -1,4 +1,4 @@
-// dd_RandomDamage(stopXY).js
+// stop.js
 // stop x and y component of mv for n framesif threshold met for frame
 
 let threshold = 95;
