@@ -153,7 +153,7 @@ else:
             if os.path.exists(os.path.join("FFglitch","ffgac")) or os.path.exists(os.path.join("FFglitch","ffgac.exe")):
                 os.remove(os.path.join("FFglitch","ffglitch.zip"))
             time.sleep(1)
-            # Set permissions after extraction for macOS
+
             set_mac_permissions()
             checkffglitch()
             print("FFglitch setup complete!")
@@ -167,3 +167,4 @@ time.sleep(1)
 print("Setup Complete!")
 time.sleep(5)
 sys.exit()
+
