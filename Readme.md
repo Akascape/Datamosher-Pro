@@ -114,7 +114,7 @@ All the other required component licenses (mostly MIT) are provided in their fol
 
 ## DATAMOSH MADE EASY
 
-| Current Python Version: | 2.3 |
+| Current Python Version: | 2.4 |
 | ----------------| --------- |
 | Current Premium Version: | 2.8 |
 
