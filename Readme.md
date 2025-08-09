@@ -25,7 +25,7 @@ Then I found some scripts and algorithms available for datamoshing which gives a
 - For Python version, you need to install some stuff, not so difficult, check this >[installation](https://github.com/Akascape/Datamosher-Pro/wiki/1.How-to-Install)< guide.
 
 **Official Tutorial Videos**
-<br> [<img src="https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg" width=40% height=40%>](https://youtu.be/TQIQ1TmHUBY) [<img src="https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg" width=40% height=40%>](https://www.youtube.com/watch?v=eO-w-I-oCnc)
+<br> [<img src="https://img.youtube.com/vi/TQIQ1TmHUBY/0.jpg" width=40% height=40%>](https://youtu.be/TQIQ1TmHUBY) [<img src="https://img.youtube.com/vi/eO-w-I-oCnc/0.jpg" width=40% height=40%>](https://www.youtube.com/watch?v=eO-w-I-oCnc) [<img src="https://img.youtube.com/vi/Adlze2E-SrE/0.jpg" width=40% height=40%>](https://youtu.be/Adlze2E-SrE?feature=shared)
 
 # Documentation 📑
 - A detailed documentation of this software is available in the >[Wiki](https://github.com/Akascape/Datamosher-Pro/wiki)< page.
