@@ -21,9 +21,9 @@ Then I found some scripts and algorithms available for datamoshing which gives a
 <br> <p align='center'> [<img src="https://img.shields.io/badge/Python_Version-informational?style=flat&logo=python&logoColor=blue&color=eaea4a" width=300 height=50>](https://github.com/Akascape/Datamosher-Pro/releases/download/Datamosher_Prov2.4/Datamosher-Pro_python-version_2.4.zip) <br> Don't forget to leave a ⭐ </p>
 
 ### Try the new mobile version 📱
-[<img src="https://img.shields.io/badge/Android-PlayStore-informational?style=flat&logo=android&logoColor=green&color=white" width=200 height=30>](https://play.google.com/store/apps/details?id=com.akascape.datamosherpro)
+[<img src="https://img.shields.io/badge/Android-PlayStore-informational?style=flat&logo=android&logoColor=green&color=white" width=200 height=30>](https://play.google.com/store/apps/details?id=com.akascape.datamosherpro) 
 
-[<img src="https://img.shields.io/badge/iOS-AppStore-informational?style=flat&logo=apple&logoColor=black&color=white" width=200 height=30>](https://apps.apple.com/us/app/datamosher-pro/id6760105109)
+[<img src="https://img.shields.io/badge/iOS-AppStore-informational?style=flat&logo=apple&logoColor=black&color=white" width=180 height=35>](https://apps.apple.com/us/app/datamosher-pro/id6760105109)
 
 # Installation? ⚙️
 - For the premium version, just extract the downloaded zip file and run the "Datamosher Pro" application.
